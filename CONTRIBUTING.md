@@ -41,3 +41,16 @@ Esegui i controlli locali, poi verifica in gioco: cambio di quest, campi mancant
 You can contribute without coding. Open an Issue with the quest ID, addon version, beta build, quest stage and readable text/screenshot. Keep quantities and conditions correct; retain player placeholders and identify source/provenance. Never fabricate missing fields or bypass English fingerprint checks.
 
 Submit focused pull requests. Preserve third-party notices and distinguish original code licensing from game-text rights. Run `lua tests/regression.lua` and `python3 tools/package.py`, then test the actual client. Mock checks are not a substitute for in-game verification.
+
+## Pubblicare una beta / Publishing a beta
+
+Aggiorna `## Version` nel TOC e il changelog, poi pubblica il commit su `main`. Da un checkout aggiornato crea e invia il tag corrispondente:
+
+```sh
+git tag v0.9.5
+git push origin v0.9.5
+```
+
+Sostituisci `0.9.5` con la versione effettiva. Il workflow rifiuta tag diversi dalla versione del TOC, verifica Lua 5.1, esegue i test e genera lo ZIP. Solo dopo il successo pubblica una GitHub prerelease con ZIP allegato e note generate. I normali commit non creano release. Non spostare tag già pubblicati: usa una nuova versione.
+
+Update the TOC version and changelog, push the commit to `main`, then push the matching `vX.Y.Z` tag. The release workflow validates the version, Lua syntax and regression checks, builds the installable ZIP, and publishes a beta prerelease with generated notes. No extra token is required. Ordinary commits only run validation. Use a new version rather than moving published tags.

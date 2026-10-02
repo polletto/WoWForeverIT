@@ -1,0 +1,40 @@
+name: Publish beta release
+on:
+  push:
+    tags:
+      - 'v*'
+permissions:
+  contents: read
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify tag matches addon version
+        id: version
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: python3 tools/check_release.py
+      - run: sudo apt-get update && sudo apt-get install -y lua5.1
+      - name: Lua syntax
+        run: find WoWForeverIT -name '*.lua' -print0 | xargs -0 -n1 luac5.1 -p
+      - name: Regression checks
+        run: lua5.1 tests/regression.lua
+      - name: Build installable ZIP
+        run: python3 tools/package.py
+      - name: Publish release and attach ZIP
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ github.ref_name }}
+          ADDON_VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          archive="dist/WoWForeverIT-beta-${ADDON_VERSION}.zip"
+          gh release create "$RELEASE_TAG" "$archive" \
+            --verify-tag --prerelease --latest=false \
+            --title "WoWForeverIT ${ADDON_VERSION} (beta)" --generate-notes

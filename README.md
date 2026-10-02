@@ -73,6 +73,12 @@ Coverage is incomplete. Database records are not a count of fully translated, ve
 
 Use `/wfit toggle`, `/wfit debug` and `/wfit info`. Report quest IDs, addon/client versions, quest stage and relevant text or screenshots in [Issues](https://github.com/polletto/WoWForeverIT/issues). See [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## Release automatiche / Automated releases
+
+Le beta pubblicate saranno disponibili in [Releases](https://github.com/polletto/WoWForeverIT/releases). Un tag `vX.Y.Z` corrispondente alla versione del TOC avvia i controlli e pubblica una prerelease con ZIP installabile allegato. I normali commit eseguono solo i controlli. Procedura in [CONTRIBUTING.md](CONTRIBUTING.md#pubblicare-una-beta--publishing-a-beta).
+
+Matching `vX.Y.Z` tags trigger validation, packaging and a GitHub beta prerelease with an installable ZIP. Ordinary commits only run checks.
+
 ## Development
 
 No build step is required to load the addon. From the repository root:
