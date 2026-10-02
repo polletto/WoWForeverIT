@@ -1,0 +1,16 @@
+name: Validate addon
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y lua5.1
+      - name: Lua syntax
+        run: find WoWForeverIT -name '*.lua' -print0 | xargs -0 -n1 luac5.1 -p
+      - name: Regression checks
+        run: lua5.1 tests/regression.lua
+      - name: Build installable ZIP
+        run: python3 tools/package.py

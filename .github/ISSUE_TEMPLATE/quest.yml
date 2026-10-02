@@ -1,0 +1,42 @@
+name: Missione mancante o errata / Quest translation
+description: Segnala una quest o un campo rimasto in inglese.
+title: "[Quest] "
+body:
+  - type: input
+    id: quest_id
+    attributes:
+      label: Quest ID
+      description: Usa /wfit info nel registro oppure /wfit debug presso l’NPC.
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Titolo inglese / English title
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versione addon e build beta / Addon version and client build
+    validations:
+      required: true
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Fase / Stage
+      options:
+        - Accettazione / Accept
+        - Registro o tracker / Log or tracker
+        - Progresso / Progress
+        - Completamento / Completion
+        - Altro / Other
+    validations:
+      required: true
+  - type: textarea
+    id: text
+    attributes:
+      label: Testo inglese, screenshot e problema / Text, screenshot and issue
+      description: Indica eventuali quantità o condizioni errate. Oscura dati personali.
+    validations:
+      required: true

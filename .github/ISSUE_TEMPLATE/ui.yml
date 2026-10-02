@@ -1,0 +1,23 @@
+name: Interfaccia o errore Lua / UI or Lua issue
+description: Segnala voci inglesi, problemi di aggiornamento o errori Lua.
+title: "[UI] "
+body:
+  - type: input
+    id: versions
+    attributes:
+      label: Versione addon e build beta
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Schermata e passi per riprodurre / Screen and reproduction steps
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Testo inglese, screenshot o errore Lua / Evidence
+      description: Oscura dati personali; includi altri addon attivi rilevanti.
+    validations:
+      required: true
