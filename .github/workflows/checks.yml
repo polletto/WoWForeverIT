@@ -12,5 +12,7 @@ jobs:
         run: find WoWForeverIT -name '*.lua' -print0 | xargs -0 -n1 luac5.1 -p
       - name: Regression checks
         run: lua5.1 tests/regression.lua
+      - name: Quest coverage inventory
+        run: lua5.1 tools/coverage.lua
       - name: Build installable ZIP
         run: python3 tools/package.py

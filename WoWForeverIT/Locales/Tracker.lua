@@ -1,5 +1,10 @@
--- Exact short objective labels captured in the user's quest tracker.
+-- Exact short objective labels from user captures and sourced quest pages.
 local terms = {
+    ["Protect the Index"] = "Proteggi l'Index Esoteria",
+    ["Al'Aketh Windstone Charm"] = "Amuleto di Pietra del Vento degli Al'Aketh",
+    ["Confront Belathaan Brightwish"] = "Affronta Belathaan Brightwish",
+    ["Speak with Rathiril Sunlance"] = "Parla con Rathiril Sunlance",
+    ["Speak with the Innkeeper"] = "Parla con la locandiera",
     ["Windsong Crawler Meat"] = "Carne di Granchio di Cantovento",
     ["Flutterfly Dust"] = "Polvere di Svolazzafarfalla",
     ["Lowlands Galestrider Tenderloin"] = "Filetto di Calcavento delle Pianure",

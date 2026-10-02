@@ -26,7 +26,24 @@ UnitSex=function() return 2 end
 local eventFrame
 CreateFrame=function() eventFrame=frame();return eventFrame end
 SlashCmdList={}
-C_Timer={After=function(_,fn) fn() end,NewTicker=function(_,fn) pulse=fn end}
+local pending = {}
+C_Timer={After=function(_,fn) pending[#pending+1]=fn end,NewTicker=function(_,fn) pulse=fn end}
+local function drain()
+ local callbacks=pending;pending={}
+ for _,fn in ipairs(callbacks) do fn() end
+end
+local hookCount=0
+hooksecurefunc=function(target, method, callback)
+ if type(target)=='string' then callback=method;method=target;target=_G end
+ local original=assert(target[method]);hookCount=hookCount+1
+ target[method]=function(...)
+  original(...)
+  callback(...)
+ end
+end
+QuestInfo_ShowTitle=function() QuestInfoTitleHeader:SetText(GetTitleText()) end
+QuestInfo_ShowDescriptionText=function() QuestInfoDescriptionText:SetText(GetQuestText()) end
+QuestInfo_ShowObjectivesText=function() QuestInfoObjectivesText:SetText(GetObjectiveText()) end
 local id=369
 GetQuestID=function() return id end
 GetTitleText=function() return 'A New Plague' end
@@ -56,7 +73,12 @@ MacroFrame=frame(macro,macroName,saveButton)
 local counter=field('Quests: |cffffffff3/25|r')
 WorldMapFrame=frame(counter)
 local header=field('A New Plague')
-QuestObjectiveTracker={usedBlocks={[369]={id=369,HeaderText=header}}}
+QuestObjectiveTracker={usedBlocks={[369]={id=369,HeaderText=header}},
+ Update=function() header:SetText('A New Plague') end}
+QuestMapFrame_UpdateAll=function()
+ counter:SetText('Quests: |cffffffff3/25|r')
+ QuestInfoTitleHeader:SetText(GetTitleText())
+end
 
 for line in io.lines("WoWForeverIT/WoWForeverIT.toc") do
  if line:match("%.lua$") then
@@ -68,7 +90,7 @@ end
 assert(WoWForeverIT_TranslateField(369,'title','A New Plague')=='Una nuova piaga')
 assert(WoWForeverIT_TranslateField(369,'title','A Changed Quest')==nil)
 assert(WoWForeverIT_TranslateField(369,'text',GetQuestText())==nil)
-local count=0;for _ in pairs(WoWForeverIT_QuestIT.DataIT) do count=count+1 end;assert(count==2458)
+local count=0;for _ in pairs(WoWForeverIT_QuestIT.DataIT) do count=count+1 end;assert(count==2464)
 assert(WoWForeverIT_TranslateField(92698,'title','What Is My Purpose?')=='Qual è il mio scopo?')
 assert(WoWForeverIT_TranslateField(92682,'title','Make Yourself Useful')=='Renditi utile')
 assert(WoWForeverIT_TranslateField(92682,'text','Unknown description')==nil)
@@ -100,3 +122,33 @@ print('PASS: database count, fingerprints, placeholders, tracker, counter, menu 
 
 assert(WoWForeverIT_TranslateObjectiveLine("0/1 Obtain Crystallized lightning\nfrom the Shrieking Cave") == "0/1 Recupera il Fulmine Cristallizzato nella Grotta Stridente")
 assert(WoWForeverIT_TranslateObjectiveLine("- 0/1 Obtain  CRYSTALLIZED lightning from the Shrieking Cave") == "- 0/1 Recupera il Fulmine Cristallizzato nella Grotta Stridente")
+
+-- Redraw callbacks must translate before a timer or safety pulse runs.
+SlashCmdList.WOWFOREVERIT('toggle') -- back to Italian
+id=369
+QuestInfoFrame.questLog=true;QuestFrame.visible=false
+drain()
+QuestMapFrame_UpdateAll()
+assert(counter.text=='Missioni: |cffffffff3/25|r')
+assert(QuestInfoTitleHeader.text=='Una nuova piaga')
+QuestObjectiveTracker:Update()
+assert(header.text=='Una nuova piaga')
+WorldMapFrame.OnShow(WorldMapFrame)
+assert(counter.text=='Missioni: |cffffffff3/25|r')
+-- Functions loaded after login get hooks exactly once.
+QuestMapFrame_UpdateQuests=function() counter:SetText('Quests: |cffffffff4/25|r') end
+eventFrame:OnEvent('ADDON_LOADED','Blizzard_QuestMap')
+local installed=hookCount
+eventFrame:OnEvent('QUEST_LOG_UPDATE');eventFrame:OnEvent('QUEST_LOG_UPDATE')
+assert(hookCount==installed,'redraw hooks must not accumulate')
+assert(#pending==1,'event retries must coalesce')
+QuestMapFrame_UpdateQuests()
+assert(counter.text=='Missioni: |cffffffff4/25|r')
+SlashCmdList.WOWFOREVERIT('toggle')
+QuestMapFrame_UpdateAll();QuestObjectiveTracker:Update()
+assert(counter.text=='Quests: |cffffffff3/25|r' and header.text=='A New Plague')
+assert(WoWForeverIT_TranslateObjectiveLine("3/10 Al'Aketh Windstone Charm")=="3/10 Amuleto di Pietra del Vento degli Al'Aketh")
+assert(WoWForeverIT_TranslateField(92871,'title','In Service of Zephras')=='Al servizio di Zephras')
+assert(WoWForeverIT_TranslateField(93746,'title','A Firm Response')=='Una risposta decisa')
+assert(WoWForeverIT_TranslateField(93461,'text','Changed source')==nil)
+print('PASS: immediate redraws, lazy hooks, coalesced timers, toggle and added quest records')

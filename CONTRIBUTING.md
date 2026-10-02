@@ -54,3 +54,5 @@ git push origin v0.9.5
 Sostituisci `0.9.5` con la versione effettiva. Il workflow rifiuta tag diversi dalla versione del TOC, verifica Lua 5.1, esegue i test e genera lo ZIP. Solo dopo il successo pubblica una GitHub prerelease con ZIP allegato e note generate. I normali commit non creano release. Non spostare tag già pubblicati: usa una nuova versione.
 
 Update the TOC version and changelog, push the commit to `main`, then push the matching `vX.Y.Z` tag. The release workflow validates the version, Lua syntax and regression checks, builds the installable ZIP, and publishes a beta prerelease with generated notes. No extra token is required. Ordinary commits only run validation. Use a new version rather than moving published tags.
+
+Conteggio riproducibile dei record e dei campi: `lua5.1 tools/coverage.lua`. Vedi [copertura attuale](docs/quest-coverage.md).

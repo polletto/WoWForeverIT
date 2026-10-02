@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.9.5
+
+- Secure post-hooks apply quest/map/tracker translations immediately after supported UI redraws rather than waiting for the 1.5-second safety ticker. Hooks also install on live modules loaded after login. Event retries are coalesced.
+- Keep newly drawn counters and reused row labels during refresh; restore saved labels only when toggling back to English.
+- Add six previously absent Zephras quests (26 fields) as concise original Italian adaptations with English fingerprints and recorded sources.
+- Add reproducible coverage inventory: 2,464 unique IDs, 1,586 records with five stored fields, 878 partial records. These are data coverage counts, not a claim of complete or in-game-verified localization.
+- Regression checks cover immediate redraws before timers, lazy loading, hook duplication, counters and language toggling. In-game verification pending.
+
 ## 0.9.4
 
 - Public repository documentation, contribution guide and issue forms.

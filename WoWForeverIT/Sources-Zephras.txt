@@ -26,3 +26,20 @@ What Is My Purpose?
 Make Yourself Useful
 
 Le fonti web possono comprimere gli a capo; sono conservate impronte per le sole varianti di spaziatura dei paragrafi. Nessun controllo ID/testo viene disabilitato.
+
+Lotto 0.9.5, consultato il 2026-10-02 (sei ID assenti dal DB importato):
+92840: https://www.wowhead.com/forever/quest=92840
+Catching Wind
+92834: https://www.wowhead.com/forever/quest=92834
+Avenged Tenfold
+92860: https://www.wowhead.com/forever/quest=92860
+In Service of Zephras
+92871: https://www.wowhead.com/forever/quest=92871
+In Service of Zephras
+93746: https://www.wowhead.com/forever/quest=93746
+A Firm Response
+93461: https://www.wowhead.com/forever/quest=93461
+Welcome to Shen'dar Village
+
+I campi presenti sono adattamenti concisi originali, non traduzioni ufficiali integrali. I campi non disponibili non sono inventati. I nomi di personaggi giocanti Bfg (92840) e Marabi (93746), presenti nelle pagine inglesi, sono normalizzati in $N prima di calcolare le impronte. Restano da confermare nel client. Le impronte multiple differiscono solo per gli a capo tra paragrafi.
+Le pagine /forever/it/quest=92871 e /forever/it/quest=93746 riportavano ancora i testi delle missioni in inglese tra parentesi quadre, non traduzioni italiane.

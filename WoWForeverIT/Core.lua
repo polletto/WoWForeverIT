@@ -8,6 +8,10 @@ local hooksInstalled = false
 local trackerHookInstalled = false
 local legacyTrackerHookInstalled = false
 local pulseInstalled = false
+local redrawHooks = setmetatable({}, {__mode = "k"})
+local showHooks = setmetatable({}, {__mode = "k"})
+local globalHookTarget = {}
+local deferredRefreshPending = false
 local replaceTrackerText
 local restoreEnglish
 local originalLabels = setmetatable({}, { __mode = "k" })
@@ -341,7 +345,7 @@ local function trackerTitle(self, quest)
     if not translated then return end
     local block = self.GetExistingBlock and self:GetExistingBlock(id)
     if block and block.HeaderText then pcall(label, block.HeaderText, translated.title) end
-    if C_Timer and C_Timer.After then C_Timer.After(0, replaceTrackerText) end
+    pcall(replaceTrackerText)
 end
 
 local function replaceTitle()
@@ -386,17 +390,16 @@ end
 local function replaceVisibleText()
     local t = activeTranslation()
     if not t then
-        restoreLabels()
         -- Blizzard reuses these FontStrings between quests; restore the live
         -- text even when the next quest has no entry in our database.
-        restoreEnglish()
+        restoreEnglish(true)
         replaceLabels()
         replaceMapButtons()
         replaceNpcButtons()
         replaceTrackerText()
         return
     end
-    restoreEnglish()
+    restoreEnglish(true)
     replaceTrackerText()
     replaceLabels()
     replaceMapButtons()
@@ -435,26 +438,69 @@ local function installHooks()
     hooksInstalled = true
 end
 
+-- Secure post-hooks translate immediately after Blizzard redraws the widgets.
+-- Register per target/method: mixins and live instances can appear after login.
+local function hookRedraw(target, method, callback)
+    if type(hooksecurefunc) ~= "function" then return false end
+    local object = target or _G
+    if type(object[method]) ~= "function" then return false end
+    local key = target or globalHookTarget
+    local methods = redrawHooks[key]
+    if not methods then methods = {}; redrawHooks[key] = methods end
+    if methods[method] then return true end
+    local safeCallback = function(...) pcall(callback, ...) end
+    local ok
+    if target then ok = pcall(hooksecurefunc, target, method, safeCallback)
+    else ok = pcall(hooksecurefunc, method, safeCallback) end
+    if ok then methods[method] = true end
+    return ok
+end
+
 local function installTrackerHook()
-    if type(hooksecurefunc) ~= "function" then return end
-    if not trackerHookInstalled and type(QuestObjectiveTrackerMixin) == "table" and type(QuestObjectiveTrackerMixin.UpdateSingle) == "function" then
-        hooksecurefunc(QuestObjectiveTrackerMixin, "UpdateSingle", trackerTitle)
-        trackerHookInstalled = true
+    for _, name in ipairs({"QuestObjectiveTrackerMixin", "QuestObjectiveTracker", "QUEST_TRACKER_MODULE"}) do
+        local target = _G[name]
+        if type(target) == "table" then
+            if hookRedraw(target, "UpdateSingle", trackerTitle) then trackerHookInstalled = true end
+            hookRedraw(target, "Update", replaceTrackerText)
+        end
     end
-    if not legacyTrackerHookInstalled and type(QuestWatch_Update) == "function" then
-        hooksecurefunc("QuestWatch_Update", replaceTrackerText)
-        legacyTrackerHookInstalled = true
+    local tracker = ObjectiveTrackerFrame
+    if tracker then hookRedraw(tracker, "Update", replaceTrackerText) end
+    if hookRedraw(nil, "QuestWatch_Update", replaceTrackerText) then legacyTrackerHookInstalled = true end
+    hookRedraw(nil, "ObjectiveTracker_Update", replaceTrackerText)
+end
+
+local function installMapHooks()
+    for _, name in ipairs({"QuestMapFrame_UpdateAll", "QuestMapFrame_UpdateQuests",
+        "QuestMapFrame_UpdateQuestDetails", "QuestMapFrame_ShowQuestDetails", "QuestLog_Update"}) do
+        hookRedraw(nil, name, replaceVisibleText)
+    end
+    for _, name in ipairs({"WorldMapFrame", "QuestMapFrame", "QuestScrollFrame"}) do
+        local root = _G[name]
+        if root then
+            hookRedraw(root, "Update", replaceVisibleText)
+            if not showHooks[root] and type(root.HookScript) == "function" then
+                local ok = pcall(root.HookScript, root, "OnShow", function() pcall(replaceVisibleText) end)
+                if ok then showHooks[root] = true end
+            end
+        end
     end
 end
 
 local function refresh()
     installHooks()
     installTrackerHook()
+    installMapHooks()
     installMenuHook()
-    if type(C_Timer) == "table" and type(C_Timer.After) == "function" then
-        C_Timer.After(0, replaceVisibleText)
-    else
-        replaceVisibleText()
+    -- Do not wait for the 1.5-second safety ticker on clicks or quest events.
+    pcall(replaceVisibleText)
+    -- One coalesced retry covers widgets populated later during the same event.
+    if not deferredRefreshPending and C_Timer and type(C_Timer.After) == "function" then
+        deferredRefreshPending = true
+        C_Timer.After(0, function()
+            deferredRefreshPending = false
+            pcall(replaceVisibleText)
+        end)
     end
 end
 
@@ -472,8 +518,10 @@ local function installPulse()
     pulseInstalled = true
 end
 
-restoreEnglish = function()
-    restoreLabels()
+restoreEnglish = function(keepLabels)
+    -- Only a language toggle restores saved UI labels. During redraws Blizzard
+    -- may have replaced them with new counters or reused quest rows.
+    if not keepLabels then restoreLabels() end
     if inQuestLog() then
         local id = C_QuestLog and C_QuestLog.GetSelectedQuest and C_QuestLog.GetSelectedQuest()
         if id and C_QuestLog.GetTitleForQuestID then
@@ -508,7 +556,7 @@ frame:SetScript("OnEvent", function(_, event, arg)
             refresh()
             installPulse()
         else
-            installMenuHook()
+            refresh()
         end
         return
     end
