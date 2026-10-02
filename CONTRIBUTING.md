@@ -56,3 +56,9 @@ Sostituisci `0.9.5` con la versione effettiva. Il workflow rifiuta tag diversi d
 Update the TOC version and changelog, push the commit to `main`, then push the matching `vX.Y.Z` tag. The release workflow validates the version, Lua syntax and regression checks, builds the installable ZIP, and publishes a beta prerelease with generated notes. No extra token is required. Ordinary commits only run validation. Use a new version rather than moving published tags.
 
 Conteggio riproducibile dei record e dei campi: `lua5.1 tools/coverage.lua`. Vedi [copertura attuale](docs/quest-coverage.md).
+
+### Pubblicare tramite richiesta nel repository
+
+In alternativa al push manuale del tag, dopo aver aggiornato TOC e changelog modifica `.github/release-request` con `vX.Y.Z` e pubblica su `main`. GitHub Actions verifica la versione, esegue i controlli, crea il tag sul commit della richiesta e pubblica lo ZIP nella stessa esecuzione. I tag creati con `GITHUB_TOKEN` non avviano un secondo workflow. Un tag esistente su un altro commit non viene spostato. Aggiorna il link del README al download della nuova Release.
+
+Alternatively, update `.github/release-request` to the matching `vX.Y.Z` and push to `main`. The workflow validates and tests the requested version, creates its tag and publishes the beta ZIP in the same run. Existing tags on other commits are never moved.

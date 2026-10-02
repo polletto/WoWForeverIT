@@ -17,5 +17,5 @@ if __name__ == '__main__':
     version = check(os.environ.get('RELEASE_TAG', ''))
     if output := os.environ.get('GITHUB_OUTPUT'):
         with open(output, 'a', encoding='utf-8') as stream:
-            stream.write(f'version={version}\n')
+            stream.write(f'version={version}\ntag=v{version}\n')
     print(f'Validated release v{version}')
