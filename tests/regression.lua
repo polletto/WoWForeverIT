@@ -24,7 +24,7 @@ UnitClass=function() return 'Priest','PRIEST' end
 UnitRace=function() return 'Undead','Scourge' end
 UnitSex=function() return 2 end
 local eventFrame
-CreateFrame=function() eventFrame=frame();return eventFrame end
+CreateFrame=function() local created=frame();eventFrame=eventFrame or created;return created end
 SlashCmdList={}
 local pending = {}
 C_Timer={After=function(_,fn) pending[#pending+1]=fn end,NewTicker=function(_,fn) pulse=fn end}
@@ -79,6 +79,26 @@ QuestMapFrame_UpdateAll=function()
  counter:SetText('Quests: |cffffffff3/25|r')
  QuestInfoTitleHeader:SetText(GetTitleText())
 end
+
+local tooltipTitle=field('A New Plague')
+local tooltipObjective=field('0/6 Windsong Crawler Meat')
+local tooltipHelp=field('Press F6 to submit an issue for this Quest')
+GameTooltipTextLeft1=tooltipTitle;GameTooltipTextLeft2=tooltipObjective;GameTooltipTextLeft3=tooltipHelp
+GameTooltip={}
+function GameTooltip:GetName() return 'GameTooltip' end
+function GameTooltip:GetOwner() return self.owner end
+function GameTooltip:NumLines() return 3 end
+function GameTooltip:Show() end
+function GameTooltip:AddLine(text) tooltipHelp:SetText(text) end
+QuestMapLogTitleButton_OnEnter=function(owner)
+ GameTooltip.owner=owner
+ tooltipTitle:SetText('A New Plague')
+ tooltipObjective:SetText('0/6 Windsong Crawler Meat')
+ tooltipHelp:SetText('Press F6 to submit an issue for this Quest')
+ GameTooltip:Show()
+end
+QuestPinMixin={OnMouseEnter=QuestMapLogTitleButton_OnEnter}
+QuestLogQuests_Update=function() counter:SetText('Quests: |cffffffff3/25|r') end
 
 for line in io.lines("WoWForeverIT/WoWForeverIT.toc") do
  if line:match("%.lua$") then
@@ -165,3 +185,61 @@ dofile('WoWForeverIT/Locales/Reused-Titles.lua')
 assert(title87.it=='Traduzione locale da conservare','reuse must not overwrite existing Italian titles')
 title87.it=translated87
 print('PASS: reused titles retain fingerprints and preserve existing Italian fields')
+
+WoWForeverIT_SetTooltipLanguage(true)
+local owner={info={questID=369}}
+QuestMapLogTitleButton_OnEnter(owner)
+assert(tooltipTitle.text=='Una nuova piaga')
+assert(tooltipObjective.text=='0/6 Carne di Granchio di Cantovento')
+assert(tooltipHelp.text=='Premi F6 per segnalare un problema con questa missione')
+GameTooltip:AddLine('Press F6 to submit an issue for this Quest')
+assert(tooltipHelp.text=='Premi F6 per segnalare un problema con questa missione')
+WoWForeverIT_SetTooltipLanguage(false)
+assert(tooltipTitle.text=='A New Plague')
+assert(tooltipObjective.text=='0/6 Windsong Crawler Meat')
+WoWForeverIT_SetTooltipLanguage(true)
+GameTooltip.owner={itemID=123}
+tooltipTitle:SetText('A New Plague');tooltipObjective:SetText('0/6 Windsong Crawler Meat')
+GameTooltip:Show()
+assert(tooltipTitle.text=='A New Plague' and tooltipObjective.text=='0/6 Windsong Crawler Meat')
+local pin={questID=369}
+QuestPinMixin.OnMouseEnter(pin)
+assert(tooltipTitle.text=='Una nuova piaga')
+QuestMapLogTitleButton_OnEnter({questID=999999})
+assert(tooltipTitle.text=='A New Plague')
+-- Hover-triggered log rebuilds do not wait for a timer.
+SlashCmdList.WOWFOREVERIT('toggle') -- Italian
+QuestLogQuests_Update()
+assert(counter.text=='Missioni: |cffffffff3/25|r')
+print('PASS: quest tooltips, late lines, unknown titles, unrelated tooltips, language toggle and hover redraws')
+
+-- The beta wraps tooltip titles and F6 instructions in inline color codes.
+QuestMapLogTitleButton_OnEnter({questID=93736})
+tooltipTitle:SetText('|cffffff00[9] Unwelcome Spirits|r')
+tooltipHelp:SetText('|cff00aaffPress F6 to submit an issue for this Quest|r')
+GameTooltip:Show()
+assert(tooltipTitle.text=='|cffffff00[9] Spiriti indesiderati|r')
+assert(tooltipHelp.text=='|cff00aaffPremi F6 per segnalare un problema con questa missione|r')
+WoWForeverIT_SetTooltipLanguage(false)
+assert(tooltipTitle.text=='|cffffff00[9] Unwelcome Spirits|r')
+WoWForeverIT_SetTooltipLanguage(true)
+tooltipTitle:SetText('|cffffff00[9]|r |cffffff00Unwelcome Spirits|r')
+GameTooltip:Show()
+assert(tooltipTitle.text=='|cffffff00[9]|r |cffffff00Spiriti indesiderati|r')
+print('PASS: colored tooltip titles, split level colors, colored F6 instruction and exact restoration')
+
+-- Forever can populate a pin tooltip through another handler, without the mixin hook.
+C_QuestLog.GetTitleForQuestID=function(q) return q==94897 and 'The Fate of a Loved One' or 'A New Plague' end
+C_QuestLog.GetInfo=function() return {questID=94897,title='The Fate of a Loved One'} end
+local unhookedPin={GetParent=function() return WorldMapFrame end}
+GameTooltip.owner=unhookedPin
+tooltipTitle:SetText('|cffffff00[11] The Fate of a Loved One|r')
+tooltipHelp:SetText('|cff00aaffPress |r|cff00aaffF6 to submit an issue for this Quest|r')
+GameTooltip:Show()
+assert(tooltipTitle.text=='|cffffff00[11] Il destino di una persona amata|r')
+assert(tooltipHelp.text=='|cff00aaffPremi F6 per segnalare un problema con questa missione|r')
+GameTooltip.owner={GetParent=function() return nil end}
+tooltipTitle:SetText('|cffffff00[11] The Fate of a Loved One|r')
+GameTooltip:Show()
+assert(tooltipTitle.text=='|cffffff00[11] The Fate of a Loved One|r')
+print('PASS: unhooked map pins resolve from exact live quest titles; foreign owners remain untouched')

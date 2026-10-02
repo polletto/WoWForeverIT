@@ -1,6 +1,6 @@
 -- Reproducible count by unique quest ID; counts stored fields, not verified quests.
 for line in io.lines('WoWForeverIT/WoWForeverIT.toc') do
- if line:match('%.lua$') and line~='Core.lua' then dofile('WoWForeverIT/'..line) end
+ if line:match('%.lua$') and line~='Core.lua' and line~='QuestTooltips.lua' then dofile('WoWForeverIT/'..line) end
 end
 local data=WoWForeverIT_QuestIT.DataIT
 local own=WoWForeverIT_Quests or {}

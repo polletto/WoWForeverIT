@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.9.7
+
+- Add `/wfit tooltip` for a delayed tooltip diagnostic snapshot.
+
+- Translate quest log row and map pin tooltips: available titles, fingerprint-matched fields, short objectives and beta F6 issue instruction. Unknown text remains unchanged; item and spell tooltips are outside this scope.
+- Hook QuestLogQuests_Update, which redraws the log when hovering map pins, to restore Italian rows immediately.
+- Tooltip language toggle restores only unchanged lines owned by the active tooltip. Map-pin title, objective and F6 instruction verified in game by the tester.
+
+
 ## 0.9.6
 
 - Reuse four previously English-identical quest titles from WOW Forver - Italiano contributors, preserving source credits and MIT notice.
@@ -13,14 +22,14 @@
 - Keep newly drawn counters and reused row labels during refresh; restore saved labels only when toggling back to English.
 - Add six previously absent Zephras quests (26 fields) as concise original Italian adaptations with English fingerprints and recorded sources.
 - Add reproducible coverage inventory: 2,464 unique IDs, 1,586 records with five stored fields, 878 partial records. These are data coverage counts, not a claim of complete or in-game-verified localization.
-- Regression checks cover immediate redraws before timers, lazy loading, hook duplication, counters and language toggling. In-game verification pending.
+- Regression checks cover immediate redraws before timers, lazy loading, hook duplication, counters and language toggling. Map-pin title, objective and F6 instruction verified in game by the tester.
 
 ## 0.9.4
 
 - Public repository documentation, contribution guide and issue forms.
 - Preserve source credits and clarify code/game-text licensing.
 - Reproducible installable ZIP packaging and regression checks.
-- Short objective lookup tolerates line breaks, repeated spaces, non-breaking spaces and capitalization, including the Crystallized Lightning objective. Unknown labels and counters are preserved. In-game verification pending.
+- Short objective lookup tolerates line breaks, repeated spaces, non-breaking spaces and capitalization, including the Crystallized Lightning objective. Unknown labels and counters are preserved. Map-pin title, objective and F6 instruction verified in game by the tester.
 
 ## 0.9.3
 

@@ -472,7 +472,7 @@ end
 
 local function installMapHooks()
     for _, name in ipairs({"QuestMapFrame_UpdateAll", "QuestMapFrame_UpdateQuests",
-        "QuestMapFrame_UpdateQuestDetails", "QuestMapFrame_ShowQuestDetails", "QuestLog_Update"}) do
+        "QuestMapFrame_UpdateQuestDetails", "QuestMapFrame_ShowQuestDetails", "QuestLogQuests_Update", "QuestLog_Update"}) do
         hookRedraw(nil, name, replaceVisibleText)
     end
     for _, name in ipairs({"WorldMapFrame", "QuestMapFrame", "QuestScrollFrame"}) do
@@ -592,11 +592,18 @@ SlashCmdList.WOWFOREVERIT = function(input)
     local cmd = (input or ""):lower():match("^%s*(%S*)")
     if cmd == "toggle" then
         italianEnabled = not italianEnabled
+        if WoWForeverIT_SetTooltipLanguage then WoWForeverIT_SetTooltipLanguage(italianEnabled) end
         if italianEnabled then refresh() replaceGameMenu() else restoreEnglish() end
         if QuestObjectiveTracker and type(QuestObjectiveTracker.MarkDirty) == "function" then
             QuestObjectiveTracker:MarkDirty()
         end
         report("Testo nella finestra quest", italianEnabled and "italiano" or "inglese")
+    elseif cmd == "tooltip" then
+        if SlashCmdList.WOWFOREVERITTOOLTIP then
+            SlashCmdList.WOWFOREVERITTOOLTIP()
+        else
+            report("Diagnostica tooltip", "modulo QuestTooltips.lua non caricato. Controlla la cartella e il file .toc, poi riavvia WoW.")
+        end
     elseif cmd == "debug" then
         debugEnabled = not debugEnabled
         report("Debug", debugEnabled and "attivo" or "disattivo")

@@ -2,7 +2,7 @@
 
 Italian quest and interface localization for the **WoW Forever beta**. Community project by [polletto](https://github.com/polletto), with quest data and text utilities adapted from **QuestIT 0.8.6 by Drakanast**.
 
-**Version 0.9.6 · Beta · Interface 16001**
+**Version 0.9.7 · Beta · Interface 16001**
 
 ## Italiano
 
@@ -10,7 +10,7 @@ WoWForeverIT traduce direttamente le finestre delle missioni, il registro nella 
 
 ### Installazione
 
-1. Scarica [WoWForeverIT-beta-0.9.6.zip](https://github.com/polletto/WoWForeverIT/releases/download/v0.9.6/WoWForeverIT-beta-0.9.6.zip).
+1. Scarica [WoWForeverIT-beta-0.9.7.zip](https://github.com/polletto/WoWForeverIT/releases/download/v0.9.7/WoWForeverIT-beta-0.9.7.zip).
 2. Chiudi il gioco ed estrai la cartella `WoWForeverIT` in `Interface/AddOns` **dell'installazione beta che usi**.
 3. Verifica questa struttura: `Interface/AddOns/WoWForeverIT/WoWForeverIT.toc`.
 4. Abilita l'addon. Per verificare questa versione, disabilita QuestIT e altri traduttori che modificano le stesse finestre.
@@ -67,7 +67,7 @@ Gli screenshot documentano le versioni già provate in gioco; non tutte le etich
 
 WoWForeverIT translates supported quest text inside the game's existing quest dialogs, map quest log and objective tracker. It also provides an initial Italian dictionary for the Esc menu and selected settings screens.
 
-Download the [installable ZIP](https://github.com/polletto/WoWForeverIT/releases/download/v0.9.6/WoWForeverIT-beta-0.9.6.zip), close the game, and extract its `WoWForeverIT` folder into the beta installation's `Interface/AddOns`. The final file must be `Interface/AddOns/WoWForeverIT/WoWForeverIT.toc`. Disable other translators affecting the same UI while testing.
+Download the [installable ZIP](https://github.com/polletto/WoWForeverIT/releases/download/v0.9.7/WoWForeverIT-beta-0.9.7.zip), close the game, and extract its `WoWForeverIT` folder into the beta installation's `Interface/AddOns`. The final file must be `Interface/AddOns/WoWForeverIT/WoWForeverIT.toc`. Disable other translators affecting the same UI while testing.
 
 Coverage is incomplete. Database records are not a count of fully translated, verified quests. Imported fields use English fingerprints; changed or missing text stays English. Existing local overrides do not use fingerprint checks. Zephras additions are concise original Italian adaptations. Short tracker objectives and UI labels use separate dictionaries. Imported gossip, options and books are not wired into the viewer yet.
 

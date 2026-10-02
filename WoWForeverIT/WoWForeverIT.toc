@@ -1,7 +1,7 @@
 ## Interface: 16001
 ## Title: WoW Forever IT
 ## Notes: Italian quest and interface localization for the Forever beta.
-## Version: 0.9.6
+## Version: 0.9.7
 ## Author: polletto and contributors
 Locales/itIT.lua
 Locales/Brill.lua
@@ -16,3 +16,4 @@ Locales/Tracker.lua
 QuestDB.lua
 Locales/UI.lua
 Core.lua
+QuestTooltips.lua
