@@ -1,0 +1,15 @@
+Fonti consultate il 2026-10-02.
+Progetto: https://github.com/z4mbo/WOW-Forver-Italiano
+Commit: f5d5970e57745ae6d59e72983b494195a6167822
+Licenza originale: Vendor/WOWForverItaliano/LICENSE (MIT).
+
+87 Goldtooth -> Dentedoro
+3904 Milly's Harvest -> Il raccolto di Milly
+3905 Grape Manifest -> Elenco dell'uva
+398 Wanted: Maggot Eye -> Ricercato: Maggot Eye
+
+87 e 398: Addon/Data/Quests.lua
+3904 e 3905: Addon/Data/QuestTitlesExtra.lua
+
+Confrontati 66 titoli. Tutti gli ID erano presenti; quattro titoli erano ancora identici all'inglese. È stata verificata l'impronta del titolo inglese contro quella già nel DB. Si riutilizza solo il titolo italiano, conservando l'impronta esistente. Le traduzioni già italiane non vengono sovrascritte. Non vengono importati dialoghi basandosi sul solo titolo.
+

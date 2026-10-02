@@ -1,4 +1,4 @@
-# Copertura missioni — beta 0.9.5
+# Copertura missioni — beta 0.9.6
 
 Conteggio del 2026-10-02, riproducibile con `lua5.1 tools/coverage.lua` dalla radice del repository. Si contano gli ID unici e i campi effettivi dopo la precedenza degli override locali.
 
@@ -11,7 +11,7 @@ Conteggio del 2026-10-02, riproducibile con `lua5.1 tools/coverage.lua` dalla ra
 | Record con tutti e cinque i campi presenti | 1.586 |
 | Record con copertura parziale | 878 |
 | Campi testuali presenti | 11.006 |
-| Titoli identici all'impronta inglese | 516 |
+| Titoli identici all'impronta inglese | 512 |
 
 | Campo presente | Missioni |
 | --- | ---: |
@@ -41,3 +41,16 @@ Le pagine italiane di 92871 e 93746 erano ancora in inglese. Nessuna traduzione 
 ## Prossimi lotti
 
 Confrontare gli ID della zona con quelli già caricati, poi verificare i singoli campi mancanti. Per le quest condivise con Vanilla confrontare anche il testo Forever: la corrispondenza del titolo o dell'ID da sola non basta. Controllare la pagina italiana effettiva, perché la localizzazione dei menu del sito non implica quella del testo della missione. Aggiungere campi con provenienza e impronte, conservando i record già funzionanti e i segnaposto del giocatore.
+
+## Titoli italiani riutilizzati nella 0.9.6
+
+Confrontati 66 titoli del progetto WOW Forver - Italiano con gli ID e le impronte già presenti. Nessun ID nuovo: quattro titoli ancora inglesi sono stati completati senza sostituire i campi già italiani. La copertura passa da 516 a 512 titoli identici all’inglese; gli ID unici restano 2.464.
+
+| ID | Titolo italiano riutilizzato |
+| --- | --- |
+| 87 | Dentedoro |
+| 3904 | Il raccolto di Milly |
+| 3905 | Elenco dell'uva |
+| 398 | Ricercato: Maggot Eye |
+
+Nomi di NPC mantenuti come nella fonte. Licenza e provenienza: [Sources-Reused.txt](../WoWForeverIT/Sources-Reused.txt). Testi narrativi non importati: la fonte non fornisce il testo inglese completo per verificarne le impronte nel nostro adattatore. Il confronto con QuestieDB non ha trovato un pacchetto itIT per queste quest.

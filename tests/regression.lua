@@ -152,3 +152,16 @@ assert(WoWForeverIT_TranslateField(92871,'title','In Service of Zephras')=='Al s
 assert(WoWForeverIT_TranslateField(93746,'title','A Firm Response')=='Una risposta decisa')
 assert(WoWForeverIT_TranslateField(93461,'text','Changed source')==nil)
 print('PASS: immediate redraws, lazy hooks, coalesced timers, toggle and added quest records')
+
+assert(WoWForeverIT_TranslateField(87,'title','Goldtooth')=='Dentedoro')
+assert(WoWForeverIT_TranslateField(3904,'title',"Milly's Harvest")=="Il raccolto di Milly")
+assert(WoWForeverIT_TranslateField(3905,'title','Grape Manifest')=="Elenco dell'uva")
+assert(WoWForeverIT_TranslateField(398,'title','Wanted: Maggot Eye')=='Ricercato: Maggot Eye')
+assert(WoWForeverIT_TranslateField(87,'title','Changed beta title')==nil)
+local title87=WoWForeverIT_QuestIT.DataIT[87].title
+local translated87=title87.it
+title87.it='Traduzione locale da conservare'
+dofile('WoWForeverIT/Locales/Reused-Titles.lua')
+assert(title87.it=='Traduzione locale da conservare','reuse must not overwrite existing Italian titles')
+title87.it=translated87
+print('PASS: reused titles retain fingerprints and preserve existing Italian fields')

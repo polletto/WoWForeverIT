@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.9.6
+
+- Reuse four previously English-identical quest titles from WOW Forver - Italiano contributors, preserving source credits and MIT notice.
+- Keep existing Italian titles and English fingerprints; beta text changes still fall back to English.
+- Unique quest count stays 2,464; English-identical titles decrease from 516 to 512.
+
+
 ## 0.9.5
 
 - Secure post-hooks apply quest/map/tracker translations immediately after supported UI redraws rather than waiting for the 1.5-second safety ticker. Hooks also install on live modules loaded after login. Event retries are coalesced.
