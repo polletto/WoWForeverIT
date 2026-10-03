@@ -2,6 +2,13 @@ local addonName = ...
 local prefix = "|cff44ccff[WoWForeverIT]|r "
 local debugEnabled = false
 local italianEnabled = true
+local defaults={enabled=true,quests=true,interface=true,questTooltips=true,debug=false}
+function WoWForeverIT_GetOption(key)
+    local value=WoWForeverIT_Settings and WoWForeverIT_Settings[key]
+    if value==nil then return defaults[key] end
+    return value
+end
+local function questsEnabled() return italianEnabled and WoWForeverIT_GetOption('quests') end
 local currentID
 local currentPhase
 local hooksInstalled = false
@@ -31,7 +38,7 @@ local function inQuestLog()
 end
 
 local function activeTranslation()
-    if not italianEnabled then return nil end
+    if not questsEnabled() then return nil end
     local id
     if inQuestLog() then
         if not C_QuestLog or type(C_QuestLog.GetSelectedQuest) ~= "function" then return nil end
@@ -88,7 +95,7 @@ local function restoreLabels()
 end
 
 local function replaceLabels()
-    if not italianEnabled then return end
+    if not questsEnabled() then return end
     local rewards = QuestInfoFrame and QuestInfoFrame.rewardsFrame
     label(QuestInfoDescriptionHeader, "Descrizione")
     label(QuestInfoObjectivesHeader, "Obiettivi")
@@ -137,7 +144,7 @@ local mapButtonTranslations = {
 }
 
 local function replaceMapButtons()
-    if not italianEnabled or not WorldMapFrame or not WorldMapFrame:IsShown() then return end
+    if not questsEnabled() or not WorldMapFrame or not WorldMapFrame:IsShown() then return end
     local titles = {}
     local objectives = {}
     for id, t in pairs(WoWForeverIT_VisibleQuestTranslations()) do
@@ -174,9 +181,21 @@ local menuTranslations = WoWForeverIT_UI or {}
 local menuRoots = {"GameMenuFrame", "SettingsPanel", "InterfaceOptionsFrame", "VideoOptionsFrame",
     "AudioOptionsFrame", "KeyBindingFrame", "AddonList", "MacroFrame", "MacroPopupFrame",
     "HelpFrame", "SupportFrame", "EditModeManagerFrame"}
+local characterRoots = {CharacterFrame=true, PaperDollFrame=true, ReputationFrame=true,
+    SkillFrame=true, TokenFrame=true, HonorFrame=true, PVPFrame=true,
+    CharacterStatsFrame=true, AchievementFrame=true, CommunitiesFrame=true, GuildFrame=true,
+    WardrobeFrame=true, WardrobeCollectionFrame=true, CollectionsJournal=true, SpellBookFrame=true, PlayerSpellsFrame=true,
+    TradeSkillFrame=true, CraftFrame=true, ProfessionsFrame=true, ClassTrainerFrame=true}
+for name in pairs(characterRoots) do menuRoots[#menuRoots+1]=name end
+local filterRoots={DropDownList1=true,DropDownList2=true,DropDownList3=true,
+    UIDropDownMenuList1=true,UIDropDownMenuList2=true}
+for name in pairs(filterRoots) do menuRoots[#menuRoots+1]=name end
+local filterTranslations=WoWForeverIT_FilterUI or {}
+local characterTranslations = WoWForeverIT_CharacterUI or {}
+local menuUpdateHooks = {}
 local menuHooks = setmetatable({}, {__mode = "k"})
 local function replaceGameMenu()
-    if not italianEnabled then return end
+    if not WoWForeverIT_GetOption('interface') or not italianEnabled then return end
     for _, name in ipairs(menuRoots) do
         local root = _G[name]
         if root and type(root.IsShown) == "function" and root:IsShown() then
@@ -195,7 +214,37 @@ local function replaceGameMenu()
                     end
                 end
                 local english = region:GetText()
-                local italian = menuTranslations[english]
+                local italian
+                if filterRoots[name] then italian=filterTranslations[english]
+                else italian=(characterRoots[name] and (characterTranslations[english] or filterTranslations[english])) or menuTranslations[english] end
+                if not italian and characterRoots[name] and type(english)=='string' then
+                    -- Beta stat labels include punctuation and sometimes inline colors.
+                    local plain=english:gsub('|c%x%x%x%x%x%x%x%x',''):gsub('|r','')
+                    local base,suffix=plain:match('^(.-)(:%s*)$')
+                    local translated=characterTranslations[base or plain]
+                    if translated then italian=translated..(suffix or '') end
+                    local rank=plain:match('^Rank (%d+)$')
+                    if rank then italian='Grado '..rank end
+                    local page,total=plain:match('^Page (%d+)%s*/%s*(%d+)$')
+                    if page then italian='Pagina '..page..'/'..total end
+                    if plain:match('^Rank Points:') then italian=english:gsub('Rank Points:', 'Punti grado:',1) end
+                    local level,class=plain:match('^Level (%d+) (.+)$')
+                    local classes={Mage='Mago',Warrior='Guerriero',Priest='Sacerdote',
+                        Rogue='Ladro',Hunter='Cacciatore',Warlock='Stregone',
+                        Paladin='Paladino',Shaman='Sciamano',Druid='Druido'}
+                    if level and classes[class] then
+                        -- Replace visible words in the original text; keep the class color span.
+                        local first,last=english:find(class,1,true)
+                        if first then
+                            italian=english:sub(1,first-1)..classes[class]..english:sub(last+1)
+                            italian=italian:gsub('Level ', 'Livello ',1)
+                        end
+                    end
+                    if italian and not level then
+                        local color=english:match('^(|c%x%x%x%x%x%x%x%x)')
+                        if color then italian=color..italian..'|r' end
+                    end
+                end
                 if not italian and type(english) == "string" then
                     local number = english:match("^Action Bar (%d+)$")
                     if number then italian = "Barra azioni " .. number end
@@ -207,7 +256,58 @@ local function replaceGameMenu()
         end
     end
 end
+local characterTooltipLayoutPending=false
+local function translateCharacterTooltip()
+    if characterTooltipLayoutPending then return end
+    if not WoWForeverIT_GetOption('interface') or not italianEnabled or not GameTooltip or not GameTooltip.GetOwner then return end
+    local owner=GameTooltip:GetOwner()
+    local matched=false
+    for _=1,12 do
+        if not owner then break end
+        for name in pairs(characterRoots) do if owner==_G[name] then matched=true break end end
+        if matched then break end
+        owner=owner.GetParent and owner:GetParent()
+    end
+    if not matched or not GameTooltip.NumLines then return end
+    local name=GameTooltip:GetName() or 'GameTooltip'
+    local changed=false
+    for i=1,GameTooltip:NumLines() do
+        local line=_G[name..'TextLeft'..i]
+        if line and line.GetText then
+            local raw=line:GetText()
+            if type(raw)=='string' then
+                local plain=raw:gsub('|c%x%x%x%x%x%x%x%x',''):gsub('|r','')
+                local text=characterTranslations[plain]
+                if text then
+                    local color=raw:match('^(|c%x%x%x%x%x%x%x%x)')
+                    label(line,(color or '')..text..(color and '|r' or ''))
+                    changed=true
+                end
+            end
+        end
+    end
+    if changed and type(GameTooltip.Show)=='function' then
+        -- GameTooltip lays out its background on Show. Re-run once after changing
+        -- line lengths; the guard prevents the secure post-hook from recursing.
+        characterTooltipLayoutPending=true
+        pcall(GameTooltip.Show,GameTooltip)
+        characterTooltipLayoutPending=false
+    end
+end
 local function installMenuHook()
+    if GameTooltip and not menuUpdateHooks.tooltip and type(hooksecurefunc)=='function' then
+        local ok=pcall(hooksecurefunc,GameTooltip,'Show',function() pcall(translateCharacterTooltip) end)
+        if ok then menuUpdateHooks.tooltip=true end
+    end
+    for _, name in ipairs({'PaperDollFrame_UpdateStats', 'PaperDollFrame_Update',
+        'ReputationFrame_Update', 'SkillFrame_Update', 'SpellBookFrame_Update',
+        'SpellBookFrame_UpdateSpells', 'TradeSkillFrame_Update', 'CraftFrame_Update',
+        'ClassTrainerFrame_Update', 'ToggleDropDownMenu', 'UIDropDownMenu_Initialize'}) do
+        if not menuUpdateHooks[name] and type(_G[name])=='function' and type(hooksecurefunc)=='function' then
+            local ok=pcall(hooksecurefunc,name,function() pcall(replaceGameMenu) end)
+            if ok then menuUpdateHooks[name]=true end
+        end
+    end
     for _, name in ipairs(menuRoots) do
         local root = _G[name]
         if root and not menuHooks[root] and type(root.HookScript) == "function" then
@@ -221,7 +321,7 @@ local function installMenuHook()
 end
 
 local function replaceNpcButtons()
-    if not italianEnabled then return end
+    if not questsEnabled() then return end
     if inQuestLog() or not QuestFrame or not QuestFrame:IsShown() then return end
     local names = {Continue = "Continua", Cancel = "Annulla", Accept = "Accetta", Decline = "Rifiuta"}
     visitUI(QuestFrame, function(region)
@@ -233,7 +333,7 @@ local function replaceNpcButtons()
 end
 
 replaceTrackerText = function()
-    if not italianEnabled then return end
+    if not questsEnabled() then return end
     local titles = {}
     local objectives = {}
     local trackerHeaders = {
@@ -341,7 +441,7 @@ end
 local function trackerTitle(self, quest)
     if not quest or type(quest.GetID) ~= "function" then return end
     local id = quest:GetID()
-    local translated = italianEnabled and WoWForeverIT_VisibleQuestTranslations()[id]
+    local translated = questsEnabled() and WoWForeverIT_VisibleQuestTranslations()[id]
     if not translated then return end
     local block = self.GetExistingBlock and self:GetExistingBlock(id)
     if block and block.HeaderText then pcall(label, block.HeaderText, translated.title) end
@@ -543,6 +643,19 @@ restoreEnglish = function(keepLabels)
     setField(QuestProgressText, readText(GetProgressText))
 end
 
+function WoWForeverIT_SetOption(key,value)
+    if defaults[key]==nil then return end
+    WoWForeverIT_Settings=WoWForeverIT_Settings or {}
+    WoWForeverIT_Settings[key]=not not value
+    italianEnabled=WoWForeverIT_GetOption('enabled')
+    debugEnabled=WoWForeverIT_GetOption('debug')
+    restoreEnglish()
+    if WoWForeverIT_SetTooltipLanguage then
+        WoWForeverIT_SetTooltipLanguage(questsEnabled() and WoWForeverIT_GetOption('questTooltips'))
+    end
+    refresh()
+    replaceGameMenu()
+end
 local frame = CreateFrame("Frame")
 for _, event in ipairs({"ADDON_LOADED", "QUEST_DETAIL", "QUEST_PROGRESS", "QUEST_COMPLETE", "QUEST_FINISHED", "QUEST_LOG_UPDATE", "QUEST_WATCH_LIST_CHANGED"}) do
     frame:RegisterEvent(event)
@@ -550,6 +663,10 @@ end
 frame:SetScript("OnEvent", function(_, event, arg)
     if event == "ADDON_LOADED" then
         if arg == addonName then
+            WoWForeverIT_Settings=WoWForeverIT_Settings or {}
+            italianEnabled=WoWForeverIT_GetOption('enabled')
+            debugEnabled=WoWForeverIT_GetOption('debug')
+            if WoWForeverIT_SetTooltipLanguage then WoWForeverIT_SetTooltipLanguage(questsEnabled() and WoWForeverIT_GetOption('questTooltips')) end
             print(prefix .. "caricato. /wfit toggle | /wfit debug | /wfit info")
             installHooks()
             installTrackerHook()
@@ -591,13 +708,15 @@ SLASH_WOWFOREVERIT1 = "/wfit"
 SlashCmdList.WOWFOREVERIT = function(input)
     local cmd = (input or ""):lower():match("^%s*(%S*)")
     if cmd == "toggle" then
-        italianEnabled = not italianEnabled
+        WoWForeverIT_SetOption("enabled",not italianEnabled)
         if WoWForeverIT_SetTooltipLanguage then WoWForeverIT_SetTooltipLanguage(italianEnabled) end
         if italianEnabled then refresh() replaceGameMenu() else restoreEnglish() end
         if QuestObjectiveTracker and type(QuestObjectiveTracker.MarkDirty) == "function" then
             QuestObjectiveTracker:MarkDirty()
         end
         report("Testo nella finestra quest", italianEnabled and "italiano" or "inglese")
+    elseif cmd == "options" or cmd == "opzioni" or cmd == "" then
+        if WoWForeverIT_OpenOptions then WoWForeverIT_OpenOptions() end
     elseif cmd == "tooltip" then
         if SlashCmdList.WOWFOREVERITTOOLTIP then
             SlashCmdList.WOWFOREVERITTOOLTIP()
@@ -605,7 +724,7 @@ SlashCmdList.WOWFOREVERIT = function(input)
             report("Diagnostica tooltip", "modulo QuestTooltips.lua non caricato. Controlla la cartella e il file .toc, poi riavvia WoW.")
         end
     elseif cmd == "debug" then
-        debugEnabled = not debugEnabled
+        WoWForeverIT_SetOption("debug",not debugEnabled)
         report("Debug", debugEnabled and "attivo" or "disattivo")
     elseif cmd == "info" then
         report("Quest ID corrente", inQuestLog() and C_QuestLog and C_QuestLog.GetSelectedQuest and C_QuestLog.GetSelectedQuest() or currentID)

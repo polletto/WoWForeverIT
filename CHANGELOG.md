@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.9.8
+
+- Add saved checkbox options for quests, quest tooltips, interface and debug, opened with /wfit or /wfit opzioni.
+
+- Preserve class color spans and resize translated character tooltips.
+- Add partial spellbook/appearance filter translations and quest 98389 English text variant.
+- Add five beta screenshots to the README.
+- Translate visible labels in character, reputation, skill, spellbook, profession and trainer panels. Keep editable fields and spell/recipe descriptions unchanged.
+- Reapply labels after supported panel updates and install hooks for panels loaded later.
+
+
 ## 0.9.7
 
 - Add `/wfit tooltip` for a delayed tooltip diagnostic snapshot.

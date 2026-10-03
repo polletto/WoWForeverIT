@@ -48,6 +48,7 @@ local function captureMapTooltip()
 end
 local function translate()
     if not enabled or not GameTooltip then return end
+    if WoWForeverIT_GetOption and (not WoWForeverIT_GetOption('quests') or not WoWForeverIT_GetOption('questTooltips')) then return end
     captureMapTooltip()
     if not activeID then return end
     if type(GameTooltip.GetOwner) ~= 'function' or GameTooltip:GetOwner() ~= activeOwner then return end
