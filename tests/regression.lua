@@ -110,7 +110,7 @@ end
 assert(WoWForeverIT_TranslateField(369,'title','A New Plague')=='Una nuova piaga')
 assert(WoWForeverIT_TranslateField(369,'title','A Changed Quest')==nil)
 assert(WoWForeverIT_TranslateField(369,'text',GetQuestText())==nil)
-local count=0;for _ in pairs(WoWForeverIT_QuestIT.DataIT) do count=count+1 end;assert(count==2464)
+local count=0;for _ in pairs(WoWForeverIT_QuestIT.DataIT) do count=count+1 end;assert(count==2465)
 assert(WoWForeverIT_TranslateField(92698,'title','What Is My Purpose?')=='Qual è il mio scopo?')
 assert(WoWForeverIT_TranslateField(92682,'title','Make Yourself Useful')=='Renditi utile')
 assert(WoWForeverIT_TranslateField(92682,'text','Unknown description')==nil)
@@ -337,3 +337,17 @@ assert(WoWForeverIT_Settings.debug==true)
 WoWForeverIT_SetOption('quests',true)
 WoWForeverIT_SetOption('debug',false)
 print('PASS: saved independent interface/quest preferences and debug setting')
+assert(WoWForeverIT_TranslateObjectiveLine('- Deliver the Scarlet Crusade\nDocuments to Executor Zygand in Brill.')=='- Consegna i documenti della Crociata Scarlatta a Executor Zygand, a Brill.')
+assert(WoWForeverIT_TranslateObjectiveLine('Speak to Eleanor Shackleton near Brill.')=='Parla con Eleanor Shackleton vicino a Brill.')
+print('PASS: Vital Intelligence and Eleanor tracker objectives including wrapped text')
+
+assert(WoWForeverIT_TranslateField(96656,'title','The Adventurer')=="L'avventuriera")
+assert(WoWForeverIT_TranslateField(96656,'objectives','Speak to Eleanor Shackleton near Brill.')=='Parla con Eleanor Shackleton vicino a Brill.')
+local eleanorText=[[Averdan, you have proven yourself trustworthy in your endeavors against the Scarlet Crusade so far. That is why I am now entrusting you with an unusual task.
+
+I've heard of a new adventurer down the road by Brill. Go and see what she's doing.]]
+local eleanorItalian=WoWForeverIT_TranslateField(96656,'text',eleanorText)
+assert(eleanorItalian and eleanorItalian:find('Crociata Scarlatta',1,true))
+assert(not WoWForeverIT_TranslateField(96656,'text',eleanorText..' Changed.'))
+assert(not WoWForeverIT_TranslateField(96656,'objectives','Speak to Sam Sarsaparilla in Goldshire.'))
+print('PASS: Eleanor quest title, description and objectives with variant guards')

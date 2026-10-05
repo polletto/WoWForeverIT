@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.9.9
+
+- Add the WoWForeverIT logo with an ITA badge and Italian tricolor to the repository and README.
+- Add quest 96656 (Eleanor Shackleton): Italian title, description and objective, guarded by English fingerprints.
+- Translate Vital Intelligence and Eleanor tracker objectives, including wrapped lines.
+- Update coverage to 2,465 unique quest IDs; missing progress and completion fields remain absent.
+
 ## 0.9.8
 
 - Add saved checkbox options for quests, quest tooltips, interface and debug, opened with /wfit or /wfit opzioni.

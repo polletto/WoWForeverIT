@@ -1,23 +1,23 @@
-# Copertura missioni — beta 0.9.6
+# Copertura missioni — beta 0.9.9
 
-Conteggio del 2026-10-02, riproducibile con `lua5.1 tools/coverage.lua` dalla radice del repository. Si contano gli ID unici e i campi effettivi dopo la precedenza degli override locali.
+Conteggio del 2026-10-05, riproducibile con `lua5.1 tools/coverage.lua` dalla radice del repository. Si contano gli ID unici e i campi effettivi dopo la precedenza degli override locali.
 
 | Misura | Totale |
 | --- | ---: |
-| ID nel database importato ed esteso | 2.464 |
+| ID nel database importato ed esteso | 2.465 |
 | Override locali | 19 |
 | Override già compresi negli ID precedenti | 19 |
-| **Missioni uniche nel database** | **2.464** |
+| **Missioni uniche nel database** | **2.465** |
 | Record con tutti e cinque i campi presenti | 1.586 |
-| Record con copertura parziale | 878 |
-| Campi testuali presenti | 11.006 |
+| Record con copertura parziale | 879 |
+| Campi testuali presenti | 11.009 |
 | Titoli identici all'impronta inglese | 512 |
 
 | Campo presente | Missioni |
 | --- | ---: |
-| Titolo | 2.464 |
-| Descrizione | 2.188 |
-| Obiettivi | 2.192 |
+| Titolo | 2.465 |
+| Descrizione | 2.189 |
+| Obiettivi | 2.193 |
 | Progresso presso l'NPC | 1.744 |
 | Completamento presso l'NPC | 2.418 |
 
@@ -54,3 +54,7 @@ Confrontati 66 titoli del progetto WOW Forver - Italiano con gli ID e le impront
 | 398 | Ricercato: Maggot Eye |
 
 Nomi di NPC mantenuti come nella fonte. Licenza e provenienza: [Sources-Reused.txt](../WoWForeverIT/Sources-Reused.txt). Testi narrativi non importati: la fonte non fornisce il testo inglese completo per verificarne le impronte nel nostro adattatore. Il confronto con QuestieDB non ha trovato un pacchetto itIT per queste quest.
+
+## Aggiunta nella 0.9.9
+
+Quest 96656, variante di Eleanor Shackleton vicino a Brill: titolo, descrizione e obiettivo trascritti dagli screenshot del tester e tradotti in italiano. Le impronte distinguono questa variante dalle altre missioni intitolate The Adventurer. Progresso e completamento non ancora disponibili.
