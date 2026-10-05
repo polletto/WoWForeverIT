@@ -4,6 +4,7 @@
 ## Version: 0.9.9
 ## SavedVariables: WoWForeverIT_Settings
 ## Author: polletto and contributors
+## IconTexture: Interface\Icons\INV_Misc_Book_09
 Locales/itIT.lua
 Locales/Brill.lua
 Vendor/QuestIT/Text.lua
