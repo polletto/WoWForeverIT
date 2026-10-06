@@ -3,7 +3,7 @@
 ## Category: Localization
 ## Category-itIT: Localizzazione
 ## Notes: Italian quest and interface localization for the Forever beta.
-## Version: 0.9.10
+## Version: 0.9.11
 ## SavedVariables: WoWForeverIT_Settings
 ## IconTexture: Interface\AddOns\WoWForeverIT\Media\Icon.tga
 ## Author: polletto and contributors

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.9.11
+
+- Restore the complete tested icon binary after a transfer error in 0.9.10. Spell translations and behavior match the approved test14.
+
 ## 0.9.10
 
 - Add Italian spell names and matched descriptions for mage abilities and an initial batch for all other classes, general abilities and racial passives.
