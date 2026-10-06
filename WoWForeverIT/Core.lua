@@ -2,7 +2,7 @@ local addonName = ...
 local prefix = "|cff44ccff[WoWForeverIT]|r "
 local debugEnabled = false
 local italianEnabled = true
-local defaults={enabled=true,quests=true,interface=true,questTooltips=true,debug=false}
+local defaults={enabled=true,quests=true,interface=true,questTooltips=true,spells=true,debug=false}
 function WoWForeverIT_GetOption(key)
     local value=WoWForeverIT_Settings and WoWForeverIT_Settings[key]
     if value==nil then return defaults[key] end
@@ -655,6 +655,7 @@ function WoWForeverIT_SetOption(key,value)
     end
     refresh()
     replaceGameMenu()
+    if WoWForeverIT_RefreshSpells then WoWForeverIT_RefreshSpells() end
 end
 local frame = CreateFrame("Frame")
 for _, event in ipairs({"ADDON_LOADED", "QUEST_DETAIL", "QUEST_PROGRESS", "QUEST_COMPLETE", "QUEST_FINISHED", "QUEST_LOG_UPDATE", "QUEST_WATCH_LIST_CHANGED"}) do

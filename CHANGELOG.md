@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.9.10
+
+- Add Italian spell names and matched descriptions for mage abilities and an initial batch for all other classes, general abilities and racial passives.
+- Translate supported buff effects, cast/channel names and warrior spellbook section headings.
+- Add the custom addon icon and draggable minimap launcher with a gold border, plus saved spell translation options.
+- Preserve numeric values, unknown text and protected UI; spell display updates remain disabled during combat lockdown.
+- Publish the same GitHub beta ZIP automatically to CurseForge.
+
 ## 0.9.9
 
 - Add the WoWForeverIT logo with an ITA badge and Italian tricolor to the repository and README.

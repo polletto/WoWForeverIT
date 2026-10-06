@@ -1,0 +1,7 @@
+Primo lotto 2026-10-05: traduzioni italiane originali WoWForeverIT.
+Nomi inglesi standard e famiglie di descrizioni Classic confrontate con:
+https://www.wowhead.com/classic/spell=133
+https://www.wowhead.com/classic/spell=116
+https://www.wowhead.com/classic/spell=1459
+Non viene importato il modulo o il catalogo di WOW Forver Italiano.
+Applicazione runtime: nome inglese del client associato all’ID del tooltip; descrizione con corrispondenza completa del testo e valori numerici catturati dal client. Le varianti Forever e le formule non supportate restano in inglese.

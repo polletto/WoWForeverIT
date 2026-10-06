@@ -1,10 +1,12 @@
 ## Interface: 16001
 ## Title: WoW Forever IT
+## Category: Localization
+## Category-itIT: Localizzazione
 ## Notes: Italian quest and interface localization for the Forever beta.
-## Version: 0.9.9
+## Version: 0.9.10
 ## SavedVariables: WoWForeverIT_Settings
+## IconTexture: Interface\AddOns\WoWForeverIT\Media\Icon.tga
 ## Author: polletto and contributors
-## IconTexture: Interface\Icons\INV_Misc_Book_09
 Locales/itIT.lua
 Locales/Brill.lua
 Vendor/QuestIT/Text.lua
@@ -21,3 +23,6 @@ Locales/UI.lua
 Core.lua
 QuestTooltips.lua
 Options.lua
+Locales/Spells.lua
+Spells.lua
+Minimap.lua

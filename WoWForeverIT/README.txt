@@ -1,4 +1,4 @@
-WoWForeverIT beta 0.9.9
+WoWForeverIT beta 0.9.10
 
 INSTALLAZIONE
 Estrai WoWForeverIT in Interface/AddOns dell’installazione beta.
@@ -16,3 +16,5 @@ I testi di gioco restano di proprietà di Blizzard Entertainment.
 
 Documentazione, contributi e segnalazioni:
 https://github.com/polletto/WoWForeverIT
+
+Magie: primo lotto sperimentale del mago. Checkbox dedicata in /wfit.

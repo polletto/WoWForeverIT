@@ -351,3 +351,34 @@ assert(eleanorItalian and eleanorItalian:find('Crociata Scarlatta',1,true))
 assert(not WoWForeverIT_TranslateField(96656,'text',eleanorText..' Changed.'))
 assert(not WoWForeverIT_TranslateField(96656,'objectives','Speak to Sam Sarsaparilla in Goldshire.'))
 print('PASS: Eleanor quest title, description and objectives with variant guards')
+-- Spell module: live values, source guard, late redraw and separate preference.
+assert(WoWForeverIT_TranslateSpellBody('Fireball','Hurls a fiery ball that causes 14 to 22 Fire damage and an additional 2 Fire damage over 4 sec.')=='Scaglia una palla di fuoco che infligge da 14 a 22 danni da fuoco e altri 2 danni da fuoco in 4 s.')
+assert(not WoWForeverIT_TranslateSpellBody('Fireball','Changed beta description 14 to 22.'))
+assert(not WoWForeverIT_TranslateSpellBody('Frostbolt','Hurls a fiery ball that causes 14 to 22 Fire damage and an additional 2 Fire damage over 4 sec.'))
+local spellLabel=field('Fireball')
+SpellBookFrame=frame(spellLabel)
+WoWForeverIT_RefreshSpells()
+assert(spellLabel:GetText()=='Palla di Fuoco')
+spellLabel:SetText('Frostbolt')
+assert(spellLabel:GetText()=='Dardo di Gelo')
+WoWForeverIT_SetOption('spells',false)
+assert(spellLabel:GetText()=='Frostbolt')
+WoWForeverIT_SetOption('spells',true)
+local spellCallback
+TooltipDataProcessor={AddTooltipPostCall=function(_,fn) spellCallback=fn end}
+Enum={TooltipDataType={Spell=1}}
+C_Spell={GetSpellName=function(id) if id==133 then return 'Fireball' end end}
+WoWForeverIT_RefreshSpells()
+GameTooltipTextLeft1:SetText('Fireball')
+GameTooltipTextLeft2:SetText('Hurls a fiery ball that causes 14 to 22 Fire damage and an additional 2 Fire damage over 4 sec.')
+spellCallback(GameTooltip,{id=133})
+assert(GameTooltipTextLeft1:GetText()=='Palla di Fuoco')
+assert(GameTooltipTextLeft2:GetText():find('14 a 22',1,true))
+GameTooltipTextLeft1:SetText('Fireball')
+spellCallback(GameTooltip,{id=999})
+assert(GameTooltipTextLeft1:GetText()=='Fireball')
+InCombatLockdown=function() return true end
+spellCallback(GameTooltip,{id=133})
+assert(GameTooltipTextLeft1:GetText()=='Fireball')
+InCombatLockdown=nil
+print('PASS: spell numbers, changed sources, late redraw, preferences, unknown IDs and combat guards')
