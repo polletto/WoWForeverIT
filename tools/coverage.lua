@@ -1,6 +1,7 @@
 -- Reproducible count by unique quest ID; counts stored fields, not verified quests.
+local runtimeModules={['Core.lua']=true,['QuestTooltips.lua']=true,['Options.lua']=true,['Spells.lua']=true,['Minimap.lua']=true}
 for line in io.lines('WoWForeverIT/WoWForeverIT.toc') do
- if line:match('%.lua$') and line~='Core.lua' and line~='QuestTooltips.lua' and line~='Options.lua' then dofile('WoWForeverIT/'..line) end
+ if line:match('%.lua$') and not runtimeModules[line] then dofile('WoWForeverIT/'..line) end
 end
 local data=WoWForeverIT_QuestIT.DataIT
 local own=WoWForeverIT_Quests or {}
