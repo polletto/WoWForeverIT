@@ -15,6 +15,9 @@ concurrency:
 jobs:
   release:
     runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+      tag: ${{ steps.version.outputs.tag }}
     permissions:
       contents: write
     steps:
@@ -62,3 +65,84 @@ jobs:
           gh release create "$RELEASE_TAG" "$archive" \
             --verify-tag --prerelease --latest=false \
             --title "WoWForeverIT ${ADDON_VERSION} (beta)" --generate-notes
+  curseforge:
+    name: Upload approved beta to CurseForge
+    needs: release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download the published GitHub ZIP and notes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ needs.release.outputs.tag }}
+          ADDON_VERSION: ${{ needs.release.outputs.version }}
+        run: |
+          mkdir -p dist
+          gh release download "$RELEASE_TAG" --pattern "WoWForeverIT-beta-${ADDON_VERSION}.zip" --dir dist
+          gh release view "$RELEASE_TAG" --json body --jq '.body' > release-notes.md
+      - name: Upload the same ZIP as a CurseForge beta
+        env:
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          ADDON_VERSION: ${{ needs.release.outputs.version }}
+        run: |
+          python3 - <<'PY'
+          import json, os, re, uuid
+          from pathlib import Path
+          from urllib.request import Request, urlopen
+          from urllib.error import HTTPError, URLError
+          
+          token = os.environ.get("CF_API_TOKEN", "")
+          if not token:
+              raise SystemExit("Missing CF_API_TOKEN repository secret")
+          base = "https://wow.curseforge.com"
+          def request(path, data=None, content_type=None):
+              headers = {"X-Api-Token": token, "User-Agent": "WoWForeverIT-release"}
+              if content_type:
+                  headers["Content-Type"] = content_type
+              try:
+                  with urlopen(Request(base + path, data=data, headers=headers), timeout=120) as response:
+                      return json.load(response)
+              except HTTPError as error:
+                  raise SystemExit(f"CurseForge API returned HTTP {error.code}; check token, project ownership and metadata")
+              except URLError:
+                  raise SystemExit("CurseForge request failed; check the project before retrying an upload")
+          
+          version = os.environ["ADDON_VERSION"]
+          archive = Path("dist") / f"WoWForeverIT-beta-{version}.zip"
+          if not archive.is_file():
+              raise SystemExit("GitHub release ZIP is missing")
+          toc = Path("WoWForeverIT/WoWForeverIT.toc").read_text()
+          interface = re.search(r"^## Interface: (\d+)$", toc, re.M)
+          if not interface:
+              raise SystemExit("Missing single Interface version in TOC")
+          value = int(interface[1])
+          game_version = f"{value // 10000}.{value // 100 % 100}.{value % 100}"
+          versions = request("/api/game/versions")
+          matches = [item for item in versions if item.get("name") == game_version]
+          if len(matches) != 1:
+              raise SystemExit(f"Expected exactly one CurseForge version for {game_version}; refusing ambiguous upload")
+          metadata = {
+              "changelog": Path("release-notes.md").read_text(),
+              "changelogType": "markdown",
+              "displayName": f"WoWForeverIT {version} (beta)",
+              "gameVersions": [matches[0]["id"]],
+              "releaseType": "beta",
+          }
+          boundary = "WoWForeverIT-" + uuid.uuid4().hex
+          parts = [
+              f"--{boundary}\r\nContent-Disposition: form-data; name=\"metadata\"\r\nContent-Type: application/json\r\n\r\n".encode(),
+              json.dumps(metadata).encode(), b"\r\n",
+              f"--{boundary}\r\nContent-Disposition: form-data; name=\"file\"; filename=\"{archive.name}\"\r\nContent-Type: application/zip\r\n\r\n".encode(),
+              archive.read_bytes(), f"\r\n--{boundary}--\r\n".encode(),
+          ]
+          result = request("/api/projects/1727875/upload-file", b"".join(parts), f"multipart/form-data; boundary={boundary}")
+          file_id = result.get("id")
+          if not isinstance(file_id, int) or file_id <= 0:
+              raise SystemExit("CurseForge did not return a valid uploaded file ID; inspect project before retrying")
+          print(f"Uploaded beta to CurseForge: file {file_id}, game version {game_version}")
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as summary:
+              summary.write(f"CurseForge project 1727875: beta file **{file_id}**, game version **{game_version}**.\n")
+          PY
