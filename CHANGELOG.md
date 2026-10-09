@@ -1,4 +1,4 @@
-# Sviluppo 0.9.12
+# 0.9.12 — 2026-10-09
 
 - Estensione di quest, oggetti, abilità e dialoghi NPC con controlli sul testo originale.
 - Nomi di creature in nameplate e bersaglio, con opzione e protezione dei nomi dei giocatori e pet.
