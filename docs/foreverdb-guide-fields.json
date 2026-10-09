@@ -1,0 +1,65 @@
+[
+  {
+    "id": 2118,
+    "field": "objectives",
+    "en": "Capture a living Rabid Thistle Bear and bring it back to Tharnariun.\nShould you fail to capture a Rabid Thistle Bear and lose your trap, return to Tharnariun Treetender and request another trap.",
+    "it": "Cattura un Rabid Thistle Bear vivo e riportalo a Tharnariun. Se non riesci a catturarlo e perdi la trappola, torna da Tharnariun Treetender e chiedine un’altra.",
+    "hash": "b4896271"
+  },
+  {
+    "id": 3090,
+    "field": "text",
+    "en": "Ah, while you were gone a parchment came for you, adventurer.\nI usually avoid dealing with warlocks if I can help it, but I think you should read it when you have time. If I'm not mistaken, it came from your newly-appointed trainer Nartok. He would have words with you when you're ready.",
+    "it": "Ah, mentre eri via è arrivata una pergamena per te, avventuriero.\nDi solito evito di avere a che fare con gli stregoni, quando posso, ma credo che dovresti leggerla appena hai tempo. Se non sbaglio, viene dal tuo nuovo istruttore Nartok. Vorrebbe parlarti quando ti sentirai pronto.",
+    "hash": "b21606b9"
+  },
+  {
+    "id": 408,
+    "field": "objectives",
+    "en": "Kill 8 Wailing Ancestors and 8 Rotting Ancestors.\nKill Captain Dargol, and bring his skull to Magistrate Sevren in Brill.",
+    "it": "Uccidi 8 Wailing Ancestors e 8 Rotting Ancestors. Uccidi il Capitano Dargol e porta il suo teschio al Magistrato Sevren a Brill.",
+    "hash": "06642f19"
+  },
+  {
+    "id": 788,
+    "field": "text",
+    "en": "The first order of business will be to put a little strength in your backbone. I could send you out to the Barrens to hunt kodo, but well, in all honesty, you're more useful to us alive than dead.\nI believe you would find a good match with the mottled boars you'll find to the north of here.",
+    "it": "Per prima cosa dobbiamo irrobustirti un po’. Potrei mandarti nelle Savane a caccia di kodo, ma a dire il vero ci sei più utile vivo che morto.\nCredo che i cinghiali chiazzati a nord di qui siano avversari adatti a te.",
+    "hash": "95dbdc12"
+  },
+  {
+    "id": 804,
+    "field": "text",
+    "en": "Seeing the deed you have done for me steels my heart. I cannot fall so easily! I must endure!\nBut it remains that I cannot make the trek back to the Den unassisted. Please, adventurer, return to the Den and tell Gornek of my situation. Perhaps he can help me.",
+    "it": "Vedere ciò che hai fatto per me mi riempie il cuore di coraggio. Non posso cadere così facilmente! Devo resistere!\nMa non riesco ancora a tornare al Den senza aiuto. Ti prego, avventuriero, torna al Den e informa Gornek della mia situazione. Forse può aiutarmi.",
+    "hash": "a7b33c6c"
+  },
+  {
+    "id": 808,
+    "field": "objectives",
+    "en": "Retrieve Minshina's skull from the circle of power on the Echo Isles.\nBring it to Master Gadrin in Sen'jin Village.",
+    "it": "Recupera il teschio di Minshina dal cerchio di potere sulle Isole dell’Eco. Portalo al Maestro Gadrin nel Villaggio di Sen’jin.",
+    "hash": "4ad6d3e0"
+  },
+  {
+    "id": 826,
+    "field": "objectives",
+    "en": "Defeat Zalazane.\nKill 8 Voodoo Trolls and 8 Hexed Trolls.\nBring Zalazane's Head to Gadrin.",
+    "it": "Sconfiggi Zalazane. Uccidi 8 Troll Vudù e 8 Troll Maledetti. Porta la Testa di Zalazane a Gadrin.",
+    "hash": "ae5cfd58"
+  },
+  {
+    "id": 827,
+    "field": "objectives",
+    "en": "Gather Searing Collars from the cultists in Skull Rock.\nBring them to Margoz at his camp.",
+    "it": "Raccogli i Searing Collars dai cultisti a Roccia del Teschio. Portali a Margoz nel suo accampamento.",
+    "hash": "e9e6e758"
+  },
+  {
+    "id": 97969,
+    "field": "text",
+    "en": "You've become a leatherworker. Good for you, class. I reckon I know someone that can teach you how to make yourself a tent that will keep you cool on hot days, and dry on rainy days.\nWith a good tent over your head, you'll ensure that you get all the rest you need to stay sharp on your travels.",
+    "it": "Hai scelto la lavorazione delle pelli. Ottima idea, $C. Credo di conoscere qualcuno che può insegnarti a fabbricare una tenda che ti tenga al fresco nelle giornate calde e all’asciutto quando piove.\n\nCon una buona tenda sopra la testa potrai riposare quanto serve per mantenerti vigile durante i tuoi viaggi.",
+    "hash": "15da41a3"
+  }
+]

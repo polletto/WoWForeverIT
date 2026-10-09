@@ -1,0 +1,20 @@
+Checked 2026-10-08. Original Italian translations, numeric parameters from live tooltips.
+https://www.wowhead.com/forever/spell=8017
+https://www.wowhead.com/forever/spell=8042
+https://www.wowhead.com/forever/spell=324
+https://www.wowhead.com/forever/spell=8071
+https://www.wowhead.com/forever/spell=8050
+https://www.wowhead.com/forever/spell=8075
+https://www.wowhead.com/forever/spell=2484
+https://www.wowhead.com/forever/spell=3599
+https://www.wowhead.com/forever/spell=2645
+https://www.wowhead.com/forever/spell=17
+https://www.wowhead.com/forever/spell=1126
+Cross-checks: https://foreverdb.net/spell/8017 ; https://foreverdb.net/spell/324 ; https://foreverdb.net/spell/8042
+ForeverDB specifies build 1.60.1.70205; amounts differ from Wowhead. No numeric amount is imported into the addon.
+
+ForeverDB offline addon 0.30.0, metadata 2026-10-08.e2503fa5, client 1.60.1.70205: 40 exact spell-name keys from classSpells levels 1-10. Italian names authored locally. No NPC names, Classic quest text, or tooltip mechanics copied.
+
+174 additional original Italian names from the same classSpells inventory through level 30; names only, no mechanics inferred.
+
+Additional text families: https://www.wowhead.com/forever/spell=1776/gouge ; https://www.wowhead.com/forever/spell=19740/blessing-of-might ; https://www.wowhead.com/forever/spell=1978/serpent-sting . Checked 2026-10-08. Gouge description/aura, Blessing of Might hour-duration variant, Serpent Sting aura.

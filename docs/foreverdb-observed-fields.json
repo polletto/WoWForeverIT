@@ -1,0 +1,422 @@
+[
+  {
+    "id": 2118,
+    "field": "objectives",
+    "en": "Capture a living Rabid Thistle Bear and bring it back to Tharnariun. Should you fail to capture a Rabid Thistle Bear and lose your trap, return to Tharnariun Treetender and request another trap.",
+    "it": "Cattura un Rabid Thistle Bear vivo e riportalo a Tharnariun. Se non riesci a catturarlo e perdi la trappola, torna da Tharnariun Treetender e chiedine un’altra.",
+    "hash": "9ad4aa1b"
+  },
+  {
+    "id": 343,
+    "field": "objectives",
+    "en": "Go to the Royal Library in Stormwind Keep and speak with Milton Sheaf. He can find for you the book on metallurgy that Brother Kristoff needs for his speech.",
+    "it": "Vai alla Biblioteca Reale nella Fortezza di Roccavento e parla con Milton Sheaf. Può trovare il libro di metallurgia che serve a Fratello Kristoff per il suo discorso.",
+    "hash": "058a3904"
+  },
+  {
+    "id": 408,
+    "field": "objectives",
+    "en": "Kill 8 Wailing Ancestors and 8 Rotting Ancestors. Kill Captain Dargol, and bring his skull to Magistrate Sevren in Brill.",
+    "it": "Uccidi 8 Wailing Ancestors e 8 Rotting Ancestors. Uccidi il Capitano Dargol e porta il suo teschio al Magistrato Sevren a Brill.",
+    "hash": "38cfba43"
+  },
+  {
+    "id": 47,
+    "field": "objectives",
+    "en": "Bring 10 Gold Dust to Remy \"Two Times\" in Goldshire. Gold Dust is gathered from Kobolds in Elwynn Forest.",
+    "it": "Porta 10 Polveri d’Oro a Remy \"Two Times\" a Borgodoro. La Polvere d’Oro si ottiene dai coboldi nella Foresta di Elwynn.",
+    "hash": "90b05fd0"
+  },
+  {
+    "id": 4811,
+    "field": "objectives",
+    "en": "Travel east of Auberdine and look for a large, red crystal along Darkshore's eastern mountain range. Report back what you find to Sentinel Glynda Nal'Shea in Auberdine.",
+    "it": "Viaggia a est di Auberdine e cerca un grande cristallo rosso lungo la catena montuosa orientale di Rivafosca. Riferisci ciò che trovi alla Sentinella Glynda Nal’Shea ad Auberdine.",
+    "hash": "4f2b5645"
+  },
+  {
+    "id": 5441,
+    "field": "objectives",
+    "en": "Use the Foreman's Blackjack on Lazy Peons when they're sleeping. Wake up 5 peons, then return the Foreman's Blackjack to Foreman Thazz'ril in the Valley of Trials.",
+    "it": "Usa il Foreman’s Blackjack sui peoni pigri mentre dormono. Sveglia 5 peoni, poi restituisci il manganello al Sovrintendente Thazz’ril nella Valle delle Sfide.",
+    "hash": "29176e5d"
+  },
+  {
+    "id": 79007,
+    "field": "title",
+    "en": "... and that note you found",
+    "it": "... e quel biglietto che hai trovato",
+    "hash": "7fb969b1"
+  },
+  {
+    "id": 79008,
+    "field": "title",
+    "en": "... and that note you found",
+    "it": "... e quel biglietto che hai trovato",
+    "hash": "7fb969b1"
+  },
+  {
+    "id": 808,
+    "field": "objectives",
+    "en": "Retrieve Minshina's skull from the circle of power on the Echo Isles. Bring it to Master Gadrin in Sen'jin Village.",
+    "it": "Recupera il teschio di Minshina dal cerchio di potere sulle Isole dell’Eco. Portalo al Maestro Gadrin nel Villaggio di Sen’jin.",
+    "hash": "3b1cff8a"
+  },
+  {
+    "id": 826,
+    "field": "objectives",
+    "en": "Defeat Zalazane. Kill 8 Voodoo Trolls and 8 Hexed Trolls. Bring Zalazane's Head to Gadrin.",
+    "it": "Sconfiggi Zalazane. Uccidi 8 Troll Vudù e 8 Troll Maledetti. Porta la Testa di Zalazane a Gadrin.",
+    "hash": "c49c8e18"
+  },
+  {
+    "id": 827,
+    "field": "objectives",
+    "en": "Gather Searing Collars from the cultists in Skull Rock. Bring them to Margoz at his camp.",
+    "it": "Raccogli i Searing Collars dai cultisti a Roccia del Teschio. Portali a Margoz nel suo accampamento.",
+    "hash": "2aa1c202"
+  },
+  {
+    "id": 86576,
+    "field": "title",
+    "en": "Bloodfury Trinkets",
+    "it": "Monili Bloodfury",
+    "hash": "7a0435cc"
+  },
+  {
+    "id": 86585,
+    "field": "title",
+    "en": "Banner of the Fallen",
+    "it": "Stendardo dei caduti",
+    "hash": "48a32be8"
+  },
+  {
+    "id": 86613,
+    "field": "title",
+    "en": "Excavation Tools",
+    "it": "Attrezzi da scavo",
+    "hash": "50754d8b"
+  },
+  {
+    "id": 86667,
+    "field": "title",
+    "en": "Snowbound",
+    "it": "Bloccato dalla neve",
+    "hash": "fdfcc1db"
+  },
+  {
+    "id": 91564,
+    "field": "title",
+    "en": "To Have Loved and Lost (part 1)",
+    "it": "Aver amato e perduto (parte 1)",
+    "hash": "a7b51e8f"
+  },
+  {
+    "id": 92415,
+    "field": "title",
+    "en": "Remember That I Love You",
+    "it": "Ricorda che ti amo",
+    "hash": "02d918ce"
+  },
+  {
+    "id": 92516,
+    "field": "title",
+    "en": "Hippogryph Harassment",
+    "it": "Molestie degli ippogrifi",
+    "hash": "34e3456e"
+  },
+  {
+    "id": 92553,
+    "field": "objectives",
+    "en": "Collect Small Eggs and Strider Meat from creatures found throughout the Shen'dar Highlands.",
+    "it": "Raccogli Small Eggs e Strider Meat dalle creature che si trovano nelle Alture di Shen’dar.",
+    "hash": "a3ce6354"
+  },
+  {
+    "id": 92706,
+    "field": "title",
+    "en": "WANTED: Bruuz",
+    "it": "RICERCATO: Bruuz",
+    "hash": "c0182a95"
+  },
+  {
+    "id": 92742,
+    "field": "title",
+    "en": "Testing the Wells",
+    "it": "Controllare i pozzi",
+    "hash": "538376e6"
+  },
+  {
+    "id": 92744,
+    "field": "title",
+    "en": "Murloc Gills",
+    "it": "Branchie di murloc",
+    "hash": "64df9567"
+  },
+  {
+    "id": 92745,
+    "field": "title",
+    "en": "Toxic Soil (part 3)",
+    "it": "Terreno tossico (parte 3)",
+    "hash": "eca0f1d3"
+  },
+  {
+    "id": 92747,
+    "field": "title",
+    "en": "Toxic Soil (part 4)",
+    "it": "Terreno tossico (parte 4)",
+    "hash": "eca0f1f2"
+  },
+  {
+    "id": 92748,
+    "field": "title",
+    "en": "Toxic Soil (part 5)",
+    "it": "Terreno tossico (parte 5)",
+    "hash": "eca0f211"
+  },
+  {
+    "id": 92749,
+    "field": "title",
+    "en": "A Dynamite Plan",
+    "it": "Un piano esplosivo",
+    "hash": "033d4cd5"
+  },
+  {
+    "id": 92750,
+    "field": "title",
+    "en": "Toxic Soil (part 7)",
+    "it": "Terreno tossico (parte 7)",
+    "hash": "eca0f24f"
+  },
+  {
+    "id": 92751,
+    "field": "title",
+    "en": "Toxic Soil (part 8)",
+    "it": "Terreno tossico (parte 8)",
+    "hash": "eca0f26e"
+  },
+  {
+    "id": 92752,
+    "field": "title",
+    "en": "Toxic Soil (part 9)",
+    "it": "Terreno tossico (parte 9)",
+    "hash": "eca0f28d"
+  },
+  {
+    "id": 92753,
+    "field": "title",
+    "en": "Toxic Soil (part 10)",
+    "it": "Terreno tossico (parte 10)",
+    "hash": "a77d420d"
+  },
+  {
+    "id": 92819,
+    "field": "title",
+    "en": "Toxic Soil (part 11)",
+    "it": "Terreno tossico (parte 11)",
+    "hash": "a77d422c"
+  },
+  {
+    "id": 940,
+    "field": "objectives",
+    "en": "Deliver the Inscribed Bark to Arch Druid Fandral Staghelm in Darnassus.",
+    "it": "Consegna la Inscribed Bark all’Arcidruido Fandral Staghelm a Darnassus.",
+    "hash": "4d953665"
+  },
+  {
+    "id": 94896,
+    "field": "objectives",
+    "en": "Collect Abandoned Belongings from the ruins of Ban'aethal.",
+    "it": "Raccogli Abandoned Belongings tra le rovine di Ban’aethal.",
+    "hash": "6112aef6"
+  },
+  {
+    "id": 95041,
+    "field": "title",
+    "en": "Data Hoarders",
+    "it": "Accumulatori di dati",
+    "hash": "74ca65b0"
+  },
+  {
+    "id": 95189,
+    "field": "title",
+    "en": "Crest of Lordaeron",
+    "it": "Stemma di Lordaeron",
+    "hash": "7d93a518"
+  },
+  {
+    "id": 95884,
+    "field": "title",
+    "en": "The Offering Stone",
+    "it": "La pietra delle offerte",
+    "hash": "98c6f75a"
+  },
+  {
+    "id": 96139,
+    "field": "title",
+    "en": "The Valor Family",
+    "it": "La famiglia Valor",
+    "hash": "85f49d8f"
+  },
+  {
+    "id": 96392,
+    "field": "title",
+    "en": "Farsen's Watch",
+    "it": "La veglia di Farsen",
+    "hash": "984d5dc0"
+  },
+  {
+    "id": 96394,
+    "field": "title",
+    "en": "The Restless Dead",
+    "it": "I morti inquieti",
+    "hash": "c548efc8"
+  },
+  {
+    "id": 96403,
+    "field": "title",
+    "en": "Important Heirlooms",
+    "it": "Cimeli importanti",
+    "hash": "e34ea84e"
+  },
+  {
+    "id": 96912,
+    "field": "title",
+    "en": "PvP Season Journey (part 1)",
+    "it": "Percorso della stagione PvP (parte 1)",
+    "hash": "1b72e544"
+  },
+  {
+    "id": 96913,
+    "field": "title",
+    "en": "PvP Season Journey (part 2)",
+    "it": "Percorso della stagione PvP (parte 2)",
+    "hash": "1b72e563"
+  },
+  {
+    "id": 96914,
+    "field": "title",
+    "en": "PvP Season Journey (part 3)",
+    "it": "Percorso della stagione PvP (parte 3)",
+    "hash": "1b72e582"
+  },
+  {
+    "id": 96915,
+    "field": "title",
+    "en": "PvP Season Journey (part 4)",
+    "it": "Percorso della stagione PvP (parte 4)",
+    "hash": "1b72e5a1"
+  },
+  {
+    "id": 96916,
+    "field": "title",
+    "en": "PvP Season Journey (part 5)",
+    "it": "Percorso della stagione PvP (parte 5)",
+    "hash": "1b72e5c0"
+  },
+  {
+    "id": 96917,
+    "field": "title",
+    "en": "PvP Season Journey (part 6)",
+    "it": "Percorso della stagione PvP (parte 6)",
+    "hash": "1b72e5df"
+  },
+  {
+    "id": 96918,
+    "field": "title",
+    "en": "PvP Season Journey (part 7)",
+    "it": "Percorso della stagione PvP (parte 7)",
+    "hash": "1b72e5fe"
+  },
+  {
+    "id": 96919,
+    "field": "title",
+    "en": "PvP Season Journey (part 8)",
+    "it": "Percorso della stagione PvP (parte 8)",
+    "hash": "1b72e61d"
+  },
+  {
+    "id": 96920,
+    "field": "title",
+    "en": "PvP Season Journey (part 9)",
+    "it": "Percorso della stagione PvP (parte 9)",
+    "hash": "1b72e63c"
+  },
+  {
+    "id": 96921,
+    "field": "title",
+    "en": "PvP Season Journey (part 10)",
+    "it": "Percorso della stagione PvP (parte 10)",
+    "hash": "52e9c43e"
+  },
+  {
+    "id": 96986,
+    "field": "title",
+    "en": "The Grave Knight",
+    "it": "Il cavaliere della tomba",
+    "hash": "47414457"
+  },
+  {
+    "id": 97225,
+    "field": "objectives",
+    "en": "Collect Forgotten Loa Idols from the Echo Isles. Bring them to Master Gadrin in Sen'jin Village.",
+    "it": "Raccogli Forgotten Loa Idols sulle Isole dell’Eco. Portali al Maestro Gadrin nel Villaggio di Sen’jin.",
+    "hash": "7cbdde4c"
+  },
+  {
+    "id": 97250,
+    "field": "title",
+    "en": "Wrongly Blamed, Justly Corrected",
+    "it": "Accusato ingiustamente, corretto a ragione",
+    "hash": "b62cfb51"
+  },
+  {
+    "id": 97279,
+    "field": "objectives",
+    "en": "Collect Abandoned Training Weapons, then return to Kzan Thornslash in the Den.",
+    "it": "Raccogli Abandoned Training Weapons, poi torna da Kzan Thornslash nel Den.",
+    "hash": "f1f41544"
+  },
+  {
+    "id": 97894,
+    "field": "title",
+    "en": "Business in Auberdine",
+    "it": "Affari ad Auberdine",
+    "hash": "451aaa7c"
+  },
+  {
+    "id": 98025,
+    "field": "title",
+    "en": "WANTED: Jai'vhanel",
+    "it": "RICERCATA: Jai’vhanel",
+    "hash": "04d417b0"
+  },
+  {
+    "id": 98025,
+    "field": "objectives",
+    "en": "Find and slay the owl known as Jai'vhanel and take one of her feathers. The black owl was last seen north of the Ameth'Aran ruins near the mountain base. Report the death of Jai'vhanel to Sentinel Glynda Nal'Shea in Auberdine.",
+    "it": "Trova e uccidi la civetta chiamata Jai’vhanel e prendi una delle sue piume. La civetta nera è stata vista l’ultima volta a nord delle rovine di Ameth’Aran, vicino alla base della montagna. Riferisci la morte di Jai’vhanel alla Sentinella Glynda Nal’Shea ad Auberdine.",
+    "hash": "8bbc0857"
+  },
+  {
+    "id": 98310,
+    "field": "title",
+    "en": "Gleaning Our Future",
+    "it": "Raccogliere il nostro futuro",
+    "hash": "ace021a2"
+  },
+  {
+    "id": 98387,
+    "field": "title",
+    "en": "Blackrock Blockade",
+    "it": "Blocco dei Blackrock",
+    "hash": "83c8d5b1"
+  },
+  {
+    "id": 98423,
+    "field": "title",
+    "en": "The Treaty of Understanding",
+    "it": "Il trattato d’intesa",
+    "hash": "d8fd0c4d"
+  }
+]

@@ -1,3 +1,10 @@
+# Sviluppo 0.9.12
+
+- Estensione di quest, oggetti, abilità e dialoghi NPC con controlli sul testo originale.
+- Nomi di creature in nameplate e bersaglio, con opzione e protezione dei nomi dei giocatori e pet.
+- Correzione dei nomi negli incantesimi ripetuti e traduzioni parziali di menu, pannello Amici, tooltip e messaggi di sistema.
+- Due screenshot di verifica in gioco nel README.
+
 # Changelog
 
 ## 0.9.11

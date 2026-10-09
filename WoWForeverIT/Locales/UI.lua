@@ -1,5 +1,19 @@
 -- Exact visible labels only; no replacement of CVars or Blizzard globals.
 WoWForeverIT_UI = {
+    Friends="Amici", ["Search for keywords"]="Cerca per parola chiave",
+    Filter="Filtro", ["Add New Friend"]="Aggiungi un amico",
+    ["Friend Requests"]="Richieste di amicizia", ["Friend Request"]="Richiesta di amicizia",
+    ["Friends List"]="Lista amici", ["Add Friend"]="Aggiungi un amico",
+    ["Blocked Players"]="Giocatori bloccati", ["Ignored Players"]="Giocatori ignorati",
+    ["Recent Players"]="Giocatori recenti", ["Pending Requests"]="Richieste in attesa",
+    ["Online Friends"]="Amici online", ["Offline Friends"]="Amici offline",
+    ["Show Offline Friends"]="Mostra amici offline", ["Hide Offline Friends"]="Nascondi amici offline",
+    ["Remove Friend"]="Rimuovi amico", ["Accept Request"]="Accetta richiesta",
+    ["Decline Request"]="Rifiuta richiesta", ["Send Request"]="Invia richiesta",
+    Online="Online", Offline="Offline", Away="Assente", Busy="Occupato",
+    ["Appear Offline"]="Appari offline", ["Do Not Disturb"]="Non disturbare",
+
+    Experience="Esperienza", ["Experience:"]="Esperienza:",
     ["Game Menu"] = "Menu di gioco", Options = "Opzioni", Settings = "Impostazioni",
     System = "Sistema", Interface = "Interfaccia", ["Key Bindings"] = "Assegnazione tasti",
     Macros = "Macro", AddOns = "Addon", Addons = "Addon", Help = "Aiuto", Support = "Assistenza",

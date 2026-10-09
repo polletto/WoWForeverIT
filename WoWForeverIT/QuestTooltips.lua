@@ -6,6 +6,7 @@ local lastError
 local activeOwner, activeID
 local originals = setmetatable({}, {__mode='k'})
 local labels = {
+    ['<Click to view Quest Details>'] = '<Clicca per vedere i dettagli della missione>',
     ['Click to view quest details'] = 'Clicca per vedere i dettagli della missione',
     ['Click to view quest details.'] = 'Clicca per vedere i dettagli della missione.',
     ['Press F6 to submit an issue for this Quest'] = 'Premi F6 per segnalare un problema con questa missione',

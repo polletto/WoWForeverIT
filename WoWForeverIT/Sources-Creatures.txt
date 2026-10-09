@@ -1,0 +1,4 @@
+Original Italian names, exact ID+English-name pairs from ForeverDB offline 0.30.0 qfNpcNames, 2026-10-08.e2503fa5. Unit tooltip only. Player/pet GUIDs, unknown identities, protected regions and combat updates excluded.
+Zephras NPC identity sources: https://www.wowhead.com/forever/npc=251169/pesky-cirrusfly ; npc=251402/cirrusfly-soldier ; npc=251404/cirrusfly-queen ; npc=250926/scrawny-ursera. Original Italian translations, checked Oct9. Nameplates use current unit GUID/name; protected and forbidden labels excluded.
+Juvenile Vuldren ID250873 cross-check: https://wowseer.gg/npc/250873 and https://daybreakforever.com/npcs ; exact ID/name matching required at runtime.
+Further Zephras ID/name sources checked Oct9: Wowhead Forever NPC 251143 Roiling Winds, 251160 Al'Aketh Convert, 251245 Prideclaw. Original Italian names.

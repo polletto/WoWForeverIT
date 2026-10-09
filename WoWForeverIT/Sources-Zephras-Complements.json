@@ -1,0 +1,152 @@
+[
+  {
+    "quest_id": 92515,
+    "field": "reward",
+    "it": "Non ti avevo promesso che sarebbe stato un lavoro pulito, vero?",
+    "en": "I didn't say it wouldn't be a dirty job, did I?",
+    "url": "https://foreverchanges.pro/quest/92515",
+    "forms": [
+      "I didn't say it wouldn't be a dirty job, did I?"
+    ],
+    "hashes": [
+      "526d6445"
+    ]
+  },
+  {
+    "quest_id": 92516,
+    "field": "reward",
+    "it": "Ottimo lavoro, e anche in fretta. Niente male davvero.",
+    "en": "Well done, and quickly too. Not too bad at all.",
+    "url": "https://foreverchanges.pro/quest/92516",
+    "forms": [
+      "Well done, and quickly too. Not too bad at all."
+    ],
+    "hashes": [
+      "42d833d7"
+    ]
+  },
+  {
+    "quest_id": 92517,
+    "field": "reward",
+    "it": "Con i banditi dispersi abbiamo un problema in meno. Temo però che i superstiti possano cercare protezione nel culto, ingrossandone le file già sempre più preoccupanti.\n\nComunque, accettiamo le vittorie quando arrivano.",
+    "en": "With the bandits dispersed, that is one less problem for us to deal with. Though I confess that now I worry that any bandits who survived may turn next to the cult for protection, further bolstering their increasingly alarming numbers.\n\nStill though, we'll take the victories where we can get them.",
+    "url": "https://foreverchanges.pro/quest/92517",
+    "forms": [
+      "With the bandits dispersed, that is one less problem for us to deal with. Though I confess that now I worry that any bandits who survived may turn next to the cult for protection, further bolstering their increasingly alarming numbers.\n\nStill though, we'll take the victories where we can get them.",
+      "With the bandits dispersed, that is one less problem for us to deal with. Though I confess that now I worry that any bandits who survived may turn next to the cult for protection, further bolstering their increasingly alarming numbers.\nStill though, we'll take the victories where we can get them.",
+      "With the bandits dispersed, that is one less problem for us to deal with. Though I confess that now I worry that any bandits who survived may turn next to the cult for protection, further bolstering their increasingly alarming numbers. Still though, we'll take the victories where we can get them."
+    ],
+    "hashes": [
+      "c4359f82",
+      "a4ea20a6",
+      "6247b850"
+    ]
+  },
+  {
+    "quest_id": 92553,
+    "field": "reward",
+    "it": "Queste uova non sono facili da procurare, ma che i venti mi assistano: fritte in un po’ di sego di ursera sono DELIZIOSE!\n\nSe hai tempo e ti piace cucinare, posso insegnarti qualche trucco imparato negli anni. Basta chiedere e sarò felice di addestrarti.",
+    "en": "These eggs aren't easy to get but wind save me, they are DELICIOUS fried up in a bit of ursera tallow.\n\nIf you've got a bit of time to spare and you enjoy cooking, I can teach you a few tips and tricks I've picked up. Say the word and I'd be happy to train you.",
+    "url": "https://foreverchanges.pro/quest/92553",
+    "forms": [
+      "These eggs aren't easy to get but wind save me, they are DELICIOUS fried up in a bit of ursera tallow.\n\nIf you've got a bit of time to spare and you enjoy cooking, I can teach you a few tips and tricks I've picked up. Say the word and I'd be happy to train you.",
+      "These eggs aren't easy to get but wind save me, they are DELICIOUS fried up in a bit of ursera tallow.\nIf you've got a bit of time to spare and you enjoy cooking, I can teach you a few tips and tricks I've picked up. Say the word and I'd be happy to train you.",
+      "These eggs aren't easy to get but wind save me, they are DELICIOUS fried up in a bit of ursera tallow. If you've got a bit of time to spare and you enjoy cooking, I can teach you a few tips and tricks I've picked up. Say the word and I'd be happy to train you."
+    ],
+    "hashes": [
+      "c5d93846",
+      "56de9a84",
+      "b790ba2e"
+    ]
+  },
+  {
+    "quest_id": 92597,
+    "field": "reward",
+    "it": "Lo senti? Sì? Bene! Hai mosso i primi passi. Con le tue capacità potrai attingere all’energia magica latente in molti luoghi, ottenendo benefici diversi: alcuni profondi, altri più sottili. Non saprai quali finché non proverai, ma è proprio questa la parte migliore del dono: rendere noto ciò che è ignoto.\n\nPer sopravvivere a questi tempi difficili dobbiamo cercare conoscenza... e potere, senza esitare.",
+    "en": "Do you feel it? Yes? Good! You have taken your first steps. You'll find that with your abilities, you will be able to tap into latent magical energy in many locations. Doing so will provide a myriad of benefits, some profound, others more subtle. You won't know until you tap into them, But that's the best part of the gift... making the unknown known.\n\nIf we are to survive these dire times, we must be unwavering in our search for knowledge... and power.",
+    "url": "https://foreverchanges.pro/quest/92597",
+    "forms": [
+      "Do you feel it? Yes? Good! You have taken your first steps. You'll find that with your abilities, you will be able to tap into latent magical energy in many locations. Doing so will provide a myriad of benefits, some profound, others more subtle. You won't know until you tap into them, But that's the best part of the gift... making the unknown known.\n\nIf we are to survive these dire times, we must be unwavering in our search for knowledge... and power.",
+      "Do you feel it? Yes? Good! You have taken your first steps. You'll find that with your abilities, you will be able to tap into latent magical energy in many locations. Doing so will provide a myriad of benefits, some profound, others more subtle. You won't know until you tap into them, But that's the best part of the gift... making the unknown known.\nIf we are to survive these dire times, we must be unwavering in our search for knowledge... and power.",
+      "Do you feel it? Yes? Good! You have taken your first steps. You'll find that with your abilities, you will be able to tap into latent magical energy in many locations. Doing so will provide a myriad of benefits, some profound, others more subtle. You won't know until you tap into them, But that's the best part of the gift... making the unknown known. If we are to survive these dire times, we must be unwavering in our search for knowledge... and power."
+    ],
+    "hashes": [
+      "49236d34",
+      "544feb20",
+      "1f1d7ab6"
+    ]
+  },
+  {
+    "quest_id": 93318,
+    "field": "progress",
+    "it": "Mi servirà la testa della creatura come prova della tua impresa.",
+    "en": "I'll need the creature's head as proof of the deed.",
+    "url": "https://foreverchanges.pro/quest/93318",
+    "forms": [
+      "I'll need the creature's head as proof of the deed."
+    ],
+    "hashes": [
+      "895b533e"
+    ]
+  },
+  {
+    "quest_id": 93318,
+    "field": "reward",
+    "it": "Come se il culto e i banditi delle alture non bastassero, non ci serviva anche un vuldren gigante a terrorizzare i cittadini. Oggi hai fatto qualcosa di grande. Come promesso, ecco la tua ricompensa.",
+    "en": "If we didn't have enough on our plates between the cult and the highlands bandits, we don't need a giant vuldren terrorizing our citizens as well. You've done a great thing here today. As promised, here is your reward.",
+    "url": "https://foreverchanges.pro/quest/93318",
+    "forms": [
+      "If we didn't have enough on our plates between the cult and the highlands bandits, we don't need a giant vuldren terrorizing our citizens as well. You've done a great thing here today. As promised, here is your reward."
+    ],
+    "hashes": [
+      "75994968"
+    ]
+  },
+  {
+    "quest_id": 93319,
+    "field": "reward",
+    "it": "Grazie, $C. Per ora ci aiuterà a tirare avanti. Ma se non riusciamo presto a ripristinare le vie di rifornimento, qualche pietra del vento rubata sarà l’ultimo dei nostri problemi.",
+    "en": "Thanks $C. This should help us get by for now. If we can't get the supply routes squared away soon though, a few stolen windstones will be the least of our worries.",
+    "url": "https://foreverchanges.pro/quest/93319",
+    "forms": [
+      "Thanks $C. This should help us get by for now. If we can't get the supply routes squared away soon though, a few stolen windstones will be the least of our worries."
+    ],
+    "hashes": [
+      "d366abec"
+    ]
+  },
+  {
+    "quest_id": 93951,
+    "field": "reward",
+    "it": "Raccogliere piume per adornare i capelli può sembrare una frivolezza. Eppure, anche in tempi come questi, dobbiamo cercare di apprezzare le piccole gioie.\n\nSe una mia creazione rende felice qualcuno, per me è una buona giornata. Grazie per queste piume e per avermi aiutata a portare un po’ di gioia a Zephras.",
+    "en": "It might seem a bit of a vain triviality, gathering feathers for our hair. However, even in times like these, one needs to embrace the small joys as much as possible.\n\nIf one thing I create brings someone joy, then I will consider that to be a good day. Thank you for bringing me these and helping me bring some joy to Zephras.",
+    "url": "https://foreverchanges.pro/quest/93951",
+    "forms": [
+      "It might seem a bit of a vain triviality, gathering feathers for our hair. However, even in times like these, one needs to embrace the small joys as much as possible.\n\nIf one thing I create brings someone joy, then I will consider that to be a good day. Thank you for bringing me these and helping me bring some joy to Zephras.",
+      "It might seem a bit of a vain triviality, gathering feathers for our hair. However, even in times like these, one needs to embrace the small joys as much as possible.\nIf one thing I create brings someone joy, then I will consider that to be a good day. Thank you for bringing me these and helping me bring some joy to Zephras.",
+      "It might seem a bit of a vain triviality, gathering feathers for our hair. However, even in times like these, one needs to embrace the small joys as much as possible. If one thing I create brings someone joy, then I will consider that to be a good day. Thank you for bringing me these and helping me bring some joy to Zephras."
+    ],
+    "hashes": [
+      "bae825f0",
+      "bd11854e",
+      "b9ba6278"
+    ]
+  },
+  {
+    "quest_id": 94411,
+    "field": "reward",
+    "it": "Scontrarci direttamente con i nostri fratelli e sorelle shen’dorei ci indebolisce come popolo, ma talvolta occorre agire con decisione per evitare tragedie peggiori.\n\nI maghi dell’Alto Ordine non si curano delle conseguenze delle loro interferenze magiche. Le forze che tengono unita l’isola sono fragili e vulnerabili: basterebbe una sola azione avventata per distruggere la nostra casa.",
+    "en": "Direct conflict with our shen'dorei brothers and sisters only weakens us as a people, but decisive action must at times be taken to prevent greater tragedy.\n\nThe mages of the High Order have zero regard for the consequences of their magical meddling. The forces that bind our island are fragile and vulnerable and all it could take is one thoughtless action to destroy our home.",
+    "url": "https://foreverchanges.pro/quest/94411",
+    "forms": [
+      "Direct conflict with our shen'dorei brothers and sisters only weakens us as a people, but decisive action must at times be taken to prevent greater tragedy.\n\nThe mages of the High Order have zero regard for the consequences of their magical meddling. The forces that bind our island are fragile and vulnerable and all it could take is one thoughtless action to destroy our home.",
+      "Direct conflict with our shen'dorei brothers and sisters only weakens us as a people, but decisive action must at times be taken to prevent greater tragedy.\nThe mages of the High Order have zero regard for the consequences of their magical meddling. The forces that bind our island are fragile and vulnerable and all it could take is one thoughtless action to destroy our home.",
+      "Direct conflict with our shen'dorei brothers and sisters only weakens us as a people, but decisive action must at times be taken to prevent greater tragedy. The mages of the High Order have zero regard for the consequences of their magical meddling. The forces that bind our island are fragile and vulnerable and all it could take is one thoughtless action to destroy our home."
+    ],
+    "hashes": [
+      "d84c929a",
+      "58550350",
+      "55479666"
+    ]
+  }
+]

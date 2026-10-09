@@ -4,7 +4,7 @@
 
 Italian quest and interface localization for the **WoW Forever beta**. Community project by [polletto](https://github.com/polletto), with quest data and text utilities adapted from **QuestIT 0.8.6 by Drakanast**.
 
-**Version 0.9.11 · Beta · Interface 16001**
+**Sviluppo 0.9.12 · Beta · Interface 16001**
 
 ## Italiano
 
@@ -25,9 +25,11 @@ Il pulsante **Code → Download ZIP** scarica il repository di sviluppo: per gio
 - Registro missioni, intestazioni, pulsanti, titoli nel tracker e un dizionario parziale di obiettivi brevi.
 - Etichette di personaggio, competenze, reputazione, grimorio, professioni, aspetti e relativi tooltip; filtri parziali.
 - Nomi e descrizioni riconosciute delle abilità del mago, primo lotto delle altre classi, buff supportati e nomi nella barra di lancio/canalizzazione; copertura parziale.
+- Nomi delle creature nei tooltip, nei nameplate e nel bersaglio; i giocatori e i pet sono esclusi. Opzione dedicata per i nameplate.
+- Traduzioni parziali di messaggi di sistema, menu delle icone e pannello Amici.
 - Icona personalizzata e pulsante trascinabile sulla minimappa con bordo dorato.
 - Primo gruppo di categorie, etichette e pulsanti di Esc, Opzioni, grafica, audio, comandi, Addon e Macro.
-- **2.465 ID unici** nel database (i 19 override locali sono già compresi): 1.586 record con tutti e cinque i campi presenti e 879 parziali. Questo numero non indica altrettante quest interamente tradotte e verificate; 512 titoli coincidono ancora con l’impronta inglese. [Conteggio dettagliato](docs/quest-coverage.md).
+- **2.609 ID di quest** con copertura variabile dei campi; 7.859 nomi di oggetti e 4.122 descrizioni con controllo del testo originale; 133 nomi di creature. La presenza nel database non implica traduzione integrale o verifica in gioco.
 - I campi importati vengono confrontati con l'impronta del testo inglese: se il testo manca o è diverso, resta in inglese. Gli override locali precedenti non applicano questo confronto.
 
 ### Comandi
@@ -41,7 +43,7 @@ Il pulsante **Code → Download ZIP** scarica il repository di sviluppo: per gio
 
 ### Limiti attuali
 
-La copertura è parziale. Il database QuestIT contiene 2.328 quest con almeno un campo di origine Vanilla non ancora confermato su Forever. Alcuni titoli, nomi di oggetti e luoghi rimangono in inglese. Le nuove aggiunte di Zephras sono **adattamenti italiani sintetici**, non traduzioni ufficiali integrali. Saluti NPC, opzioni di dialogo e libri presenti nei dati importati non sono ancora collegati al visualizzatore.
+La copertura è parziale. Il database QuestIT contiene 2.328 quest con almeno un campo di origine Vanilla non ancora confermato su Forever. Alcuni titoli, nomi di oggetti e luoghi rimangono in inglese. Le nuove aggiunte di Zephras sono **adattamenti italiani sintetici**, non traduzioni ufficiali integrali. Sono collegati 95 dialoghi NPC e 49 opzioni; la copertura resta parziale.
 
 Le quantità e i nomi necessari a trovare NPC e oggetti devono restare corretti. Il dizionario del tracker è separato dalla descrizione della quest. Le impostazioni hanno solo una prima copertura: tooltip e molte voci specifiche della beta restano da tradurre. Una nuova build del client può richiedere correzioni.
 
@@ -80,6 +82,18 @@ Completamento di “Qual è il mio scopo?” presso l’NPC (0.9.1):
 Menu Esc tradotto (prima versione del dizionario):
 
 ![Menu Esc in italiano](docs/images/esc-menu.png)
+
+### Nameplate delle creature / Creature nameplates
+
+Nomi delle creature di Zephras tradotti in italiano, verificati in gioco con la versione test20. I nameplate dei giocatori restano esclusi.
+
+![Nameplate italiani: Convertito Al’Aketh e Venti Turbolenti](docs/images/creature-nameplates-zephras.png)
+
+### Nome del bersaglio / Target name
+
+Nameplate e nome del bersaglio in italiano, verificati nella beta con test21. Alcuni obiettivi del tracker mostrati restano in inglese.
+
+![Creature di Zephras: nameplate e riquadro del bersaglio tradotti](docs/images/creature-target-zephras.png)
 
 Gli screenshot documentano le versioni già provate in gioco; non tutte le etichette sono tradotte. Le immagini di gioco appartengono ai rispettivi titolari.
 

@@ -110,7 +110,7 @@ end
 assert(WoWForeverIT_TranslateField(369,'title','A New Plague')=='Una nuova piaga')
 assert(WoWForeverIT_TranslateField(369,'title','A Changed Quest')==nil)
 assert(WoWForeverIT_TranslateField(369,'text',GetQuestText())==nil)
-local count=0;for _ in pairs(WoWForeverIT_QuestIT.DataIT) do count=count+1 end;assert(count==2465)
+local count=0;for _ in pairs(WoWForeverIT_QuestIT.DataIT) do count=count+1 end;assert(count==2609)
 assert(WoWForeverIT_TranslateField(92698,'title','What Is My Purpose?')=='Qual è il mio scopo?')
 assert(WoWForeverIT_TranslateField(92682,'title','Make Yourself Useful')=='Renditi utile')
 assert(WoWForeverIT_TranslateField(92682,'text','Unknown description')==nil)

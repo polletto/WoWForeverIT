@@ -1,0 +1,254 @@
+[
+  {
+    "id": 95161,
+    "field": "text",
+    "en": "If you're looking for Jeremy Heartweaver, your best bet is to talk to his newly adopted mother, Avette Fellwood out in Duskwood. Sweet woman. Likely needs another pair of hands for her work, but it beats staying in the orphanage.\n\nIf you see little Jeremy do be sure to tell him we're all thinking of him, won't you?",
+    "it": "Se cerchi Jeremy Heartweaver, ti conviene parlare con la sua nuova madre adottiva, Avette Fellwood, a Boscovespro. È una donna gentile. Probabilmente le farà comodo un altro paio di mani per il lavoro, ma è sempre meglio che restare all’orfanotrofio.\n\nSe vedi il piccolo Jeremy, assicurati di dirgli che pensiamo tutti a lui, va bene?",
+    "url": "https://foreverchanges.pro/quest/95161",
+    "forms": [
+      "If you're looking for Jeremy Heartweaver, your best bet is to talk to his newly adopted mother, Avette Fellwood out in Duskwood. Sweet woman. Likely needs another pair of hands for her work, but it beats staying in the orphanage.\n\nIf you see little Jeremy do be sure to tell him we're all thinking of him, won't you?",
+      "If you're looking for Jeremy Heartweaver, your best bet is to talk to his newly adopted mother, Avette Fellwood out in Duskwood. Sweet woman. Likely needs another pair of hands for her work, but it beats staying in the orphanage.\nIf you see little Jeremy do be sure to tell him we're all thinking of him, won't you?",
+      "If you're looking for Jeremy Heartweaver, your best bet is to talk to his newly adopted mother, Avette Fellwood out in Duskwood. Sweet woman. Likely needs another pair of hands for her work, but it beats staying in the orphanage. If you see little Jeremy do be sure to tell him we're all thinking of him, won't you?"
+    ],
+    "hashes": [
+      "e4bdbf07",
+      "cadfe6a9",
+      "c6bba053"
+    ]
+  },
+  {
+    "id": 95161,
+    "field": "progress",
+    "en": "Yes? What do you need?",
+    "it": "Sì? Di cosa hai bisogno?",
+    "url": "https://foreverchanges.pro/quest/95161",
+    "forms": [
+      "Yes? What do you need?"
+    ],
+    "hashes": [
+      "c47051c7"
+    ]
+  },
+  {
+    "id": 95161,
+    "field": "reward",
+    "en": "Oh no...\n\nIt's nice of you to bring this, but I don't think Jeremy is ready to see it. Matron Nightingale said my little Jeremy hasn't spoken since the attack on Lordaeron, and I don't intend to force him now. Showing him this will only cause him more pain.\n\nDon't look at me like that. I won't hide his past from him, but he needs time to heal. I'll give this to him when he's older. Thank you for stopping by, but I think it's time you should go.",
+    "it": "Oh no...\n\nÈ gentile da parte tua portarmi questa lettera, ma non credo che Jeremy sia pronto a vederla. La Matrona Nightingale ha detto che il mio piccolo Jeremy non parla dall’attacco a Lordaeron, e non intendo costringerlo adesso. Mostrargliela gli causerebbe soltanto altro dolore.\n\nNon guardarmi così. Non gli nasconderò il suo passato, ma ha bisogno di tempo per guarire. Gliela darò quando sarà più grande. Grazie per essere passato, ma credo sia ora che tu vada.",
+    "url": "https://foreverchanges.pro/quest/95161",
+    "forms": [
+      "Oh no...\n\nIt's nice of you to bring this, but I don't think Jeremy is ready to see it. Matron Nightingale said my little Jeremy hasn't spoken since the attack on Lordaeron, and I don't intend to force him now. Showing him this will only cause him more pain.\n\nDon't look at me like that. I won't hide his past from him, but he needs time to heal. I'll give this to him when he's older. Thank you for stopping by, but I think it's time you should go.",
+      "Oh no...\nIt's nice of you to bring this, but I don't think Jeremy is ready to see it. Matron Nightingale said my little Jeremy hasn't spoken since the attack on Lordaeron, and I don't intend to force him now. Showing him this will only cause him more pain.\nDon't look at me like that. I won't hide his past from him, but he needs time to heal. I'll give this to him when he's older. Thank you for stopping by, but I think it's time you should go.",
+      "Oh no... It's nice of you to bring this, but I don't think Jeremy is ready to see it. Matron Nightingale said my little Jeremy hasn't spoken since the attack on Lordaeron, and I don't intend to force him now. Showing him this will only cause him more pain. Don't look at me like that. I won't hide his past from him, but he needs time to heal. I'll give this to him when he's older. Thank you for stopping by, but I think it's time you should go."
+    ],
+    "hashes": [
+      "4a5257e0",
+      "8ec4c432",
+      "3e0cbd86"
+    ]
+  },
+  {
+    "id": 95697,
+    "field": "text",
+    "en": "Zamja tells me we need more homestyle cooking.\nIf we start selling raptor, she thinks it'll draw in customers who don't usually visit Borstan's Firepit.\n\nHer idea is not so bad. But I want something that rises above the smells of our birth villages. We're in Orgrimmar! Borstan should serve a grand take on their familiar favorites.\n\nA hunter recently came back from the Wetlands with a giant talon from the thicket raptors in the Excavation Sites.\n\nUp for a job?",
+    "it": "Zamja mi dice che abbiamo bisogno di più cucina casalinga.\nPensa che, se iniziassimo a vendere carne di raptor, attireremmo clienti che normalmente non vengono al Braciere di Borstan.\n\nL’idea non è male. Ma voglio qualcosa che vada oltre i profumi dei villaggi in cui siamo nati. Siamo a Orgrimmar! Borstan dovrebbe servire una versione grandiosa dei loro piatti preferiti.\n\nUn cacciatore è tornato di recente dalle Paludi Grigie con un artiglio enorme dei raptor che abitano i siti di scavo.\n\nTi va di fare un lavoro?",
+    "url": "https://foreverchanges.pro/quest/95697",
+    "forms": [
+      "Zamja tells me we need more homestyle cooking.\nIf we start selling raptor, she thinks it'll draw in customers who don't usually visit Borstan's Firepit.\n\nHer idea is not so bad. But I want something that rises above the smells of our birth villages. We're in Orgrimmar! Borstan should serve a grand take on their familiar favorites.\n\nA hunter recently came back from the Wetlands with a giant talon from the thicket raptors in the Excavation Sites.\n\nUp for a job?",
+      "Zamja tells me we need more homestyle cooking.\nIf we start selling raptor, she thinks it'll draw in customers who don't usually visit Borstan's Firepit.\nHer idea is not so bad. But I want something that rises above the smells of our birth villages. We're in Orgrimmar! Borstan should serve a grand take on their familiar favorites.\nA hunter recently came back from the Wetlands with a giant talon from the thicket raptors in the Excavation Sites.\nUp for a job?",
+      "Zamja tells me we need more homestyle cooking. If we start selling raptor, she thinks it'll draw in customers who don't usually visit Borstan's Firepit. Her idea is not so bad. But I want something that rises above the smells of our birth villages. We're in Orgrimmar! Borstan should serve a grand take on their familiar favorites. A hunter recently came back from the Wetlands with a giant talon from the thicket raptors in the Excavation Sites. Up for a job?"
+    ],
+    "hashes": [
+      "bbf45399",
+      "30f3989f",
+      "11faf533"
+    ]
+  },
+  {
+    "id": 98319,
+    "field": "text",
+    "en": "It's bad enough havin' a troll problem, but the mountains are filled tae the brim with wendigos! They normally keep to their own caves, but they seem tae be spreadin' like bunnies. Now they've filled the Grizzled Den north of here.\n\nIf we want Whitebeard's report, we're gonna need to find my partner Cornelius. The blockhead got a little too excited and charged in head first. Brave, but stupid.\n\nHead into the cave and see where he is. And feel free to take out some the beasts while yer at it.",
+    "it": "Come se il problema dei troll non bastasse, le montagne sono piene di wendigo! Di solito restano nelle loro grotte, ma sembra che si riproducano come conigli. Ora hanno invaso il Grizzled Den a nord di qui.\n\nSe vogliamo il rapporto di Whitebeard, dobbiamo trovare il mio compagno Cornelius. Quello zuccone si è fatto prendere dall’entusiasmo ed è entrato a testa bassa. Coraggioso, ma stupido.\n\nEntra nella grotta e cerca di trovarlo. E già che ci sei, sentiti libero di eliminare qualche bestia.",
+    "url": "https://foreverchanges.pro/quest/98319",
+    "forms": [
+      "It's bad enough havin' a troll problem, but the mountains are filled tae the brim with wendigos! They normally keep to their own caves, but they seem tae be spreadin' like bunnies. Now they've filled the Grizzled Den north of here.\n\nIf we want Whitebeard's report, we're gonna need to find my partner Cornelius. The blockhead got a little too excited and charged in head first. Brave, but stupid.\n\nHead into the cave and see where he is. And feel free to take out some the beasts while yer at it.",
+      "It's bad enough havin' a troll problem, but the mountains are filled tae the brim with wendigos! They normally keep to their own caves, but they seem tae be spreadin' like bunnies. Now they've filled the Grizzled Den north of here.\nIf we want Whitebeard's report, we're gonna need to find my partner Cornelius. The blockhead got a little too excited and charged in head first. Brave, but stupid.\nHead into the cave and see where he is. And feel free to take out some the beasts while yer at it.",
+      "It's bad enough havin' a troll problem, but the mountains are filled tae the brim with wendigos! They normally keep to their own caves, but they seem tae be spreadin' like bunnies. Now they've filled the Grizzled Den north of here. If we want Whitebeard's report, we're gonna need to find my partner Cornelius. The blockhead got a little too excited and charged in head first. Brave, but stupid. Head into the cave and see where he is. And feel free to take out some the beasts while yer at it."
+    ],
+    "hashes": [
+      "5e3d40ad",
+      "15113309",
+      "adbc5535"
+    ]
+  },
+  {
+    "id": 98321,
+    "field": "text",
+    "en": "Hoha! Good to see a $R who's not afraid to get their hands dirty.\n\nIf yer lookin' fer work, I'm afraid I'm a little short on supplies at the moment. Our most reliable source of ore has been overrun by wendigo and now the cave has been abandoned. The miners had to drop everything when they fled!\n\nSay, why don't ye poke yer head around the Grizzled Den to the west and see if you can find some of our missing shipments. It would save us a great deal o' trouble.",
+    "it": "Ohilà! È bello vedere un $R che non ha paura di sporcarsi le mani.\n\nSe cerchi lavoro, temo di essere un po’ a corto di provviste. La nostra fonte di minerale più affidabile è stata invasa dai wendigo e ora la grotta è abbandonata. I minatori hanno dovuto lasciare tutto quando sono fuggiti!\n\nPerché non dai un’occhiata al Grizzled Den a ovest e provi a trovare alcune delle spedizioni mancanti? Ci risparmieresti un bel po’ di problemi.",
+    "url": "https://foreverchanges.pro/quest/98321",
+    "forms": [
+      "Hoha! Good to see a $R who's not afraid to get their hands dirty.\n\nIf yer lookin' fer work, I'm afraid I'm a little short on supplies at the moment. Our most reliable source of ore has been overrun by wendigo and now the cave has been abandoned. The miners had to drop everything when they fled!\n\nSay, why don't ye poke yer head around the Grizzled Den to the west and see if you can find some of our missing shipments. It would save us a great deal o' trouble.",
+      "Hoha! Good to see a $R who's not afraid to get their hands dirty.\nIf yer lookin' fer work, I'm afraid I'm a little short on supplies at the moment. Our most reliable source of ore has been overrun by wendigo and now the cave has been abandoned. The miners had to drop everything when they fled!\nSay, why don't ye poke yer head around the Grizzled Den to the west and see if you can find some of our missing shipments. It would save us a great deal o' trouble.",
+      "Hoha! Good to see a $R who's not afraid to get their hands dirty. If yer lookin' fer work, I'm afraid I'm a little short on supplies at the moment. Our most reliable source of ore has been overrun by wendigo and now the cave has been abandoned. The miners had to drop everything when they fled! Say, why don't ye poke yer head around the Grizzled Den to the west and see if you can find some of our missing shipments. It would save us a great deal o' trouble."
+    ],
+    "hashes": [
+      "9dbb56ae",
+      "4be01d3e",
+      "b716c2fe"
+    ]
+  },
+  {
+    "id": 98321,
+    "field": "progress",
+    "en": "Wendigos are nasty beasties. Its just good all the miners made it out of the Grizzled Den in one piece!",
+    "it": "I wendigo sono bestiacce. Meno male che tutti i minatori sono usciti dal Grizzled Den tutti interi!",
+    "url": "https://foreverchanges.pro/quest/98321",
+    "forms": [
+      "Wendigos are nasty beasties. Its just good all the miners made it out of the Grizzled Den in one piece!"
+    ],
+    "hashes": [
+      "d8feab52"
+    ]
+  },
+  {
+    "id": 98321,
+    "field": "reward",
+    "en": "Now that's more like it! With these shipments we'll get the forge back up and runnin' in no time!",
+    "it": "Così va molto meglio! Con queste spedizioni rimetteremo in funzione la forgia in men che non si dica!",
+    "url": "https://foreverchanges.pro/quest/98321",
+    "forms": [
+      "Now that's more like it! With these shipments we'll get the forge back up and runnin' in no time!"
+    ],
+    "hashes": [
+      "21353d6e"
+    ]
+  },
+  {
+    "id": 98322,
+    "field": "text",
+    "en": "Spelunking dark caves is adventurer business. My job's just to make reports and send them over to Ironforge.\n\nTrouble is, one of my reports hasn't... well, reported back. I asked a few mountaineers to learn more about the wendigo problem we have out here, but I haven't heard from them.\n\nIf you're already going to be out and about, what say you don't check in with Mountaineer Gretchen just west of town. I'm late enough as it is!",
+    "it": "Esplorare grotte buie è un lavoro da avventurieri. Io devo soltanto scrivere rapporti e mandarli a Forgiardente.\n\nIl problema è che uno dei miei rapporti non... be’, non è ancora tornato. Ho chiesto ad alcuni montanari di indagare sul problema dei wendigo qui fuori, ma non ho più avuto loro notizie.\n\nSe hai già intenzione di andare in giro, perché non controlli come sta la Montanara Gretchen, appena a ovest della città? Sono già abbastanza in ritardo!",
+    "url": "https://foreverchanges.pro/quest/98322",
+    "forms": [
+      "Spelunking dark caves is adventurer business. My job's just to make reports and send them over to Ironforge.\n\nTrouble is, one of my reports hasn't... well, reported back. I asked a few mountaineers to learn more about the wendigo problem we have out here, but I haven't heard from them.\n\nIf you're already going to be out and about, what say you don't check in with Mountaineer Gretchen just west of town. I'm late enough as it is!",
+      "Spelunking dark caves is adventurer business. My job's just to make reports and send them over to Ironforge.\nTrouble is, one of my reports hasn't... well, reported back. I asked a few mountaineers to learn more about the wendigo problem we have out here, but I haven't heard from them.\nIf you're already going to be out and about, what say you don't check in with Mountaineer Gretchen just west of town. I'm late enough as it is!",
+      "Spelunking dark caves is adventurer business. My job's just to make reports and send them over to Ironforge. Trouble is, one of my reports hasn't... well, reported back. I asked a few mountaineers to learn more about the wendigo problem we have out here, but I haven't heard from them. If you're already going to be out and about, what say you don't check in with Mountaineer Gretchen just west of town. I'm late enough as it is!"
+    ],
+    "hashes": [
+      "990407e8",
+      "9cabe0e2",
+      "f9bde222"
+    ]
+  },
+  {
+    "id": 98322,
+    "field": "reward",
+    "en": "Ol' Whitebeard sent ya, aye?\n\nI got his report, alright. This whole situation's a mess!",
+    "it": "Ti ha mandato il vecchio Whitebeard, eh?\n\nHo il suo rapporto, sì. Questa situazione è un vero disastro!",
+    "url": "https://foreverchanges.pro/quest/98322",
+    "forms": [
+      "Ol' Whitebeard sent ya, aye?\n\nI got his report, alright. This whole situation's a mess!",
+      "Ol' Whitebeard sent ya, aye?\nI got his report, alright. This whole situation's a mess!",
+      "Ol' Whitebeard sent ya, aye? I got his report, alright. This whole situation's a mess!"
+    ],
+    "hashes": [
+      "ce276938",
+      "df9ef0b4",
+      "fbfeed5e"
+    ]
+  },
+  {
+    "id": 99047,
+    "field": "text",
+    "en": "My sisters and I... were dispatched... Oracle Tree...\n\nTree... message. I... harpies... everywhere...\n\n<Eralya coughs up blood, grimacing through the pain.>\n\nI may not have long... no one coming. Please... Byancie... in Dolanaar...",
+    "it": "Le mie sorelle e io... inviate... Albero dell’Oracolo...\n\nAlbero... messaggio. Io... arpie... ovunque...\n\n<Eralya tossisce sangue, contorcendosi per il dolore.>\n\nPotrebbe mancarmi poco... non arriva nessuno. Ti prego... Byancie... a Dolanaar...",
+    "url": "https://foreverchanges.pro/quest/99047",
+    "forms": [
+      "My sisters and I... were dispatched... Oracle Tree...\n\nTree... message. I... harpies... everywhere...\n\n<Eralya coughs up blood, grimacing through the pain.>\n\nI may not have long... no one coming. Please... Byancie... in Dolanaar...",
+      "My sisters and I... were dispatched... Oracle Tree...\nTree... message. I... harpies... everywhere...\n<Eralya coughs up blood, grimacing through the pain.>\nI may not have long... no one coming. Please... Byancie... in Dolanaar...",
+      "My sisters and I... were dispatched... Oracle Tree... Tree... message. I... harpies... everywhere... <Eralya coughs up blood, grimacing through the pain.> I may not have long... no one coming. Please... Byancie... in Dolanaar..."
+    ],
+    "hashes": [
+      "62a256ad",
+      "75acfe43",
+      "48ca55ad"
+    ]
+  },
+  {
+    "id": 99047,
+    "field": "reward",
+    "en": "The harpies have become afflicted by the same foulness showing up throughout the forest. I'm sure that is what ails Sentinel Eralya as well.\n\nWe must hurry. It won't be long before she succumbs to her injuries.",
+    "it": "Le arpie sono state colpite dalla stessa corruzione che si sta diffondendo nella foresta. Sono certa che sia anche ciò che affligge la Sentinella Eralya.\n\nDobbiamo fare in fretta. Non manca molto prima che soccomba alle ferite.",
+    "url": "https://foreverchanges.pro/quest/99047",
+    "forms": [
+      "The harpies have become afflicted by the same foulness showing up throughout the forest. I'm sure that is what ails Sentinel Eralya as well.\n\nWe must hurry. It won't be long before she succumbs to her injuries.",
+      "The harpies have become afflicted by the same foulness showing up throughout the forest. I'm sure that is what ails Sentinel Eralya as well.\nWe must hurry. It won't be long before she succumbs to her injuries.",
+      "The harpies have become afflicted by the same foulness showing up throughout the forest. I'm sure that is what ails Sentinel Eralya as well. We must hurry. It won't be long before she succumbs to her injuries."
+    ],
+    "hashes": [
+      "0348f33f",
+      "389a2fe5",
+      "f59c84fb"
+    ]
+  },
+  {
+    "id": 99047,
+    "field": "objectives",
+    "en": "Seek aid from Byancie in Dolaanar for Sentinel Eralya Leafshadow.",
+    "it": "Chiedi aiuto a Byancie a Dolanaar per la Sentinella Eralya Leafshadow.",
+    "url": "https://foreverchanges.pro/quest/99047",
+    "forms": [
+      "Seek aid from Byancie in Dolaanar for Sentinel Eralya Leafshadow."
+    ],
+    "hashes": [
+      "0cf2705f"
+    ]
+  },
+  {
+    "id": 99050,
+    "field": "text",
+    "en": "I will need your help acquiring the ingredients I need to stop the affliction long enough for Eralya to make it back here for further treatment.\n\nThankfully, our living home is still bountiful and will provide in our time of need.\n\nThe core ingredient is dewy lasher fronds. You'll find them around Lake Al'Ameth directly south of here, or Wellspring Lake and its river to the northwest.\n\nIn addition, I'll need an empty vial and some spring water. Both can be bought here in town, or traded for.",
+    "it": "Mi servirà il tuo aiuto per procurare gli ingredienti necessari a fermare il male abbastanza a lungo da permettere a Eralya di tornare qui e ricevere altre cure.\n\nPer fortuna la nostra casa vivente è ancora generosa e provvederà nel momento del bisogno.\n\nL’ingrediente principale sono le fronde dei frustatori rugiadosi. Le troverai attorno al Lago Al’Ameth, subito a sud di qui, oppure al Lago Wellspring e lungo il suo fiume a nordovest.\n\nMi serviranno anche una fiala vuota e dell’acqua di fonte. Puoi comprarle entrambe qui in città o ottenerle con uno scambio.",
+    "url": "https://foreverchanges.pro/quest/99050",
+    "forms": [
+      "I will need your help acquiring the ingredients I need to stop the affliction long enough for Eralya to make it back here for further treatment.\n\nThankfully, our living home is still bountiful and will provide in our time of need.\n\nThe core ingredient is dewy lasher fronds. You'll find them around Lake Al'Ameth directly south of here, or Wellspring Lake and its river to the northwest.\n\nIn addition, I'll need an empty vial and some spring water. Both can be bought here in town, or traded for.",
+      "I will need your help acquiring the ingredients I need to stop the affliction long enough for Eralya to make it back here for further treatment.\nThankfully, our living home is still bountiful and will provide in our time of need.\nThe core ingredient is dewy lasher fronds. You'll find them around Lake Al'Ameth directly south of here, or Wellspring Lake and its river to the northwest.\nIn addition, I'll need an empty vial and some spring water. Both can be bought here in town, or traded for.",
+      "I will need your help acquiring the ingredients I need to stop the affliction long enough for Eralya to make it back here for further treatment. Thankfully, our living home is still bountiful and will provide in our time of need. The core ingredient is dewy lasher fronds. You'll find them around Lake Al'Ameth directly south of here, or Wellspring Lake and its river to the northwest. In addition, I'll need an empty vial and some spring water. Both can be bought here in town, or traded for."
+    ],
+    "hashes": [
+      "320bb11c",
+      "805e8660",
+      "267512ca"
+    ]
+  },
+  {
+    "id": 99050,
+    "field": "progress",
+    "en": "Do you have the ingredients? I fear Eralya may not have long.",
+    "it": "Hai gli ingredienti? Temo che a Eralya resti poco tempo.",
+    "url": "https://foreverchanges.pro/quest/99050",
+    "forms": [
+      "Do you have the ingredients? I fear Eralya may not have long."
+    ],
+    "hashes": [
+      "03868cdb"
+    ]
+  },
+  {
+    "id": 99050,
+    "field": "reward",
+    "en": "Thank you for your help. Please, accept this to help with the costs of the vial and water.\n\nNow, to make the salve. It should only take a moment.",
+    "it": "Grazie per l’aiuto. Accetta questo per coprire le spese della fiala e dell’acqua.\n\nOra preparo l’unguento. Dovrebbe volerci soltanto un momento.",
+    "url": "https://foreverchanges.pro/quest/99050",
+    "forms": [
+      "Thank you for your help. Please, accept this to help with the costs of the vial and water.\n\nNow, to make the salve. It should only take a moment.",
+      "Thank you for your help. Please, accept this to help with the costs of the vial and water.\nNow, to make the salve. It should only take a moment.",
+      "Thank you for your help. Please, accept this to help with the costs of the vial and water. Now, to make the salve. It should only take a moment."
+    ],
+    "hashes": [
+      "b515f100",
+      "bef8c988",
+      "fd55ab32"
+    ]
+  }
+]

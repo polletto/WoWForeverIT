@@ -1,0 +1,335 @@
+[
+  {
+    "id": 92422,
+    "field": "text",
+    "en": "Reports have come in from the Lordamere Overlook deep within the Ruins of Lordaeron. An unholy fog has taken over the streets and graveyard, affording the scourge up there some measure of stealth.\n\nOur scouts indicate they're being conjured by a new power within their ranks, a necromancer known as Rath'mael. We do not have the luxury of waiting this one out, $N.\n\nIf you have allies, summon them and their aid to the Forsaken. Drive this creature out of our lands.",
+    "it": "Sono giunti rapporti dal Belvedere di Lordamere, nel cuore delle Rovine di Lordaeron. Una nebbia empia ha invaso le strade e il cimitero, offrendo alle creature del Flagello una certa copertura.\n\nI nostri esploratori indicano che viene evocata da una nuova forza tra le loro file: un negromante chiamato Rath’mael. Non possiamo permetterci di aspettare, $N.\n\nSe hai degli alleati, chiamali in aiuto dei Reietti. Scacciate questa creatura dalle nostre terre.",
+    "url": "https://foreverchanges.pro/quest/92422",
+    "forms": [
+      "Reports have come in from the Lordamere Overlook deep within the Ruins of Lordaeron. An unholy fog has taken over the streets and graveyard, affording the scourge up there some measure of stealth.\n\nOur scouts indicate they're being conjured by a new power within their ranks, a necromancer known as Rath'mael. We do not have the luxury of waiting this one out, $N.\n\nIf you have allies, summon them and their aid to the Forsaken. Drive this creature out of our lands.",
+      "Reports have come in from the Lordamere Overlook deep within the Ruins of Lordaeron. An unholy fog has taken over the streets and graveyard, affording the scourge up there some measure of stealth.\nOur scouts indicate they're being conjured by a new power within their ranks, a necromancer known as Rath'mael. We do not have the luxury of waiting this one out, $N.\nIf you have allies, summon them and their aid to the Forsaken. Drive this creature out of our lands.",
+      "Reports have come in from the Lordamere Overlook deep within the Ruins of Lordaeron. An unholy fog has taken over the streets and graveyard, affording the scourge up there some measure of stealth. Our scouts indicate they're being conjured by a new power within their ranks, a necromancer known as Rath'mael. We do not have the luxury of waiting this one out, $N. If you have allies, summon them and their aid to the Forsaken. Drive this creature out of our lands."
+    ],
+    "hashes": [
+      "d4d0588c",
+      "b24b8d84",
+      "346f00c4"
+    ]
+  },
+  {
+    "id": 92464,
+    "field": "text",
+    "en": "Ever since our elemental benefactors left us, it seems that we are simply moving from one unrest to another. The problem we face now is that the manifestations of the winds near the standing stones to the northeast are agitated.\n\nNot truly self-aware like the sentient wind spirits that once lived here, these simple sprites respond in kind to forces, emotions, and intentions of the creatures around them.\n\nMy apprentice Yala Windwatcher went to observe them. Seek her out and discover what she's learned.",
+    "it": "Da quando i nostri benefattori elementali ci hanno lasciati, sembra che passiamo soltanto da un tumulto all’altro. Ora le manifestazioni dei venti vicino alle pietre erette a nordest sono agitate.\n\nNon sono davvero consapevoli di sé come gli spiriti del vento senzienti che vivevano qui un tempo. Questi semplici spiriti reagiscono alle forze, alle emozioni e alle intenzioni delle creature che li circondano.\n\nLa mia apprendista Yala Windwatcher è andata a osservarli. Cercala e scopri che cosa ha imparato.",
+    "url": "https://foreverchanges.pro/quest/92464",
+    "forms": [
+      "Ever since our elemental benefactors left us, it seems that we are simply moving from one unrest to another. The problem we face now is that the manifestations of the winds near the standing stones to the northeast are agitated.\n\nNot truly self-aware like the sentient wind spirits that once lived here, these simple sprites respond in kind to forces, emotions, and intentions of the creatures around them.\n\nMy apprentice Yala Windwatcher went to observe them. Seek her out and discover what she's learned.",
+      "Ever since our elemental benefactors left us, it seems that we are simply moving from one unrest to another. The problem we face now is that the manifestations of the winds near the standing stones to the northeast are agitated.\nNot truly self-aware like the sentient wind spirits that once lived here, these simple sprites respond in kind to forces, emotions, and intentions of the creatures around them.\nMy apprentice Yala Windwatcher went to observe them. Seek her out and discover what she's learned.",
+      "Ever since our elemental benefactors left us, it seems that we are simply moving from one unrest to another. The problem we face now is that the manifestations of the winds near the standing stones to the northeast are agitated. Not truly self-aware like the sentient wind spirits that once lived here, these simple sprites respond in kind to forces, emotions, and intentions of the creatures around them. My apprentice Yala Windwatcher went to observe them. Seek her out and discover what she's learned."
+    ],
+    "hashes": [
+      "3516c173",
+      "62483411",
+      "2d582ad1"
+    ]
+  },
+  {
+    "id": 92464,
+    "field": "reward",
+    "en": "Rorian sent you? Good. I could use your aid.",
+    "it": "Ti ha mandato Rorian? Bene. Mi farebbe comodo il tuo aiuto.",
+    "url": "https://foreverchanges.pro/quest/92464",
+    "forms": [
+      "Rorian sent you? Good. I could use your aid."
+    ],
+    "hashes": [
+      "de47eaaa"
+    ]
+  },
+  {
+    "id": 92464,
+    "field": "objectives",
+    "en": "Speak to the Yala Windwatcher in Thendal Grove.",
+    "it": "Parla con Yala Windwatcher nel Bosco di Thendal.",
+    "url": "https://foreverchanges.pro/quest/92464",
+    "forms": [
+      "Speak to the Yala Windwatcher in Thendal Grove."
+    ],
+    "hashes": [
+      "cad39d9b"
+    ]
+  },
+  {
+    "id": 96988,
+    "field": "text",
+    "en": "With the city of Dalaran under siege by their own constructs, this is the perfect opportunity to, let's say, borrow a few samples.\n\nImagine an army of arcane-powered abominations. The Dark Lady would have no choice but to recognize my alchemical prowess. Maybe even grant me head of the Royal Apothecary Society?\n\nGo to the city and find the constructs' cores. They are unlikely to give them willingly, so do what you must.",
+    "it": "Con la città di Dalaran assediata dai suoi stessi costrutti, abbiamo l’occasione perfetta per... diciamo, prendere in prestito qualche campione.\n\nImmagina un esercito di abomini alimentati da energia arcana. La Dama Oscura non avrebbe altra scelta che riconoscere la mia maestria alchemica. Magari mi nominerebbe persino capo della Società Reale degli Speziali!\n\nVai in città e recupera i nuclei dei costrutti. È improbabile che li cedano volontariamente, quindi fai ciò che devi.",
+    "url": "https://foreverchanges.pro/quest/96988",
+    "forms": [
+      "With the city of Dalaran under siege by their own constructs, this is the perfect opportunity to, let's say, borrow a few samples.\n\nImagine an army of arcane-powered abominations. The Dark Lady would have no choice but to recognize my alchemical prowess. Maybe even grant me head of the Royal Apothecary Society?\n\nGo to the city and find the constructs' cores. They are unlikely to give them willingly, so do what you must.",
+      "With the city of Dalaran under siege by their own constructs, this is the perfect opportunity to, let's say, borrow a few samples.\nImagine an army of arcane-powered abominations. The Dark Lady would have no choice but to recognize my alchemical prowess. Maybe even grant me head of the Royal Apothecary Society?\nGo to the city and find the constructs' cores. They are unlikely to give them willingly, so do what you must.",
+      "With the city of Dalaran under siege by their own constructs, this is the perfect opportunity to, let's say, borrow a few samples. Imagine an army of arcane-powered abominations. The Dark Lady would have no choice but to recognize my alchemical prowess. Maybe even grant me head of the Royal Apothecary Society? Go to the city and find the constructs' cores. They are unlikely to give them willingly, so do what you must."
+    ],
+    "hashes": [
+      "dcd1e631",
+      "25733485",
+      "bd28cac5"
+    ]
+  },
+  {
+    "id": 97277,
+    "field": "text",
+    "en": "Oi, had me back turned gettin' the boar roast ready when I heard me pal Gozwin screamin' fer his life!\n\nWicked fangs and a blur are all I saw when I turned. Such huge paws! A snow leopard was draggin' its gnomish catch away. I grabbed me shotgun and fired above the beast. It dropped him and sprinted off.\n\nLuckily, it hadn't done more than give ol' Goz some deep scratches.\n\nHead back to camp in the northwestern hills and retrieve Gozwin's Mechanic's Log. Kill that snow leopard too if you see it!",
+    "it": "Ehi! Avevo voltato le spalle per preparare l’arrosto di cinghiale quando ho sentito il mio amico Gozwin urlare come se stesse per morire!\n\nQuando mi sono girato ho visto soltanto zanne terribili e una sagoma veloce. Che zampe enormi! Un leopardo delle nevi stava trascinando via la sua preda gnomesca. Ho afferrato il fucile e sparato sopra la bestia. Lo ha lasciato andare ed è scappata.\n\nPer fortuna aveva soltanto lasciato qualche graffio profondo al vecchio Goz.\n\nTorna all’accampamento sulle colline a nordovest e recupera il registro da meccanico di Gozwin. E uccidi quel leopardo delle nevi, se lo vedi!",
+    "url": "https://foreverchanges.pro/quest/97277",
+    "forms": [
+      "Oi, had me back turned gettin' the boar roast ready when I heard me pal Gozwin screamin' fer his life!\n\nWicked fangs and a blur are all I saw when I turned. Such huge paws! A snow leopard was draggin' its gnomish catch away. I grabbed me shotgun and fired above the beast. It dropped him and sprinted off.\n\nLuckily, it hadn't done more than give ol' Goz some deep scratches.\n\nHead back to camp in the northwestern hills and retrieve Gozwin's Mechanic's Log. Kill that snow leopard too if you see it!",
+      "Oi, had me back turned gettin' the boar roast ready when I heard me pal Gozwin screamin' fer his life!\nWicked fangs and a blur are all I saw when I turned. Such huge paws! A snow leopard was draggin' its gnomish catch away. I grabbed me shotgun and fired above the beast. It dropped him and sprinted off.\nLuckily, it hadn't done more than give ol' Goz some deep scratches.\nHead back to camp in the northwestern hills and retrieve Gozwin's Mechanic's Log. Kill that snow leopard too if you see it!",
+      "Oi, had me back turned gettin' the boar roast ready when I heard me pal Gozwin screamin' fer his life! Wicked fangs and a blur are all I saw when I turned. Such huge paws! A snow leopard was draggin' its gnomish catch away. I grabbed me shotgun and fired above the beast. It dropped him and sprinted off. Luckily, it hadn't done more than give ol' Goz some deep scratches. Head back to camp in the northwestern hills and retrieve Gozwin's Mechanic's Log. Kill that snow leopard too if you see it!"
+    ],
+    "hashes": [
+      "e2f89052",
+      "ba3c21f2",
+      "beb4d9f0"
+    ]
+  },
+  {
+    "id": 97277,
+    "field": "progress",
+    "en": "Poor Goz is more concerned for his mecha-walker than himself. Says if anyone gets a hold of that mechanic's log he's greased. Hah! That's why I told him he should just leave his work at home!",
+    "it": "Il povero Goz è più preoccupato per il suo camminatore meccanico che per sé stesso. Dice che, se qualcuno mette le mani su quel registro da meccanico, è finito. Ah! Ecco perché gli avevo detto di lasciare il lavoro a casa!",
+    "url": "https://foreverchanges.pro/quest/97277",
+    "forms": [
+      "Poor Goz is more concerned for his mecha-walker than himself. Says if anyone gets a hold of that mechanic's log he's greased. Hah! That's why I told him he should just leave his work at home!"
+    ],
+    "hashes": [
+      "13bbe829"
+    ]
+  },
+  {
+    "id": 97891,
+    "field": "text",
+    "en": "You! Quickly, I need you to bring this potion across the slime canal to Doctor Martin Felben in the Apothecarium!\n\nIt has a very limited shelf life, and no I can't go myself, my knees rattle and pop out if I attempt to run.\n\nJust another lovely side effect of undeath, apparently.\n\nBut we're wasting time! Here, take this and go!\n\n<Alessandro makes a shooing motion.>",
+    "it": "Tu! Presto, devi portare questa pozione al Dottor Martin Felben nell’Apothecarium, dall’altra parte del canale di melma!\n\nSi conserva per pochissimo tempo. E no, non posso andarci io: se provo a correre, le ginocchia mi scricchiolano e si staccano.\n\nUn altro piacevole effetto della non morte, a quanto pare.\n\nMa stiamo perdendo tempo! Tieni, prendila e vai!\n\n<Alessandro ti fa cenno di sbrigarti.>",
+    "url": "https://foreverchanges.pro/quest/97891",
+    "forms": [
+      "You! Quickly, I need you to bring this potion across the slime canal to Doctor Martin Felben in the Apothecarium!\n\nIt has a very limited shelf life, and no I can't go myself, my knees rattle and pop out if I attempt to run.\n\nJust another lovely side effect of undeath, apparently.\n\nBut we're wasting time! Here, take this and go!\n\n<Alessandro makes a shooing motion.>",
+      "You! Quickly, I need you to bring this potion across the slime canal to Doctor Martin Felben in the Apothecarium!\nIt has a very limited shelf life, and no I can't go myself, my knees rattle and pop out if I attempt to run.\nJust another lovely side effect of undeath, apparently.\nBut we're wasting time! Here, take this and go!\n<Alessandro makes a shooing motion.>",
+      "You! Quickly, I need you to bring this potion across the slime canal to Doctor Martin Felben in the Apothecarium! It has a very limited shelf life, and no I can't go myself, my knees rattle and pop out if I attempt to run. Just another lovely side effect of undeath, apparently. But we're wasting time! Here, take this and go! <Alessandro makes a shooing motion.>"
+    ],
+    "hashes": [
+      "6d69a77a",
+      "5b902a46",
+      "69b9fc32"
+    ]
+  },
+  {
+    "id": 97891,
+    "field": "reward",
+    "en": "Ah, marvelous! I had been waiting for Alessandro's potion to arrive. The last six he sent destabilized along the way, but you've made it just in time!\n\nHere, take this for your effort. That is all for now, unless you have other business with me?\n\nIf not, remove yourself so I may continue my experiments unhindered.",
+    "it": "Ah, magnifico! Aspettavo l’arrivo della pozione di Alessandro. Le ultime sei che ha mandato si sono destabilizzate lungo il tragitto, ma tu sei arrivato appena in tempo!\n\nTieni, questo è per il tuo impegno. Per ora è tutto, a meno che tu non abbia altre questioni da discutere con me.\n\nAltrimenti vattene, così potrò continuare i miei esperimenti senza essere disturbato.",
+    "url": "https://foreverchanges.pro/quest/97891",
+    "forms": [
+      "Ah, marvelous! I had been waiting for Alessandro's potion to arrive. The last six he sent destabilized along the way, but you've made it just in time!\n\nHere, take this for your effort. That is all for now, unless you have other business with me?\n\nIf not, remove yourself so I may continue my experiments unhindered.",
+      "Ah, marvelous! I had been waiting for Alessandro's potion to arrive. The last six he sent destabilized along the way, but you've made it just in time!\nHere, take this for your effort. That is all for now, unless you have other business with me?\nIf not, remove yourself so I may continue my experiments unhindered.",
+      "Ah, marvelous! I had been waiting for Alessandro's potion to arrive. The last six he sent destabilized along the way, but you've made it just in time! Here, take this for your effort. That is all for now, unless you have other business with me? If not, remove yourself so I may continue my experiments unhindered."
+    ],
+    "hashes": [
+      "2d9a37c1",
+      "901baa4d",
+      "93ff19f9"
+    ]
+  },
+  {
+    "id": 97985,
+    "field": "text",
+    "en": "Fascinating, aren't they? This is the first time I have ever been privy to the secrets of abomination creation.\n\nI have been studying these notes, and it appears we need a heart. A massive one!\n\nI hear there is a thunder lizard there of impressive size called Stormheart, that patrols along the canyon edge in Thousand Needles. With a name like that it must have the perfect heart. I must have that heart!\n\nOh, also I suggest you bring friends. Stormheart isn't known for being docile.",
+    "it": "Affascinanti, vero? È la prima volta che posso conoscere i segreti della creazione degli abomini.\n\nHo studiato questi appunti e pare che ci serva un cuore. Uno enorme!\n\nHo sentito parlare di una lucertola del tuono di dimensioni impressionanti, chiamata Stormheart, che pattuglia il bordo del canyon nei Millepicchi. Con un nome simile deve avere il cuore perfetto. Devo averlo!\n\nAh, ti suggerisco anche di portare degli amici. Stormheart non è famoso per la sua docilità.",
+    "url": "https://foreverchanges.pro/quest/97985",
+    "forms": [
+      "Fascinating, aren't they? This is the first time I have ever been privy to the secrets of abomination creation.\n\nI have been studying these notes, and it appears we need a heart. A massive one!\n\nI hear there is a thunder lizard there of impressive size called Stormheart, that patrols along the canyon edge in Thousand Needles. With a name like that it must have the perfect heart. I must have that heart!\n\nOh, also I suggest you bring friends. Stormheart isn't known for being docile.",
+      "Fascinating, aren't they? This is the first time I have ever been privy to the secrets of abomination creation.\nI have been studying these notes, and it appears we need a heart. A massive one!\nI hear there is a thunder lizard there of impressive size called Stormheart, that patrols along the canyon edge in Thousand Needles. With a name like that it must have the perfect heart. I must have that heart!\nOh, also I suggest you bring friends. Stormheart isn't known for being docile.",
+      "Fascinating, aren't they? This is the first time I have ever been privy to the secrets of abomination creation. I have been studying these notes, and it appears we need a heart. A massive one! I hear there is a thunder lizard there of impressive size called Stormheart, that patrols along the canyon edge in Thousand Needles. With a name like that it must have the perfect heart. I must have that heart! Oh, also I suggest you bring friends. Stormheart isn't known for being docile."
+    ],
+    "hashes": [
+      "60e049e4",
+      "c8c3b80c",
+      "ce0ee2e2"
+    ]
+  },
+  {
+    "id": 98067,
+    "field": "text",
+    "en": "General Feathermoon ensures all sentinels have time to pray to Elune. A proper huntress wields not blade alone, but gifts of the goddess to overcome our enemies.\n\nYou may help with my daily duties. Place sentinels around the city--start with the tunnels leading beneath Cenarion Hold to the north, the bank at the center of town, the inn in the Craftsman's Terrace to the northeast, and the city gates. The guards can assist you.\n\nSomething is amiss in Teldrassil--we must remain vigilant.",
+    "it": "La Generale Feathermoon si assicura che tutte le Sentinelle abbiano il tempo di pregare Elune. Una vera cacciatrice non usa soltanto la lama, ma anche i doni della dea per sconfiggere i nostri nemici.\n\nPuoi aiutarmi con i compiti quotidiani. Posiziona le sentinelle attorno alla città: comincia dai tunnel che conducono sotto il Cenarion Hold a nord, dalla banca nel centro della città, dalla locanda sulla Terrazza degli Artigiani a nordest e dalle porte della città. Le guardie possono aiutarti.\n\nQualcosa non va a Teldrassil. Dobbiamo restare vigili.",
+    "url": "https://foreverchanges.pro/quest/98067",
+    "forms": [
+      "General Feathermoon ensures all sentinels have time to pray to Elune. A proper huntress wields not blade alone, but gifts of the goddess to overcome our enemies.\n\nYou may help with my daily duties. Place sentinels around the city--start with the tunnels leading beneath Cenarion Hold to the north, the bank at the center of town, the inn in the Craftsman's Terrace to the northeast, and the city gates. The guards can assist you.\n\nSomething is amiss in Teldrassil--we must remain vigilant.",
+      "General Feathermoon ensures all sentinels have time to pray to Elune. A proper huntress wields not blade alone, but gifts of the goddess to overcome our enemies.\nYou may help with my daily duties. Place sentinels around the city--start with the tunnels leading beneath Cenarion Hold to the north, the bank at the center of town, the inn in the Craftsman's Terrace to the northeast, and the city gates. The guards can assist you.\nSomething is amiss in Teldrassil--we must remain vigilant.",
+      "General Feathermoon ensures all sentinels have time to pray to Elune. A proper huntress wields not blade alone, but gifts of the goddess to overcome our enemies. You may help with my daily duties. Place sentinels around the city--start with the tunnels leading beneath Cenarion Hold to the north, the bank at the center of town, the inn in the Craftsman's Terrace to the northeast, and the city gates. The guards can assist you. Something is amiss in Teldrassil--we must remain vigilant."
+    ],
+    "hashes": [
+      "5f07faf7",
+      "7c1b0b79",
+      "0ef9b1b9"
+    ]
+  },
+  {
+    "id": 98067,
+    "field": "reward",
+    "en": "I thank you for your aid. Though I find peace in the daily rituals, it is nice to have a moment to reflect instead.",
+    "it": "Ti ringrazio per l’aiuto. Anche se trovo pace nei rituali quotidiani, è piacevole avere invece un momento per riflettere.",
+    "url": "https://foreverchanges.pro/quest/98067",
+    "forms": [
+      "I thank you for your aid. Though I find peace in the daily rituals, it is nice to have a moment to reflect instead."
+    ],
+    "hashes": [
+      "26c2ef52"
+    ]
+  },
+  {
+    "id": 98392,
+    "field": "text",
+    "en": "These belts... look closely at the leather, $N. Do you see the taint running through the fibers?\n\nI have a suspicion as to its origin, but we will need further proof to be sure.\n\nVenture back out into the harpies' nests to the west and take out their leaders. If their necklaces carry the same darkness as these belts, we'll have our answer.",
+    "it": "Queste cinture... osserva bene il cuoio, $N. Vedi la contaminazione che attraversa le fibre?\n\nHo un sospetto sulla sua origine, ma ci serviranno altre prove per esserne certi.\n\nTorna ai nidi delle arpie a ovest ed elimina le loro capi. Se le collane contengono la stessa oscurità di queste cinture, avremo la nostra risposta.",
+    "url": "https://foreverchanges.pro/quest/98392",
+    "forms": [
+      "These belts... look closely at the leather, $N. Do you see the taint running through the fibers?\n\nI have a suspicion as to its origin, but we will need further proof to be sure.\n\nVenture back out into the harpies' nests to the west and take out their leaders. If their necklaces carry the same darkness as these belts, we'll have our answer.",
+      "These belts... look closely at the leather, $N. Do you see the taint running through the fibers?\nI have a suspicion as to its origin, but we will need further proof to be sure.\nVenture back out into the harpies' nests to the west and take out their leaders. If their necklaces carry the same darkness as these belts, we'll have our answer.",
+      "These belts... look closely at the leather, $N. Do you see the taint running through the fibers? I have a suspicion as to its origin, but we will need further proof to be sure. Venture back out into the harpies' nests to the west and take out their leaders. If their necklaces carry the same darkness as these belts, we'll have our answer."
+    ],
+    "hashes": [
+      "a2076c12",
+      "0686377e",
+      "041cd0aa"
+    ]
+  },
+  {
+    "id": 98392,
+    "field": "progress",
+    "en": "Have you wrested the amulets from the harpies' leaders?",
+    "it": "Hai strappato gli amuleti alle capi delle arpie?",
+    "url": "https://foreverchanges.pro/quest/98392",
+    "forms": [
+      "Have you wrested the amulets from the harpies' leaders?"
+    ],
+    "hashes": [
+      "0ba51e06"
+    ]
+  },
+  {
+    "id": 98392,
+    "field": "reward",
+    "en": "<Arynia investigates the amulets.>\n\nDo you see the foul green swirls within the gems? This is indeed fel moss corruption at work.\n\nI have heard similar reports from Shadowglen and elsewhere in the boughs of this substance turning our very world against us.\n\nI will inform my superiors of this at once.",
+    "it": "<Arynia esamina gli amuleti.>\n\nVedi quelle spirali verdi e malsane nelle gemme? È proprio la corruzione del muschio vile all’opera.\n\nHo sentito rapporti simili da Shadowglen e da altre zone tra i rami: questa sostanza sta rivoltando il nostro stesso mondo contro di noi.\n\nInformerò subito i miei superiori.",
+    "url": "https://foreverchanges.pro/quest/98392",
+    "forms": [
+      "<Arynia investigates the amulets.>\n\nDo you see the foul green swirls within the gems? This is indeed fel moss corruption at work.\n\nI have heard similar reports from Shadowglen and elsewhere in the boughs of this substance turning our very world against us.\n\nI will inform my superiors of this at once.",
+      "<Arynia investigates the amulets.>\nDo you see the foul green swirls within the gems? This is indeed fel moss corruption at work.\nI have heard similar reports from Shadowglen and elsewhere in the boughs of this substance turning our very world against us.\nI will inform my superiors of this at once.",
+      "<Arynia investigates the amulets.> Do you see the foul green swirls within the gems? This is indeed fel moss corruption at work. I have heard similar reports from Shadowglen and elsewhere in the boughs of this substance turning our very world against us. I will inform my superiors of this at once."
+    ],
+    "hashes": [
+      "efe8e1e3",
+      "0fc773c7",
+      "97370dc5"
+    ]
+  },
+  {
+    "id": 98398,
+    "field": "text",
+    "en": "I am impressed by what you have accomplished here in so short a time, $N. Would that I could ask you to remain here to assist me with my duties... but I know in my heart that greater tasks lie ahead for you.\n\nI have noticed the Oracle Tree has just shed a piece of its bark. No doubt it has a task that it wishes completed. You should speak with it.",
+    "it": "Sono colpita da ciò che hai compiuto qui in così poco tempo, $N. Vorrei poterti chiedere di restare e aiutarmi con i miei compiti, ma nel cuore so che ti attendono imprese più grandi.\n\nHo notato che l’Albero dell’Oracolo ha appena perso un pezzo di corteccia. Senza dubbio ha un compito che desidera vedere portato a termine. Dovresti parlargli.",
+    "url": "https://foreverchanges.pro/quest/98398",
+    "forms": [
+      "I am impressed by what you have accomplished here in so short a time, $N. Would that I could ask you to remain here to assist me with my duties... but I know in my heart that greater tasks lie ahead for you.\n\nI have noticed the Oracle Tree has just shed a piece of its bark. No doubt it has a task that it wishes completed. You should speak with it.",
+      "I am impressed by what you have accomplished here in so short a time, $N. Would that I could ask you to remain here to assist me with my duties... but I know in my heart that greater tasks lie ahead for you.\nI have noticed the Oracle Tree has just shed a piece of its bark. No doubt it has a task that it wishes completed. You should speak with it.",
+      "I am impressed by what you have accomplished here in so short a time, $N. Would that I could ask you to remain here to assist me with my duties... but I know in my heart that greater tasks lie ahead for you. I have noticed the Oracle Tree has just shed a piece of its bark. No doubt it has a task that it wishes completed. You should speak with it."
+    ],
+    "hashes": [
+      "595c0b86",
+      "aab78576",
+      "4472b48c"
+    ]
+  },
+  {
+    "id": 98398,
+    "field": "reward",
+    "en": "As you inspect the fallen bark, a voice enters your mind. It is calm and soothing, cresting over you like a gentle breeze through the leaves.",
+    "it": "Mentre esamini la corteccia caduta, una voce entra nella tua mente. È calma e rassicurante, ti avvolge come una brezza leggera tra le foglie.",
+    "url": "https://foreverchanges.pro/quest/98398",
+    "forms": [
+      "As you inspect the fallen bark, a voice enters your mind. It is calm and soothing, cresting over you like a gentle breeze through the leaves."
+    ],
+    "hashes": [
+      "9e582217"
+    ]
+  },
+  {
+    "id": 98403,
+    "field": "text",
+    "en": "Lord Melenas did not act alone; he was at the behest of another. The one you seek is Xethorr the Wicked. It seems he has twisted the spiders that call Teldrassil home, intending their venom for some foul plan.\n\nHe has taken residence deep in the forest, in the area to the northwest of here known as the Cleft. Take caution, and bring allies, for Xethorr is not an opponent to be trifled with.\n\nDispatch his brood, and bring me anything that may tell us more of the satyr's work here.",
+    "it": "Lord Melenas non agiva da solo: obbediva a qualcun altro. Chi cerchi è Xethorr il Malvagio. Sembra che abbia corrotto i ragni che abitano Teldrassil, per usare il loro veleno in qualche piano empio.\n\nSi è insediato nel cuore della foresta, nella zona a nordovest chiamata Cleft. Fai attenzione e porta degli alleati, perché Xethorr non è un avversario da sottovalutare.\n\nElimina la sua covata e portami qualsiasi cosa possa dirci di più sull’opera del satiro qui.",
+    "url": "https://foreverchanges.pro/quest/98403",
+    "forms": [
+      "Lord Melenas did not act alone; he was at the behest of another. The one you seek is Xethorr the Wicked. It seems he has twisted the spiders that call Teldrassil home, intending their venom for some foul plan.\n\nHe has taken residence deep in the forest, in the area to the northwest of here known as the Cleft. Take caution, and bring allies, for Xethorr is not an opponent to be trifled with.\n\nDispatch his brood, and bring me anything that may tell us more of the satyr's work here.",
+      "Lord Melenas did not act alone; he was at the behest of another. The one you seek is Xethorr the Wicked. It seems he has twisted the spiders that call Teldrassil home, intending their venom for some foul plan.\nHe has taken residence deep in the forest, in the area to the northwest of here known as the Cleft. Take caution, and bring allies, for Xethorr is not an opponent to be trifled with.\nDispatch his brood, and bring me anything that may tell us more of the satyr's work here.",
+      "Lord Melenas did not act alone; he was at the behest of another. The one you seek is Xethorr the Wicked. It seems he has twisted the spiders that call Teldrassil home, intending their venom for some foul plan. He has taken residence deep in the forest, in the area to the northwest of here known as the Cleft. Take caution, and bring allies, for Xethorr is not an opponent to be trifled with. Dispatch his brood, and bring me anything that may tell us more of the satyr's work here."
+    ],
+    "hashes": [
+      "de096d5e",
+      "c615bf46",
+      "33b2e806"
+    ]
+  },
+  {
+    "id": 98403,
+    "field": "progress",
+    "en": "<Tallonkai lowers his voice.>\n\nDoes Xethorr still walk freely?",
+    "it": "<Tallonkai abbassa la voce.>\n\nXethorr è ancora in libertà?",
+    "url": "https://foreverchanges.pro/quest/98403",
+    "forms": [
+      "<Tallonkai lowers his voice.>\n\nDoes Xethorr still walk freely?",
+      "<Tallonkai lowers his voice.>\nDoes Xethorr still walk freely?",
+      "<Tallonkai lowers his voice.> Does Xethorr still walk freely?"
+    ],
+    "hashes": [
+      "4d78a485",
+      "5a229dd1",
+      "0e481afb"
+    ]
+  },
+  {
+    "id": 98403,
+    "field": "reward",
+    "en": "I should have known this was being used to twist the spiders of this land.\n\nI have heard whispers of this substance being the source of much of the corruption plaguing us. Though this is not the original, it is an older sample and may yield more information than what we have obtained so far.\n\nNormally I would have you send this to Darnassus for further study. However, it is best we kept this quiet for the moment, or Dolanaar will never recover its reputation.\n\nI trust you to do the same.",
+    "it": "Avrei dovuto capire che questa sostanza veniva usata per corrompere i ragni di queste terre.\n\nHo sentito voci secondo cui sarebbe all’origine di gran parte della corruzione che ci affligge. Anche se questo non è il campione originario, è più vecchio e potrebbe fornire più informazioni di quelli ottenuti finora.\n\nNormalmente ti chiederei di mandarlo a Darnassus per ulteriori studi. Tuttavia è meglio mantenere il riserbo per il momento, altrimenti Dolanaar non recupererà mai la sua reputazione.\n\nConfido che anche tu faccia lo stesso.",
+    "url": "https://foreverchanges.pro/quest/98403",
+    "forms": [
+      "I should have known this was being used to twist the spiders of this land.\n\nI have heard whispers of this substance being the source of much of the corruption plaguing us. Though this is not the original, it is an older sample and may yield more information than what we have obtained so far.\n\nNormally I would have you send this to Darnassus for further study. However, it is best we kept this quiet for the moment, or Dolanaar will never recover its reputation.\n\nI trust you to do the same.",
+      "I should have known this was being used to twist the spiders of this land.\nI have heard whispers of this substance being the source of much of the corruption plaguing us. Though this is not the original, it is an older sample and may yield more information than what we have obtained so far.\nNormally I would have you send this to Darnassus for further study. However, it is best we kept this quiet for the moment, or Dolanaar will never recover its reputation.\nI trust you to do the same.",
+      "I should have known this was being used to twist the spiders of this land. I have heard whispers of this substance being the source of much of the corruption plaguing us. Though this is not the original, it is an older sample and may yield more information than what we have obtained so far. Normally I would have you send this to Darnassus for further study. However, it is best we kept this quiet for the moment, or Dolanaar will never recover its reputation. I trust you to do the same."
+    ],
+    "hashes": [
+      "9b502937",
+      "e2559285",
+      "2d42f7ef"
+    ]
+  },
+  {
+    "id": 98823,
+    "field": "text",
+    "en": "Truly, this is a fascinating object.\n\nIt shows indications of being much more than a mere carving or sculpture.\n\nWhile our elders may be interested in observing this artifact, the Earthen Ring are who would carry the most wisdom for our buried ruins and forgotten lands. Seek out Muln Earthfury, a direct approach is fitting for the gravity of what you carry.\n\nYou can find him and other elders of the Earthen Ring council at the Skywatcher Plateau in northwest Mulgore.",
+    "it": "È davvero un oggetto affascinante.\n\nMostra indizi di essere molto più di una semplice incisione o scultura.\n\nI nostri anziani potrebbero essere interessati a esaminarlo, ma il Circolo della Terra possiede la maggiore conoscenza delle rovine sepolte e delle terre dimenticate. Cerca Muln Earthfury: un approccio diretto è adatto all’importanza di ciò che porti.\n\nTroverai lui e altri anziani del consiglio del Circolo della Terra sull’Altopiano di Skywatcher, nel nordovest di Mulgore.",
+    "url": "https://foreverchanges.pro/quest/98823",
+    "forms": [
+      "Truly, this is a fascinating object.\n\nIt shows indications of being much more than a mere carving or sculpture.\n\nWhile our elders may be interested in observing this artifact, the Earthen Ring are who would carry the most wisdom for our buried ruins and forgotten lands. Seek out Muln Earthfury, a direct approach is fitting for the gravity of what you carry.\n\nYou can find him and other elders of the Earthen Ring council at the Skywatcher Plateau in northwest Mulgore.",
+      "Truly, this is a fascinating object.\nIt shows indications of being much more than a mere carving or sculpture.\nWhile our elders may be interested in observing this artifact, the Earthen Ring are who would carry the most wisdom for our buried ruins and forgotten lands. Seek out Muln Earthfury, a direct approach is fitting for the gravity of what you carry.\nYou can find him and other elders of the Earthen Ring council at the Skywatcher Plateau in northwest Mulgore.",
+      "Truly, this is a fascinating object. It shows indications of being much more than a mere carving or sculpture. While our elders may be interested in observing this artifact, the Earthen Ring are who would carry the most wisdom for our buried ruins and forgotten lands. Seek out Muln Earthfury, a direct approach is fitting for the gravity of what you carry. You can find him and other elders of the Earthen Ring council at the Skywatcher Plateau in northwest Mulgore."
+    ],
+    "hashes": [
+      "8127d243",
+      "65c0405f",
+      "ffef02b5"
+    ]
+  }
+]

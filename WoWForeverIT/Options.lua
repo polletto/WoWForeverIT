@@ -4,7 +4,7 @@ local checks={}
 function WoWForeverIT_OpenOptions()
     if not panel then
         panel=CreateFrame('Frame','WoWForeverITOptions',UIParent,'BasicFrameTemplateWithInset')
-        panel:SetSize(490,393)
+        panel:SetSize(490,453)
         panel:SetPoint('CENTER')
         panel:SetFrameStrata('DIALOG')
         panel:SetMovable(true)
@@ -21,6 +21,8 @@ function WoWForeverIT_OpenOptions()
             {'questTooltips','Tooltip delle missioni'},
             {'interface','Interfaccia, menu, personaggio e professioni'},
             {'spells','Magie: nomi e descrizioni supportate'},
+            {'items','Oggetti: nomi e tooltip supportati'},
+            {'creatures','Creature: tooltip e nameplate'},
             {'debug','Debug: mostra i testi originali in chat'},
         }
         for i,row in ipairs(rows) do

@@ -1,0 +1,149 @@
+[
+  {
+    "id": 92422,
+    "field": "title",
+    "en": "The Wrath of Rath'mael",
+    "it": "L’ira di Rath’mael",
+    "hash": "79c5f46b"
+  },
+  {
+    "id": 92422,
+    "field": "objectives",
+    "en": "Kill Rath'mael in the Ruins of Lordaeron for Deathguard Kristof in Brill.",
+    "it": "Uccidi Rath’mael nelle Rovine di Lordaeron per la Guardia della Morte Kristof a Brill.",
+    "hash": "74113e27"
+  },
+  {
+    "id": 92464,
+    "field": "objectives",
+    "en": "Speak to Yala Windwatcher in Thendal Grove.",
+    "it": "Parla con Yala Windwatcher nel Bosco di Thendal.",
+    "hash": "e6cf570c"
+  },
+  {
+    "id": 96988,
+    "field": "title",
+    "en": "Source of Power",
+    "it": "Fonte di potere",
+    "hash": "950913e1"
+  },
+  {
+    "id": 96988,
+    "field": "objectives",
+    "en": "Collect 6 Cracked Sentry Cores in the City of Dalaran for Doctor Martin Felben in Undercity.",
+    "it": "Raccogli 6 Cracked Sentry Cores nella Città di Dalaran per il Dottor Martin Felben a Sepulcra.",
+    "hash": "ac4136aa"
+  },
+  {
+    "id": 97277,
+    "field": "title",
+    "en": "Grund and Gozwin",
+    "it": "Grund e Gozwin",
+    "hash": "461b9073"
+  },
+  {
+    "id": 97277,
+    "field": "objectives",
+    "en": "Find Grund and Gozwin's camp in the hills to the northwest. Recover Gozwin's Mechanic's Log and kill the Snow Leopard Prowler.",
+    "it": "Trova l’accampamento di Grund e Gozwin sulle colline a nordovest. Recupera il Gozwin’s Mechanic’s Log e uccidi lo Snow Leopard Prowler.",
+    "hash": "723e719e"
+  },
+  {
+    "id": 97891,
+    "field": "title",
+    "en": "Prompt Potion Runner",
+    "it": "Consegna urgente di pozioni",
+    "hash": "ceb3f0a1"
+  },
+  {
+    "id": 97891,
+    "field": "objectives",
+    "en": "Bring the Unstable Potion to Doctor Martin Felben in the Apothecarium within the time limit.",
+    "it": "Porta la Unstable Potion al Dottor Martin Felben nell’Apothecarium entro il tempo limite.",
+    "hash": "1b6fb331"
+  },
+  {
+    "id": 97985,
+    "field": "title",
+    "en": "Thundering Hearts",
+    "it": "Cuori tonanti",
+    "hash": "d807f6cf"
+  },
+  {
+    "id": 97985,
+    "field": "objectives",
+    "en": "Slay Stormheart in Thousand Needles and acquire its heart.",
+    "it": "Uccidi Stormheart nei Millepicchi e recupera il suo cuore.",
+    "hash": "4c96256a"
+  },
+  {
+    "id": 98067,
+    "field": "title",
+    "en": "Eyes of the Sentinels",
+    "it": "Gli occhi delle Sentinelle",
+    "hash": "6a9af955"
+  },
+  {
+    "id": 98067,
+    "field": "objectives",
+    "en": "Place Sentinel Owls at the entrance to the Cenarion Hold depths, the Darnassus Bank, the Craftsman's Terrace Inn, and the City Gate for Sentinel Dalia Sunblade in the Temple of the Moon in Darnassus.",
+    "it": "Posiziona i Sentinel Owls all’ingresso delle profondità del Cenarion Hold, della banca di Darnassus, della locanda della Terrazza degli Artigiani e della porta della città per la Sentinella Dalia Sunblade nel Tempio della Luna a Darnassus.",
+    "hash": "509b0173"
+  },
+  {
+    "id": 98392,
+    "field": "title",
+    "en": "Darkness in the Glade",
+    "it": "Oscurità nella radura",
+    "hash": "e422fe66"
+  },
+  {
+    "id": 98392,
+    "field": "objectives",
+    "en": "Collect Hatescreech's Amulet, Windmistress Gaedress' Amulet, and Witchmother Arysa's Amulet for Sentinel Arynia Cloudsbreak in the Oracle Glade.",
+    "it": "Raccogli l’Hatescreech’s Amulet, il Windmistress Gaedress’ Amulet e il Witchmother Arysa’s Amulet per la Sentinella Arynia Cloudsbreak nella Radura dell’Oracolo.",
+    "hash": "c55d9a96"
+  },
+  {
+    "id": 98398,
+    "field": "title",
+    "en": "The Oracle Tree",
+    "it": "L’Albero dell’Oracolo",
+    "hash": "3ac06fd1"
+  },
+  {
+    "id": 98398,
+    "field": "objectives",
+    "en": "Find the Oracle Tree Bark nearby to receive its message.",
+    "it": "Trova la Oracle Tree Bark qui vicino per ricevere il suo messaggio.",
+    "hash": "35a50a32"
+  },
+  {
+    "id": 98403,
+    "field": "title",
+    "en": "Twisted Hatred",
+    "it": "Odio contorto",
+    "hash": "5a09db70"
+  },
+  {
+    "id": 98403,
+    "field": "objectives",
+    "en": "Kill 8 Befouled Webwoods and bring Xethorr the Wicked's Mature Fel Moss to Tallonkai Swiftroot in Dolanaar.",
+    "it": "Uccidi 8 Befouled Webwoods e porta il Mature Fel Moss di Xethorr the Wicked a Tallonkai Swiftroot a Dolanaar.",
+    "hash": "b3cb6afc"
+  },
+  {
+    "id": 98823,
+    "field": "title",
+    "en": "Earthen Echo",
+    "it": "Eco della terra",
+    "hash": "3b6bafb2"
+  },
+  {
+    "id": 98823,
+    "field": "objectives",
+    "en": "Bring the Titan Relic to Muln Earthfury at the Skywatcher Plateau in northwest Mulgore.",
+    "it": "Porta il Titan Relic a Muln Earthfury sull’Altopiano di Skywatcher nel nordovest di Mulgore.",
+    "hash": "4514f2a8"
+  }
+]

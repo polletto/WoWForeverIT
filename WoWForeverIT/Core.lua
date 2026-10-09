@@ -2,7 +2,7 @@ local addonName = ...
 local prefix = "|cff44ccff[WoWForeverIT]|r "
 local debugEnabled = false
 local italianEnabled = true
-local defaults={enabled=true,quests=true,interface=true,questTooltips=true,spells=true,debug=false}
+local defaults={enabled=true,quests=true,interface=true,questTooltips=true,spells=true,items=true,creatures=true,debug=false}
 function WoWForeverIT_GetOption(key)
     local value=WoWForeverIT_Settings and WoWForeverIT_Settings[key]
     if value==nil then return defaults[key] end
@@ -97,6 +97,10 @@ end
 local function replaceLabels()
     if not questsEnabled() then return end
     local rewards = QuestInfoFrame and QuestInfoFrame.rewardsFrame
+    label(QuestInfoXPFrame and QuestInfoXPFrame.ReceiveText, "Esperienza:")
+    label(QuestInfoXPFrame and QuestInfoXPFrame.Label, "Esperienza:")
+    label(MapQuestInfoXPFrame and MapQuestInfoXPFrame.ReceiveText, "Esperienza:")
+    if rewards then label(rewards.XPFrame and rewards.XPFrame.ReceiveText, "Esperienza:") end
     label(QuestInfoDescriptionHeader, "Descrizione")
     label(QuestInfoObjectivesHeader, "Obiettivi")
     label(QuestInfoRewardsHeader, "Ricompense")
@@ -180,7 +184,7 @@ end
 local menuTranslations = WoWForeverIT_UI or {}
 local menuRoots = {"GameMenuFrame", "SettingsPanel", "InterfaceOptionsFrame", "VideoOptionsFrame",
     "AudioOptionsFrame", "KeyBindingFrame", "AddonList", "MacroFrame", "MacroPopupFrame",
-    "HelpFrame", "SupportFrame", "EditModeManagerFrame"}
+    "HelpFrame", "SupportFrame", "EditModeManagerFrame", "FriendsFrame", "SocialFrame", "BattleNetFriendsFrame"}
 local characterRoots = {CharacterFrame=true, PaperDollFrame=true, ReputationFrame=true,
     SkillFrame=true, TokenFrame=true, HonorFrame=true, PVPFrame=true,
     CharacterStatsFrame=true, AchievementFrame=true, CommunitiesFrame=true, GuildFrame=true,
@@ -487,7 +491,62 @@ local function replaceObjectives()
     if t then setField(QuestInfoObjectivesText, t.objectives) end
 end
 
+local function replaceNpcGreeting()
+    local titles = {}
+    if questsEnabled() and C_GossipInfo then
+        for _, method in ipairs({'GetAvailableQuests', 'GetActiveQuests'}) do
+            local api = C_GossipInfo[method]
+            if type(api) == 'function' then
+                local ok, rows = pcall(api)
+                if ok and type(rows) == 'table' then
+                    for _, row in ipairs(rows) do
+                        if type(row.title) == 'string' and row.questID then
+                            local own = WoWForeverIT_Quests and WoWForeverIT_Quests[row.questID]
+                            local translated = own and own.sourceTitle == row.title and own.title
+                                or WoWForeverIT_TranslateField(row.questID, 'title', row.title)
+                            if translated then titles[row.title] = translated end
+                        end
+                    end
+                end
+            end
+        end
+    end
+    for _, root in ipairs({GossipFrame or false, QuestFrame or false}) do
+        if root and type(root.IsShown) == 'function' and root:IsShown() then
+            visitUI(root, function(region)
+                if type(region.GetText) ~= 'function' then return end
+                local raw = region:GetText()
+                if type(raw) ~= 'string' then return end
+                local plain = raw:gsub('|c%x%x%x%x%x%x%x%x', ''):gsub('|r', '')
+                local translated = questsEnabled() and titles[plain]
+                if questsEnabled() and not translated and plain ~= '' then
+                    local core = WoWForeverIT_QuestIT.Core
+                    for _, method in ipairs({'GossipStatus', 'OptionStatus'}) do
+                        local ok, status, entry = pcall(core[method], plain)
+                        if ok and status == 'current' and entry and type(entry.it) == 'string' then
+                            local rendered, text = pcall(core.RenderItalian, entry.it, core.PlayerInfo())
+                            if rendered then translated = text; break end
+                        end
+                    end
+                end
+                if italianEnabled and WoWForeverIT_GetOption('interface') then
+                    translated = translated or (plain == 'Goodbye' and 'Arrivederci')
+                    local class = plain:match('^Hello, ([a-z]+)%.$')
+                    local classes = {warrior='guerriero',paladin='paladino',hunter='cacciatore',rogue='ladro',priest='sacerdote',shaman='sciamano',mage='mago',warlock='stregone',druid='druido'}
+                    if class and classes[class] then translated = 'Salve, '..classes[class]..'.' end
+                    if plain == 'What do you need of me, child of Zephras?' then translated = 'Di cosa hai bisogno, figlio di Zephras?' end
+                end
+                if translated then
+                    local first, last = raw:find(plain, 1, true)
+                    label(region, first and raw:sub(1, first-1)..translated..raw:sub(last+1) or translated)
+                end
+            end)
+        end
+    end
+end
+
 local function replaceVisibleText()
+    pcall(replaceNpcGreeting)
     local t = activeTranslation()
     if not t then
         -- Blizzard reuses these FontStrings between quests; restore the live
@@ -571,6 +630,9 @@ local function installTrackerHook()
 end
 
 local function installMapHooks()
+    hookRedraw(nil, "GossipFrame_Update", replaceNpcGreeting)
+    if GossipFrame then hookRedraw(GossipFrame, "Update", replaceNpcGreeting) end
+    hookRedraw(nil, "QuestFrameGreetingPanel_OnShow", replaceNpcGreeting)
     for _, name in ipairs({"QuestMapFrame_UpdateAll", "QuestMapFrame_UpdateQuests",
         "QuestMapFrame_UpdateQuestDetails", "QuestMapFrame_ShowQuestDetails", "QuestLogQuests_Update", "QuestLog_Update"}) do
         hookRedraw(nil, name, replaceVisibleText)
@@ -656,9 +718,12 @@ function WoWForeverIT_SetOption(key,value)
     refresh()
     replaceGameMenu()
     if WoWForeverIT_RefreshSpells then WoWForeverIT_RefreshSpells() end
+    if WoWForeverIT_RefreshItems then WoWForeverIT_RefreshItems() end
+    if WoWForeverIT_RefreshCreatures then WoWForeverIT_RefreshCreatures() end
+    if WoWForeverIT_RefreshMicroMenu then WoWForeverIT_RefreshMicroMenu() end
 end
 local frame = CreateFrame("Frame")
-for _, event in ipairs({"ADDON_LOADED", "QUEST_DETAIL", "QUEST_PROGRESS", "QUEST_COMPLETE", "QUEST_FINISHED", "QUEST_LOG_UPDATE", "QUEST_WATCH_LIST_CHANGED"}) do
+for _, event in ipairs({"GOSSIP_SHOW", "QUEST_GREETING", "ADDON_LOADED", "QUEST_DETAIL", "QUEST_PROGRESS", "QUEST_COMPLETE", "QUEST_FINISHED", "QUEST_LOG_UPDATE", "QUEST_WATCH_LIST_CHANGED"}) do
     frame:RegisterEvent(event)
 end
 frame:SetScript("OnEvent", function(_, event, arg)

@@ -6,6 +6,7 @@ local hooked=setmetatable({}, {__mode='k'})
 local busy=false
 local nameHooks=setmetatable({}, {__mode='k'})
 local nameBusy=setmetatable({}, {__mode='k'})
+local castRegions=setmetatable({}, {__mode='k'})
 local function safe(s)
  return type(s)=='string' and not (type(issecretvalue)=='function' and issecretvalue(s))
 end
@@ -13,7 +14,9 @@ local function enabled()
  return WoWForeverIT_GetOption('enabled') and WoWForeverIT_GetOption('spells')
 end
 local function allowed(region)
- if not region or (type(InCombatLockdown)=='function' and InCombatLockdown()) then return false end
+ if not region then return false end
+ -- Nonprotected player cast labels may update in combat; other spell UI stays guarded.
+ if type(InCombatLockdown)=='function' and InCombatLockdown() and not castRegions[region] then return false end
  for _,method in ipairs({'IsForbidden','IsProtected'}) do
   if type(region[method])=='function' then
    local ok,value=pcall(region[method],region)
@@ -83,7 +86,7 @@ translateName=function(region)
   if ok then nameHooks[region]=true end
  end
 end
-local function visit(root,budget)
+local function visit(root,budget,casting)
  if not root or budget<=0 then return budget end
  if type(root.IsForbidden)=='function' then local ok,v=pcall(root.IsForbidden,root);if not ok or v then return budget end end
  if type(root.IsShown)=='function' and not root:IsShown() then return budget end
@@ -91,12 +94,12 @@ local function visit(root,budget)
  if type(root.GetRegions)=='function' then
   local ok,regions=pcall(function() return {root:GetRegions()} end)
   if ok then for _,r in ipairs(regions) do
-   if type(r.IsObjectType)=='function' then local good,isFont=pcall(r.IsObjectType,r,'FontString');if good and isFont then translateName(r) end end
+   if type(r.IsObjectType)=='function' then local good,isFont=pcall(r.IsObjectType,r,'FontString');if good and isFont then if casting then castRegions[r]=true end; translateName(r) end end
   end end
  end
  if type(root.GetChildren)=='function' then
   local ok,children=pcall(function() return {root:GetChildren()} end)
-  if ok then for _,child in ipairs(children) do budget=visit(child,budget);if budget<=0 then break end end end
+  if ok then for _,child in ipairs(children) do budget=visit(child,budget,casting);if budget<=0 then break end end end
  end
  return budget
 end
@@ -176,13 +179,27 @@ function WoWForeverIT_RefreshSpells()
  end
  for _,name in ipairs({'SpellBookFrame','PlayerSpellsFrame'}) do pcall(visit,_G[name],1000) end
  -- Player bar only: reuse scoped name hooks for casts and channels.
- for _,name in ipairs({'PlayerCastingBarFrame','CastingBarFrame'}) do pcall(visit,_G[name],30) end
+ for _,name in ipairs({'PlayerCastingBarFrame','CastingBarFrame'}) do
+  local root=_G[name]
+  if root then
+   for _,key in ipairs({'Text','text','SpellName'}) do
+    local region=root[key]
+    if region and type(region.GetText)=='function' then castRegions[region]=true;pcall(translateName,region) end
+   end
+   pcall(visit,root,30,true)
+  end
+ end
 end
+local deferredCast=false
 local events=CreateFrame('Frame')
-for _,event in ipairs({'ADDON_LOADED','SPELLS_CHANGED','PLAYER_REGEN_ENABLED','UNIT_SPELLCAST_START','UNIT_SPELLCAST_CHANNEL_START','UNIT_SPELLCAST_CHANNEL_UPDATE'}) do events:RegisterEvent(event) end
+for _,event in ipairs({'ADDON_LOADED','SPELLS_CHANGED','PLAYER_REGEN_ENABLED','UNIT_SPELLCAST_START','UNIT_SPELLCAST_DELAYED','UNIT_SPELLCAST_STOP','UNIT_SPELLCAST_CHANNEL_START','UNIT_SPELLCAST_CHANNEL_UPDATE'}) do events:RegisterEvent(event) end
 events:SetScript('OnEvent',function(_,event,unit)
  if event:match('^UNIT_') and unit~='player' then return end
  WoWForeverIT_RefreshSpells()
+ if event:match('^UNIT_') and not deferredCast and C_Timer and type(C_Timer.After)=='function' then
+  deferredCast=true
+  C_Timer.After(0,function() deferredCast=false;WoWForeverIT_RefreshSpells() end)
+ end
 end)
 if type(hooksecurefunc)=='function' then
  for _,name in ipairs({'SpellBookFrame_Update','SpellBookFrame_UpdateSpells'}) do

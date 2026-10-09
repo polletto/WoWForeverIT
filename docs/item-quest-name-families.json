@@ -1,0 +1,474 @@
+{
+  "10447": {
+    "en": "Head of Lathoric the Black",
+    "it": "Testa di Lathoric the Black"
+  },
+  "10459": {
+    "en": "Chief Sharptusk Thornmantle's Head",
+    "it": "Testa di Chief Sharptusk Thornmantle"
+  },
+  "10597": {
+    "en": "Head of Magus Rimtori",
+    "it": "Testa di Magus Rimtori"
+  },
+  "11268": {
+    "en": "Head of Argelmach",
+    "it": "Testa di Argelmach"
+  },
+  "11313": {
+    "en": "Ribbly's Head",
+    "it": "Testa di Ribbly"
+  },
+  "11366": {
+    "en": "Helendis Riverhorn's Letter",
+    "it": "Lettera di Helendis Riverhorn"
+  },
+  "11466": {
+    "en": "Raschal's Report",
+    "it": "Rapporto di Raschal"
+  },
+  "11510": {
+    "en": "Lar'korwi's Head",
+    "it": "Testa di Lar'korwi"
+  },
+  "12438": {
+    "en": "Tinkee's Letter",
+    "it": "Lettera di Tinkee"
+  },
+  "1260": {
+    "en": "Tharil'zun's Head",
+    "it": "Testa di Tharil'zun"
+  },
+  "12630": {
+    "en": "Head of Rend Blackhand",
+    "it": "Testa di Rend Blackhand"
+  },
+  "13207": {
+    "en": "Shadow Lord Fel'dan's Head",
+    "it": "Testa di Shadow Lord Fel'dan"
+  },
+  "13250": {
+    "en": "Head of Balnazzar",
+    "it": "Testa di Balnazzar"
+  },
+  "13251": {
+    "en": "Head of Baron Rivendare",
+    "it": "Testa di Baron Rivendare"
+  },
+  "13469": {
+    "en": "Head of Weldon Barov",
+    "it": "Testa di Weldon Barov"
+  },
+  "13470": {
+    "en": "Head of Alexi Barov",
+    "it": "Testa di Alexi Barov"
+  },
+  "1353": {
+    "en": "Shaw's Report",
+    "it": "Rapporto di Shaw"
+  },
+  "15785": {
+    "en": "Zaeldarr's Head",
+    "it": "Testa di Zaeldarr"
+  },
+  "15880": {
+    "en": "Head of Ramstein the Gorger",
+    "it": "Testa di Ramstein the Gorger"
+  },
+  "16304": {
+    "en": "Shadumbra's Head",
+    "it": "Testa di Shadumbra"
+  },
+  "16307": {
+    "en": "Gryshka's Letter",
+    "it": "Lettera di Gryshka"
+  },
+  "1637": {
+    "en": "Letter to Ello",
+    "it": "Lettera a Ello"
+  },
+  "17009": {
+    "en": "Ambassador Malcin's Head",
+    "it": "Testa di Ambassador Malcin"
+  },
+  "17355": {
+    "en": "Rabine's Letter",
+    "it": "Lettera di Rabine"
+  },
+  "182": {
+    "en": "Garrick's Head",
+    "it": "Testa di Garrick"
+  },
+  "18422": {
+    "en": "Head of Onyxia",
+    "it": "Testa di Onyxia"
+  },
+  "18423": {
+    "en": "Head of Onyxia",
+    "it": "Testa di Onyxia"
+  },
+  "18880": {
+    "en": "Darkreaver's Head",
+    "it": "Testa di Darkreaver"
+  },
+  "18946": {
+    "en": "Head of Overseer Maltorius",
+    "it": "Testa di Overseer Maltorius"
+  },
+  "18952": {
+    "en": "Simone's Head",
+    "it": "Testa di Simone"
+  },
+  "18953": {
+    "en": "Klinfran's Head",
+    "it": "Testa di Klinfran"
+  },
+  "18954": {
+    "en": "Solenor's Head",
+    "it": "Testa di Solenor"
+  },
+  "18955": {
+    "en": "Artorius's Head",
+    "it": "Testa di Artorius"
+  },
+  "19002": {
+    "en": "Head of Nefarian",
+    "it": "Testa di Nefarian"
+  },
+  "19003": {
+    "en": "Head of Nefarian",
+    "it": "Testa di Nefarian"
+  },
+  "19069": {
+    "en": "Huntsman Malkhor's Skull",
+    "it": "Teschio di Huntsman Malkhor"
+  },
+  "2004": {
+    "en": "Grelin Whitebeard's Journal",
+    "it": "Diario di Grelin Whitebeard"
+  },
+  "20383": {
+    "en": "Head of the Broodlord Lashlayer",
+    "it": "Testa di the Broodlord Lashlayer"
+  },
+  "21220": {
+    "en": "Head of Ossirian the Unscarred",
+    "it": "Testa di Ossirian the Unscarred"
+  },
+  "2561": {
+    "en": "Chok'sul's Head",
+    "it": "Testa di Chok'sul"
+  },
+  "2619": {
+    "en": "Grelin's Report",
+    "it": "Rapporto di Grelin"
+  },
+  "2628": {
+    "en": "Senir's Report",
+    "it": "Rapporto di Senir"
+  },
+  "2639": {
+    "en": "Merrin's Letter",
+    "it": "Lettera di Merrin"
+  },
+  "2713": {
+    "en": "Ol' Sooty's Head",
+    "it": "Testa di Ol' Sooty"
+  },
+  "2837": {
+    "en": "Thurman's Letter",
+    "it": "Lettera di Thurman"
+  },
+  "2926": {
+    "en": "Head of Bazil Thredd",
+    "it": "Testa di Bazil Thredd"
+  },
+  "3082": {
+    "en": "Dargol's Skull",
+    "it": "Teschio di Dargol"
+  },
+  "3117": {
+    "en": "Hildelve's Journal",
+    "it": "Diario di Hildelve"
+  },
+  "3255": {
+    "en": "Berard's Journal",
+    "it": "Diario di Berard"
+  },
+  "3514": {
+    "en": "Mor'Ladim's Skull",
+    "it": "Teschio di Mor'Ladim"
+  },
+  "3550": {
+    "en": "Targ's Head",
+    "it": "Testa di Targ"
+  },
+  "3551": {
+    "en": "Muckrake's Head",
+    "it": "Testa di Muckrake"
+  },
+  "3552": {
+    "en": "Glommus's Head",
+    "it": "Testa di Glommus"
+  },
+  "3553": {
+    "en": "Mug'thol's Head",
+    "it": "Testa di Mug'thol"
+  },
+  "3615": {
+    "en": "Kurzen's Head",
+    "it": "Testa di Kurzen"
+  },
+  "3618": {
+    "en": "Gobbler's Head",
+    "it": "Testa di Gobbler"
+  },
+  "3621": {
+    "en": "Ivar's Head",
+    "it": "Testa di Ivar"
+  },
+  "3623": {
+    "en": "Thule's Head",
+    "it": "Testa di Thule"
+  },
+  "3625": {
+    "en": "Nek'rosh's Head",
+    "it": "Testa di Nek'rosh"
+  },
+  "3626": {
+    "en": "Head of Baron Vardus",
+    "it": "Testa di Baron Vardus"
+  },
+  "3630": {
+    "en": "Head of Targorr",
+    "it": "Testa di Targorr"
+  },
+  "3633": {
+    "en": "Head of Gath'Ilzogg",
+    "it": "Testa di Gath'Ilzogg"
+  },
+  "3634": {
+    "en": "Head of Grimson",
+    "it": "Testa di Grimson"
+  },
+  "3637": {
+    "en": "Head of VanCleef",
+    "it": "Testa di VanCleef"
+  },
+  "3640": {
+    "en": "Head of Deepfury",
+    "it": "Testa di Deepfury"
+  },
+  "3672": {
+    "en": "Head of Nagaz",
+    "it": "Testa di Nagaz"
+  },
+  "3721": {
+    "en": "Farren's Report",
+    "it": "Rapporto di Farren"
+  },
+  "3880": {
+    "en": "Head of Bangalash",
+    "it": "Testa di Bangalash"
+  },
+  "3904": {
+    "en": "Gan'zulah's Head",
+    "it": "Testa di Gan'zulah"
+  },
+  "3905": {
+    "en": "Nezzliok's Head",
+    "it": "Testa di Nezzliok"
+  },
+  "4432": {
+    "en": "Sully Balloo's Letter",
+    "it": "Lettera di Sully Balloo"
+  },
+  "4515": {
+    "en": "Marez's Head",
+    "it": "Testa di Marez"
+  },
+  "4516": {
+    "en": "Otto's Head",
+    "it": "Testa di Otto"
+  },
+  "4517": {
+    "en": "Falconcrest's Head",
+    "it": "Testa di Falconcrest"
+  },
+  "4551": {
+    "en": "Or'Kalar's Head",
+    "it": "Testa di Or'Kalar"
+  },
+  "4864": {
+    "en": "Minshina's Skull",
+    "it": "Teschio di Minshina"
+  },
+  "4866": {
+    "en": "Zalazane's Head",
+    "it": "Testa di Zalazane"
+  },
+  "5006": {
+    "en": "Khazgorm's Journal",
+    "it": "Diario di Khazgorm"
+  },
+  "5022": {
+    "en": "Kodobane's Head",
+    "it": "Testa di Kodobane"
+  },
+  "5023": {
+    "en": "Verog's Head",
+    "it": "Testa di Verog"
+  },
+  "5025": {
+    "en": "Hezrul's Head",
+    "it": "Testa di Hezrul"
+  },
+  "5067": {
+    "en": "Serena's Head",
+    "it": "Testa di Serena"
+  },
+  "5072": {
+    "en": "Lok's Skull",
+    "it": "Teschio di Lok"
+  },
+  "5073": {
+    "en": "Nak's Skull",
+    "it": "Teschio di Nak"
+  },
+  "5074": {
+    "en": "Kuz's Skull",
+    "it": "Teschio di Kuz"
+  },
+  "5084": {
+    "en": "Baron Longshore's Head",
+    "it": "Testa di Baron Longshore"
+  },
+  "5138": {
+    "en": "Harvester's Head",
+    "it": "Testa di Harvester"
+  },
+  "5354": {
+    "en": "Letter to Delgren",
+    "it": "Lettera a Delgren"
+  },
+  "5383": {
+    "en": "Athrikus Narassin's Head",
+    "it": "Testa di Athrikus Narassin"
+  },
+  "5388": {
+    "en": "Ran Bloodtooth's Skull",
+    "it": "Teschio di Ran Bloodtooth"
+  },
+  "5442": {
+    "en": "Head of Arugal",
+    "it": "Testa di Arugal"
+  },
+  "5520": {
+    "en": "Velinde's Journal",
+    "it": "Diario di Velinde"
+  },
+  "5537": {
+    "en": "Sarilus Foulborne's Head",
+    "it": "Testa di Sarilus Foulborne"
+  },
+  "5544": {
+    "en": "Dal Bloodclaw's Skull",
+    "it": "Teschio di Dal Bloodclaw"
+  },
+  "5594": {
+    "en": "Letter to Jin'Zil",
+    "it": "Lettera a Jin'Zil"
+  },
+  "5790": {
+    "en": "Lonebrow's Journal",
+    "it": "Diario di Lonebrow"
+  },
+  "5791": {
+    "en": "Henrig Lonebrow's Journal",
+    "it": "Diario di Henrig Lonebrow"
+  },
+  "5830": {
+    "en": "Kenata's Head",
+    "it": "Testa di Kenata"
+  },
+  "5831": {
+    "en": "Fardel's Head",
+    "it": "Testa di Fardel"
+  },
+  "5832": {
+    "en": "Marcel's Head",
+    "it": "Testa di Marcel"
+  },
+  "5881": {
+    "en": "Head of Kelris",
+    "it": "Testa di Kelris"
+  },
+  "5917": {
+    "en": "Spy's Report",
+    "it": "Rapporto di Spy"
+  },
+  "5948": {
+    "en": "Letter to Jorgen",
+    "it": "Lettera a Jorgen"
+  },
+  "6066": {
+    "en": "Khan Dez'hepah's Head",
+    "it": "Testa di Khan Dez'hepah"
+  },
+  "6072": {
+    "en": "Khan Jehn's Head",
+    "it": "Testa di Khan Jehn"
+  },
+  "6073": {
+    "en": "Khan Shaka's Head",
+    "it": "Testa di Khan Shaka"
+  },
+  "6167": {
+    "en": "Neeka's Report",
+    "it": "Rapporto di Neeka"
+  },
+  "6212": {
+    "en": "Head of Jammal'an",
+    "it": "Testa di Jammal'an"
+  },
+  "6799": {
+    "en": "Vejrek's Head",
+    "it": "Testa di Vejrek"
+  },
+  "7306": {
+    "en": "Fenwick's Head",
+    "it": "Testa di Fenwick"
+  },
+  "7715": {
+    "en": "Onin's Report",
+    "it": "Rapporto di Onin"
+  },
+  "7737": {
+    "en": "Sethir's Journal",
+    "it": "Diario di Sethir"
+  },
+  "7908": {
+    "en": "Klaven Mortwake's Journal",
+    "it": "Diario di Klaven Mortwake"
+  },
+  "8074": {
+    "en": "Gallywix's Head",
+    "it": "Testa di Gallywix"
+  },
+  "8723": {
+    "en": "Caliph Scorpidsting's Head",
+    "it": "Testa di Caliph Scorpidsting"
+  },
+  "9235": {
+    "en": "Pratt's Letter",
+    "it": "Lettera di Pratt"
+  },
+  "9236": {
+    "en": "Jangdor's Letter",
+    "it": "Lettera di Jangdor"
+  },
+  "9246": {
+    "en": "Firebeard's Head",
+    "it": "Testa di Firebeard"
+  }
+}

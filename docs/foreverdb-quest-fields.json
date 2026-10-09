@@ -1,0 +1,44 @@
+[
+  {
+    "id": 96821,
+    "field": "title",
+    "en": "Legging It",
+    "it": "Una strada piena di zampe",
+    "hash": "5ba0b382"
+  },
+  {
+    "id": 96821,
+    "field": "text",
+    "en": "We see fewer and fewer travelers from Razor Hill these days. The scorpids were never much fun, but now I hear there are spiders making their nest along the road.\nIf your travels take you up north, kill some of the spiders on your way. Then, let Razor Hill know the path's a bit safer for them.",
+    "it": "Di questi tempi vediamo sempre meno viaggiatori provenienti da Tranciacolle. Gli scorpidi non sono mai stati piacevoli, ma ora sento dire che anche i ragni stanno facendo il nido lungo la strada.\nSe viaggi verso nord, uccidi qualche ragno lungo il cammino. Poi avvisa gli abitanti di Tranciacolle che il percorso è un po’ più sicuro.",
+    "hash": "6b387e23"
+  },
+  {
+    "id": 96821,
+    "field": "objectives",
+    "en": "Kill 6 Ridgeshade Creepers and 6 Ridgeshade Lurkers in southern Durotar, then report to Gar'thok in Razor Hill.",
+    "it": "Uccidi 6 Ridgeshade Creepers e 6 Ridgeshade Lurkers nel sud di Durotar, poi fai rapporto a Gar’thok a Tranciacolle.",
+    "hash": "3ba3cfa1"
+  },
+  {
+    "id": 99049,
+    "field": "title",
+    "en": "Threat from Below",
+    "it": "Minaccia dal basso",
+    "hash": "f1c12601"
+  },
+  {
+    "id": 99049,
+    "field": "text",
+    "en": "The nearby area is destroyed with obvious signs of a skirmish. Whatever ambushed Heglan didn't make it out unscathed. There's probably signs nearby of what happened.\nOrgnil will probably want to see any evidence left by the attackers.",
+    "it": "L’area circostante è devastata e mostra evidenti segni di uno scontro. Chiunque abbia teso l’imboscata a Heglan non ne è uscito illeso. Probabilmente qui vicino ci sono tracce di quanto è accaduto.\nOrgnil vorrà sicuramente vedere qualsiasi prova lasciata dagli assalitori.",
+    "hash": "2cd1ab95"
+  },
+  {
+    "id": 99049,
+    "field": "objectives",
+    "en": "Find signs of what attacked Heglan Shadeeye.",
+    "it": "Trova tracce di ciò che ha attaccato Heglan Shadeeye.",
+    "hash": "b62fc3ae"
+  }
+]

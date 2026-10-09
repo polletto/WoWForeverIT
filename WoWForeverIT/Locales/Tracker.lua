@@ -1,5 +1,10 @@
 -- Exact short objective labels from user captures and sourced quest pages.
 local terms = {
+    -- Exact tracker sentences from test21 live screenshot.
+    ["Bring the Rough Quartz to Windshaper Boros in Thendal Grove."] = "Porta il Quarzo Grezzo al Plasmavento Boros nel Boschetto di Thendal.",
+    ["Speak to Raan Wildwind near Shen'dar Village."] = "Parla con Raan Wildwind vicino al villaggio di Shen’dar.",
+    ["Report to Constable Aonda in Shen'dar Village."] = "Presentati alla conestabile Aonda nel villaggio di Shen’dar.",
+
     ["Deliver the Scarlet Crusade Documents to Executor Zygand in Brill."] = "Consegna i documenti della Crociata Scarlatta a Executor Zygand, a Brill.",
     ["Speak to Eleanor Shackleton near Brill."] = "Parla con Eleanor Shackleton vicino a Brill.",
     ["Protect the Index"] = "Proteggi l'Index Esoteria",

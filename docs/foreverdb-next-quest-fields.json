@@ -1,0 +1,212 @@
+[
+  {
+    "id": 95998,
+    "field": "objectives",
+    "en": "Sit near Sam's Basic Campfire and wait until you receive the Boosted Rest buff.",
+    "it": "Siediti vicino al Basic Campfire di Sam e aspetta di ricevere il beneficio Boosted Rest.",
+    "hash": "a2a09292"
+  },
+  {
+    "id": 96608,
+    "field": "title",
+    "en": "The Great Outdoors",
+    "it": "La vita all’aria aperta",
+    "hash": "d8c19bb9"
+  },
+  {
+    "id": 96608,
+    "field": "objectives",
+    "en": "Sit near Eric's Basic Campfire and wait until you receive the Boosted Rest buff.",
+    "it": "Siediti vicino al Basic Campfire di Eric e aspetta di ricevere il beneficio Boosted Rest.",
+    "hash": "b2dbe43e"
+  },
+  {
+    "id": 96628,
+    "field": "title",
+    "en": "The Adventurer",
+    "it": "L’avventuriero",
+    "hash": "e0e48271"
+  },
+  {
+    "id": 96628,
+    "field": "objectives",
+    "en": "Deliver the Supply Bundle to Eric Brighthammer near Kharanos.",
+    "it": "Consegna il Supply Bundle a Eric Brighthammer vicino a Kharanos.",
+    "hash": "6d85594c"
+  },
+  {
+    "id": 96629,
+    "field": "title",
+    "en": "Camping 101: Cooking",
+    "it": "Campeggio per principianti: cucina",
+    "hash": "41a4c801"
+  },
+  {
+    "id": 96629,
+    "field": "objectives",
+    "en": "Speak with Gremlock Pilsnor in Kharanos to learn to become a cook.",
+    "it": "Parla con Gremlock Pilsnor a Kharanos per imparare a cucinare.",
+    "hash": "357cf37d"
+  },
+  {
+    "id": 96825,
+    "field": "title",
+    "en": "This Fruit Could Bite Back",
+    "it": "Frutta che punge",
+    "hash": "3b2f2262"
+  },
+  {
+    "id": 96825,
+    "field": "objectives",
+    "en": "Cook Torka in Razor Hill wants you to collect 8 Prickly Pear Fruit from the Razormane Grounds west of town.",
+    "it": "Il cuoco Torka a Tranciacolle vuole che tu raccolga 8 Prickly Pear Fruit nei territori dei Razormane a ovest della città.",
+    "hash": "ecbd967e"
+  },
+  {
+    "id": 97223,
+    "field": "title",
+    "en": "Bloodtalon Matriarch",
+    "it": "La matriarca Bloodtalon",
+    "hash": "c5343f51"
+  },
+  {
+    "id": 97223,
+    "field": "objectives",
+    "en": "Bring Eggs of the Bloodtalon Matriarch to Xar'Ti in Sen'jin Village.",
+    "it": "Porta le Eggs of the Bloodtalon Matriarch a Xar’Ti nel Villaggio di Sen’jin.",
+    "hash": "694171b6"
+  },
+  {
+    "id": 97225,
+    "field": "title",
+    "en": "Forgotten Loa Idols",
+    "it": "Idoli dei loa dimenticati",
+    "hash": "a8534953"
+  },
+  {
+    "id": 97225,
+    "field": "objectives",
+    "en": "Collect 8 Forgotten Loa Idols from the Echo Isles. Bring them to Master Gadrin in Sen'jin Village.",
+    "it": "Raccogli 8 Forgotten Loa Idols sulle Isole dell’Eco. Portali al Maestro Gadrin nel Villaggio di Sen’jin.",
+    "hash": "d89ab7b4"
+  },
+  {
+    "id": 97279,
+    "field": "objectives",
+    "en": "Collect the required number of Abandoned Training Weapons, then return to Kzan Thornslash in the Den.",
+    "it": "Raccogli il numero richiesto di Abandoned Training Weapons, poi torna da Kzan Thornslash nel Den.",
+    "hash": "477092dc"
+  },
+  {
+    "id": 97902,
+    "field": "title",
+    "en": "Camping 101: Engineering",
+    "it": "Campeggio per principianti: ingegneria",
+    "hash": "8ee5c7fa"
+  },
+  {
+    "id": 97902,
+    "field": "objectives",
+    "en": "Speak with Mukdrak in Razor Hill to learn to craft a camping item for your profession once you have shown proficiency in your skill.",
+    "it": "Parla con Mukdrak a Tranciacolle per imparare a creare un oggetto da campeggio per la tua professione, dopo aver raggiunto il livello di competenza richiesto.",
+    "hash": "0c9c7e77"
+  },
+  {
+    "id": 97907,
+    "field": "title",
+    "en": "Camping 101: Mining",
+    "it": "Campeggio per principianti: estrazione",
+    "hash": "75f24b09"
+  },
+  {
+    "id": 97907,
+    "field": "objectives",
+    "en": "Speak with Krunn in Razor Hill to learn to craft a camping item for your profession once you have shown proficiency in your skill.",
+    "it": "Parla con Krunn a Tranciacolle per imparare a creare un oggetto da campeggio per la tua professione, dopo aver raggiunto il livello di competenza richiesto.",
+    "hash": "6e821f6a"
+  },
+  {
+    "id": 97922,
+    "field": "title",
+    "en": "Camping 101: Leatherworking",
+    "it": "Campeggio per principianti: lavorazione delle pelli",
+    "hash": "c7b038a1"
+  },
+  {
+    "id": 97922,
+    "field": "objectives",
+    "en": "Speak with Adele Fielder in Goldshire to learn to craft a camping item for your profession once you have shown proficiency in your skill.",
+    "it": "Parla con Adele Fielder a Borgodoro per imparare a creare un oggetto da campeggio per la tua professione, dopo aver raggiunto il livello di competenza richiesto.",
+    "hash": "fd9c1050"
+  },
+  {
+    "id": 97924,
+    "field": "title",
+    "en": "Camping 101: Skinning",
+    "it": "Campeggio per principianti: scuoiatura",
+    "hash": "935d802a"
+  },
+  {
+    "id": 97924,
+    "field": "objectives",
+    "en": "Speak with Helene Peltskinner in Goldshire to learn to craft a camping item for your profession once you have shown proficiency in your skill.",
+    "it": "Parla con Helene Peltskinner a Borgodoro per imparare a creare un oggetto da campeggio per la tua professione, dopo aver raggiunto il livello di competenza richiesto.",
+    "hash": "0e3dfe6c"
+  },
+  {
+    "id": 97969,
+    "field": "title",
+    "en": "Camping 101: Leatherworking",
+    "it": "Campeggio per principianti: lavorazione delle pelli",
+    "hash": "c7b038a1"
+  },
+  {
+    "id": 97969,
+    "field": "objectives",
+    "en": "Speak with Indari Sunseam in Shen'dar Village to learn to craft a camping item for your profession once you have shown proficiency in your skill.",
+    "it": "Parla con Indari Sunseam nel Villaggio di Shen’dar per imparare a creare un oggetto da campeggio per la tua professione, dopo aver raggiunto il livello di competenza richiesto.",
+    "hash": "7eff0adc"
+  },
+  {
+    "id": 99052,
+    "field": "title",
+    "en": "Threat from Below",
+    "it": "Minaccia dal basso",
+    "hash": "f1c12601"
+  },
+  {
+    "id": 99052,
+    "field": "objectives",
+    "en": "Kill the sea giant along Durotar's north coast and bring back proof of your accomplishment.",
+    "it": "Uccidi il gigante marino lungo la costa settentrionale di Durotar e riporta una prova della tua impresa.",
+    "hash": "98bd8bad"
+  },
+  {
+    "id": 99128,
+    "field": "title",
+    "en": "Slimy Menace",
+    "it": "Una minaccia viscida",
+    "hash": "0e83f4b1"
+  },
+  {
+    "id": 99128,
+    "field": "objectives",
+    "en": "Kill the murlocs at Crystal Lake.",
+    "it": "Uccidi i murloc al Lago di Cristallo.",
+    "hash": "76224dfc"
+  },
+  {
+    "id": 99158,
+    "field": "title",
+    "en": "Dawn in the Mountains",
+    "it": "Alba tra le montagne",
+    "hash": "c93c5968"
+  },
+  {
+    "id": 99158,
+    "field": "objectives",
+    "en": "Bring the crate of candles to Father Gavin at Misty Pine Refuge.",
+    "it": "Porta la cassa di candele a Padre Gavin al Rifugio di Misty Pine.",
+    "hash": "71955608"
+  }
+]

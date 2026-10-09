@@ -1,0 +1,478 @@
+{
+  "1006": {
+    "en": "Brass Collar",
+    "it": "Collare d’Ottone"
+  },
+  "1013": {
+    "en": "Iron Rivet",
+    "it": "Rivetto di Ferro"
+  },
+  "1015": {
+    "en": "Lean Wolf Flank",
+    "it": "Fianco Magro di Lupo"
+  },
+  "1019": {
+    "en": "Red Linen Bandana",
+    "it": "Bandana di Lino Rosso"
+  },
+  "1075": {
+    "en": "Shadowhide Pendant",
+    "it": "Pendente Shadowhide"
+  },
+  "1080": {
+    "en": "Tough Condor Meat",
+    "it": "Carne Dura di Condor"
+  },
+  "1081": {
+    "en": "Crisp Spider Meat",
+    "it": "Carne Croccante di Ragno"
+  },
+  "1129": {
+    "en": "Ghoul Fang",
+    "it": "Zanna di Ghoul"
+  },
+  "1130": {
+    "en": "Vial of Spider Venom",
+    "it": "Fiala di Veleno di Ragno"
+  },
+  "1179": {
+    "en": "Ice Cold Milk",
+    "it": "Latte Freddo"
+  },
+  "1206": {
+    "en": "Moss Agate",
+    "it": "Agata Muschiata"
+  },
+  "1208": {
+    "en": "Maybell's Love Letter",
+    "it": "Lettera d’Amore di Maybell"
+  },
+  "1251": {
+    "en": "Linen Bandage",
+    "it": "Benda di Lino"
+  },
+  "1252": {
+    "en": "Gramma Stonefield's Note",
+    "it": "Biglietto di Nonna Stonefield"
+  },
+  "1256": {
+    "en": "Crystal Kelp Frond",
+    "it": "Fronda di Alga Cristallina"
+  },
+  "1257": {
+    "en": "Invisibility Liquor",
+    "it": "Liquore dell’Invisibilità"
+  },
+  "1260": {
+    "en": "Tharil'zun's Head",
+    "it": "Testa di Tharil’zun"
+  },
+  "1261": {
+    "en": "Midnight Orb",
+    "it": "Globo di Mezzanotte"
+  },
+  "1283": {
+    "en": "Verner's Note",
+    "it": "Biglietto di Verner"
+  },
+  "1284": {
+    "en": "Crate of Horseshoes",
+    "it": "Cassa di Ferri di Cavallo"
+  },
+  "1293": {
+    "en": "The State of Lakeshire",
+    "it": "La Situazione di Lakeshire"
+  },
+  "1294": {
+    "en": "The General's Response",
+    "it": "Risposta del Generale"
+  },
+  "1307": {
+    "en": "Gold Pickup Schedule",
+    "it": "Programma di Ritiro dell’Oro"
+  },
+  "1309": {
+    "en": "Oslow's Toolbox",
+    "it": "Cassetta degli Attrezzi di Oslow"
+  },
+  "1325": {
+    "en": "Daffodil Bouquet",
+    "it": "Mazzo di Narcisi"
+  },
+  "1327": {
+    "en": "Wiley's Note",
+    "it": "Biglietto di Wiley"
+  },
+  "1349": {
+    "en": "Abercrombie's Crate",
+    "it": "Cassa di Abercrombie"
+  },
+  "1353": {
+    "en": "Shaw's Report",
+    "it": "Rapporto di Shaw"
+  },
+  "1381": {
+    "en": "A Mysterious Message",
+    "it": "Messaggio Misterioso"
+  },
+  "182": {
+    "en": "Garrick's Head",
+    "it": "Testa di Garrick"
+  },
+  "2309": {
+    "en": "Embossed Leather Boots",
+    "it": "Stivali di Cuoio Goffrato"
+  },
+  "2310": {
+    "en": "Embossed Leather Cloak",
+    "it": "Mantello di Cuoio Goffrato"
+  },
+  "2319": {
+    "en": "Medium Leather",
+    "it": "Cuoio Medio"
+  },
+  "2320": {
+    "en": "Coarse Thread",
+    "it": "Filo Grezzo"
+  },
+  "2321": {
+    "en": "Fine Thread",
+    "it": "Filo Sottile"
+  },
+  "2449": {
+    "en": "Earthroot",
+    "it": "Bulboterro"
+  },
+  "2454": {
+    "en": "Elixir of Minor Strength",
+    "it": "Elisir della Forza Minore"
+  },
+  "2455": {
+    "en": "Minor Mana Potion",
+    "it": "Pozione di Mana Minore"
+  },
+  "2458": {
+    "en": "Elixir of Minor Fortitude",
+    "it": "Elisir della Tempra Minore"
+  },
+  "2592": {
+    "en": "Wool Cloth",
+    "it": "Tessuto di Lana"
+  },
+  "2842": {
+    "en": "Silver Bar",
+    "it": "Lingotto d’Argento"
+  },
+  "2845": {
+    "en": "Copper Axe",
+    "it": "Ascia di Rame"
+  },
+  "2851": {
+    "en": "Copper Chain Belt",
+    "it": "Cintura di Maglia di Rame"
+  },
+  "2857": {
+    "en": "Runed Copper Belt",
+    "it": "Cintura di Rame Runico"
+  },
+  "2868": {
+    "en": "Patterned Bronze Bracers",
+    "it": "Bracciali di Bronzo Decorati"
+  },
+  "2997": {
+    "en": "Bolt of Woolen Cloth",
+    "it": "Rotolo di Tessuto di Lana"
+  },
+  "3014": {
+    "en": "Battleworn Axe",
+    "it": "Ascia Logorata dalla Battaglia"
+  },
+  "3357": {
+    "en": "Liferoot",
+    "it": "Bulbovivo"
+  },
+  "3372": {
+    "en": "Leaded Vial",
+    "it": "Fiala Piombata"
+  },
+  "3421": {
+    "en": "Simple Wildflowers",
+    "it": "Fiori di Campo Semplici"
+  },
+  "3425": {
+    "en": "Woven Wand",
+    "it": "Bacchetta Intrecciata"
+  },
+  "3482": {
+    "en": "Silvered Bronze Boots",
+    "it": "Stivali di Bronzo Argentato"
+  },
+  "3483": {
+    "en": "Silvered Bronze Gauntlets",
+    "it": "Guanti Lunghi di Bronzo Argentato"
+  },
+  "3530": {
+    "en": "Wool Bandage",
+    "it": "Benda di Lana"
+  },
+  "3575": {
+    "en": "Iron Bar",
+    "it": "Lingotto di Ferro"
+  },
+  "3576": {
+    "en": "Tin Bar",
+    "it": "Lingotto di Stagno"
+  },
+  "3577": {
+    "en": "Gold Bar",
+    "it": "Lingotto d’Oro"
+  },
+  "3712": {
+    "en": "Turtle Meat",
+    "it": "Carne di Tartaruga"
+  },
+  "3713": {
+    "en": "Soothing Spices",
+    "it": "Spezie Lenitive"
+  },
+  "3820": {
+    "en": "Stranglekelp",
+    "it": "Algatorta"
+  },
+  "3823": {
+    "en": "Lesser Invisibility Potion",
+    "it": "Pozione dell’Invisibilità Inferiore"
+  },
+  "3825": {
+    "en": "Elixir of Lesser Fortitude",
+    "it": "Elisir della Tempra Inferiore"
+  },
+  "3829": {
+    "en": "Frost Oil",
+    "it": "Olio del Gelo"
+  },
+  "3835": {
+    "en": "Green Iron Bracers",
+    "it": "Bracciali di Ferro Verde"
+  },
+  "3836": {
+    "en": "Green Iron Helm",
+    "it": "Elmo di Ferro Verde"
+  },
+  "3842": {
+    "en": "Green Iron Leggings",
+    "it": "Gambiere di Ferro Verde"
+  },
+  "3851": {
+    "en": "Solid Iron Maul",
+    "it": "Maglio di Ferro Solido"
+  },
+  "3853": {
+    "en": "Moonsteel Broadsword",
+    "it": "Spadone d’Acciaio Lunare"
+  },
+  "3855": {
+    "en": "Massive Iron Axe",
+    "it": "Ascia Massiccia di Ferro"
+  },
+  "3860": {
+    "en": "Mithril Bar",
+    "it": "Lingotto di Mithril"
+  },
+  "3864": {
+    "en": "Citrine",
+    "it": "Citrino"
+  },
+  "4234": {
+    "en": "Heavy Leather",
+    "it": "Cuoio Pesante"
+  },
+  "4239": {
+    "en": "Embossed Leather Gloves",
+    "it": "Guanti di Cuoio Goffrato"
+  },
+  "4304": {
+    "en": "Thick Leather",
+    "it": "Cuoio Spesso"
+  },
+  "4306": {
+    "en": "Silk Cloth",
+    "it": "Tessuto di Seta"
+  },
+  "4338": {
+    "en": "Mageweave Cloth",
+    "it": "Tessuto di Telamagica"
+  },
+  "4371": {
+    "en": "Bronze Tube",
+    "it": "Tubo di Bronzo"
+  },
+  "4384": {
+    "en": "Explosive Sheep",
+    "it": "Pecora Esplosiva"
+  },
+  "4392": {
+    "en": "Advanced Target Dummy",
+    "it": "Manichino Bersaglio Avanzato"
+  },
+  "4394": {
+    "en": "Big Iron Bomb",
+    "it": "Bomba Grande di Ferro"
+  },
+  "4407": {
+    "en": "Accurate Scope",
+    "it": "Mirino Accurato"
+  },
+  "4625": {
+    "en": "Firebloom",
+    "it": "Sbocciafuoco"
+  },
+  "5997": {
+    "en": "Elixir of Minor Defense",
+    "it": "Elisir della Difesa Minore"
+  },
+  "723": {
+    "en": "Goretusk Liver",
+    "it": "Fegato di Goretusk"
+  },
+  "725": {
+    "en": "Gnoll Paw",
+    "it": "Zampa di Gnoll"
+  },
+  "729": {
+    "en": "Stringy Vulture Meat",
+    "it": "Carne Filacciosa di Avvoltoio"
+  },
+  "730": {
+    "en": "Murloc Eye",
+    "it": "Occhio di Murloc"
+  },
+  "731": {
+    "en": "Goretusk Snout",
+    "it": "Grugno di Goretusk"
+  },
+  "732": {
+    "en": "Okra",
+    "it": "Gombo"
+  },
+  "735": {
+    "en": "Rolf and Malakai's Medallions",
+    "it": "Medaglioni di Rolf e Malakai"
+  },
+  "737": {
+    "en": "Holy Spring Water",
+    "it": "Acqua di Fonte Sacra"
+  },
+  "738": {
+    "en": "Sack of Barley",
+    "it": "Sacco d’Orzo"
+  },
+  "739": {
+    "en": "Sack of Corn",
+    "it": "Sacco di Mais"
+  },
+  "740": {
+    "en": "Sack of Rye",
+    "it": "Sacco di Segale"
+  },
+  "742": {
+    "en": "A Sycamore Branch",
+    "it": "Ramo di Sicomoro"
+  },
+  "743": {
+    "en": "Bundle of Charred Oak",
+    "it": "Fascio di Quercia Carbonizzata"
+  },
+  "745": {
+    "en": "Marshal McBride's Documents",
+    "it": "Documenti del Maresciallo McBride"
+  },
+  "750": {
+    "en": "Tough Wolf Meat",
+    "it": "Carne Dura di Lupo"
+  },
+  "752": {
+    "en": "Red Burlap Bandana",
+    "it": "Bandana di Tela Rossa"
+  },
+  "769": {
+    "en": "Chunk of Boar Meat",
+    "it": "Trancio di Carne di Cinghiale"
+  },
+  "772": {
+    "en": "Large Candle",
+    "it": "Candela Grande"
+  },
+  "773": {
+    "en": "Gold Dust",
+    "it": "Polvere d’Oro"
+  },
+  "780": {
+    "en": "Torn Murloc Fin",
+    "it": "Pinna di Murloc Strappata"
+  },
+  "782": {
+    "en": "Painted Gnoll Armband",
+    "it": "Bracciale Dipinto di Gnoll"
+  },
+  "814": {
+    "en": "Flask of Oil",
+    "it": "Fiaschetta d’Olio"
+  },
+  "829": {
+    "en": "Red Leather Bandana",
+    "it": "Bandana di Cuoio Rosso"
+  },
+  "841": {
+    "en": "Furlbrow's Pocket Watch",
+    "it": "Orologio da Tasca di Furlbrow"
+  },
+  "884": {
+    "en": "Ghoul Rib",
+    "it": "Costola di Ghoul"
+  },
+  "889": {
+    "en": "A Dusty Unsent Letter",
+    "it": "Lettera Polverosa Mai Spedita"
+  },
+  "910": {
+    "en": "An Undelivered Letter",
+    "it": "Lettera Mai Consegnata"
+  },
+  "915": {
+    "en": "Red Silk Bandana",
+    "it": "Bandana di Seta Rossa"
+  },
+  "916": {
+    "en": "A Torn Journal Page",
+    "it": "Pagina di Diario Strappata"
+  },
+  "921": {
+    "en": "A Faded Journal Page",
+    "it": "Pagina di Diario Sbiadita"
+  },
+  "929": {
+    "en": "Healing Potion",
+    "it": "Pozione di Cura"
+  },
+  "938": {
+    "en": "Muddy Journal Pages",
+    "it": "Pagine di Diario Infangate"
+  },
+  "939": {
+    "en": "A Bloodstained Journal Page",
+    "it": "Pagina di Diario Insanguinata"
+  },
+  "957": {
+    "en": "William's Shipment",
+    "it": "Spedizione di William"
+  },
+  "962": {
+    "en": "Pork Belly Pie",
+    "it": "Torta di Pancetta"
+  },
+  "981": {
+    "en": "Bernice's Necklace",
+    "it": "Collana di Bernice"
+  }
+}

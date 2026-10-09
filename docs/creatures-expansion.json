@@ -1,0 +1,854 @@
+{
+  "10676": {
+    "en": "Raider Jhash",
+    "name": "Incursore Jhash"
+  },
+  "10682": {
+    "en": "Raider Kerr",
+    "name": "Incursore Kerr"
+  },
+  "11944": {
+    "en": "Vorn Skyseer",
+    "name": "Vorn Skyseer"
+  },
+  "11945": {
+    "en": "Claire Willower",
+    "name": "Claire Willower"
+  },
+  "12922": {
+    "en": "Imp Minion",
+    "name": "Servitore di imp"
+  },
+  "1501": {
+    "en": "Mindless Zombie",
+    "name": "Zombi senza mente"
+  },
+  "1502": {
+    "en": "Wretched Zombie",
+    "name": "Zombi miserabile"
+  },
+  "1504": {
+    "en": "Young Night Web Spider",
+    "name": "Giovane ragno Telanotte"
+  },
+  "1505": {
+    "en": "Night Web Spider",
+    "name": "Ragno Telanotte"
+  },
+  "1506": {
+    "en": "Scarlet Convert",
+    "name": "Convertito Scarlatto"
+  },
+  "1508": {
+    "en": "Young Scavenger",
+    "name": "Giovane spazzino"
+  },
+  "1509": {
+    "en": "Ragged Scavenger",
+    "name": "Spazzino lacero"
+  },
+  "1512": {
+    "en": "Duskbat",
+    "name": "Pipistrello del crepuscolo"
+  },
+  "1513": {
+    "en": "Mangy Duskbat",
+    "name": "Pipistrello del crepuscolo rognoso"
+  },
+  "1535": {
+    "en": "Scarlet Warrior",
+    "name": "Guerriero Scarlatto"
+  },
+  "1568": {
+    "en": "Undertaker Mordo",
+    "name": "Becchino Mordo"
+  },
+  "1569": {
+    "en": "Shadow Priest Sarvis",
+    "name": "Sacerdote dell'Ombra Sarvis"
+  },
+  "1570": {
+    "en": "Executor Arren",
+    "name": "Esecutore Arren"
+  },
+  "1661": {
+    "en": "Novice Elreth",
+    "name": "Novizia Elreth"
+  },
+  "1736": {
+    "en": "Deathguard Randolph",
+    "name": "Guardia della Morte Randolph"
+  },
+  "1737": {
+    "en": "Deathguard Oliver",
+    "name": "Guardia della Morte Oliver"
+  },
+  "1739": {
+    "en": "Deathguard Phillip",
+    "name": "Guardia della Morte Phillip"
+  },
+  "1740": {
+    "en": "Deathguard Saltain",
+    "name": "Guardia della Morte Saltain"
+  },
+  "1741": {
+    "en": "Deathguard Bartrand",
+    "name": "Guardia della Morte Bartrand"
+  },
+  "1890": {
+    "en": "Rattlecage Skeleton",
+    "name": "Scheletro scricchiolante"
+  },
+  "1916": {
+    "en": "Stephen Bhartec",
+    "name": "Stephen Bhartec"
+  },
+  "1917": {
+    "en": "Daniel Ulfman",
+    "name": "Daniel Ulfman"
+  },
+  "1918": {
+    "en": "Karrel Grayves",
+    "name": "Karrel Grayves"
+  },
+  "1919": {
+    "en": "Samuel Fipps",
+    "name": "Samuel Fipps"
+  },
+  "1934": {
+    "en": "Tirisfal Farmer",
+    "name": "Contadino di Tirisfal"
+  },
+  "2113": {
+    "en": "Archibald Kava",
+    "name": "Archibald Kava"
+  },
+  "2115": {
+    "en": "Joshua Kien",
+    "name": "Joshua Kien"
+  },
+  "2116": {
+    "en": "Blacksmith Rand",
+    "name": "Fabbro Rand"
+  },
+  "2117": {
+    "en": "Harold Raims",
+    "name": "Harold Raims"
+  },
+  "2119": {
+    "en": "Dannal Stern",
+    "name": "Dannal Stern"
+  },
+  "2122": {
+    "en": "David Trias",
+    "name": "David Trias"
+  },
+  "2123": {
+    "en": "Dark Cleric Duesten",
+    "name": "Chierico oscuro Duesten"
+  },
+  "2124": {
+    "en": "Isabella",
+    "name": "Isabella"
+  },
+  "2126": {
+    "en": "Maximillion",
+    "name": "Maximillion"
+  },
+  "2307": {
+    "en": "Caretaker Caice",
+    "name": "Custode Caice"
+  },
+  "2315": {
+    "en": "Maquell Ebonwood",
+    "name": "Maquell Ebonwood"
+  },
+  "244808": {
+    "en": "Aramis Hammerhand",
+    "name": "Aramis Hammerhand"
+  },
+  "246143": {
+    "en": "Frightened Paladin",
+    "name": "Paladino spaventato"
+  },
+  "249363": {
+    "en": "Yala Windwatcher",
+    "name": "Yala Windwatcher"
+  },
+  "250868": {
+    "en": "Vuldren",
+    "name": "Vuldren"
+  },
+  "250873": {
+    "en": "Juvenile Vuldren",
+    "name": "Giovane Vuldren"
+  },
+  "250926": {
+    "en": "Scrawny Ursera",
+    "name": "Ursera smunta"
+  },
+  "250937": {
+    "en": "Ursera Scavenger",
+    "name": "Ursera rovistatrice"
+  },
+  "251115": {
+    "en": "Urs'anah",
+    "name": "Urs'anah"
+  },
+  "251143": {
+    "en": "Roiling Winds",
+    "name": "Venti turbolenti"
+  },
+  "251145": {
+    "en": "Al'Aketh Brute",
+    "name": "Bruto Al'Aketh"
+  },
+  "251160": {
+    "en": "Al'Aketh Convert",
+    "name": "Convertito Al'Aketh"
+  },
+  "251169": {
+    "en": "Pesky Cirrusfly",
+    "name": "Cirrusfly fastidiosa"
+  },
+  "251245": {
+    "en": "Prideclaw",
+    "name": "Prideclaw"
+  },
+  "251306": {
+    "en": "Hoarder",
+    "name": "Accumulatore"
+  },
+  "251361": {
+    "en": "Rorian the Dayseeker",
+    "name": "Rorian il Cercatore del Giorno"
+  },
+  "251362": {
+    "en": "Ailee Farheart",
+    "name": "Ailee Farheart"
+  },
+  "251363": {
+    "en": "Dalia the Collector",
+    "name": "Dalia la Collezionista"
+  },
+  "251364": {
+    "en": "Destin Thriceforged",
+    "name": "Destin Thriceforged"
+  },
+  "251365": {
+    "en": "Jolee Brightmeadows",
+    "name": "Jolee Brightmeadows"
+  },
+  "251366": {
+    "en": "Aetheen of the Gales",
+    "name": "Aetheen delle Burrasche"
+  },
+  "251368": {
+    "en": "Elatrell Featherlight",
+    "name": "Elatrell Featherlight"
+  },
+  "251371": {
+    "en": "Falorne Fallwind",
+    "name": "Falorne Fallwind"
+  },
+  "251373": {
+    "en": "Xyton Silverwind",
+    "name": "Xyton Silverwind"
+  },
+  "251374": {
+    "en": "Windshaper Boro",
+    "name": "Plasmatore dei venti Boro"
+  },
+  "251376": {
+    "en": "Tai'ree Farsight",
+    "name": "Tai'ree Farsight"
+  },
+  "251379": {
+    "en": "Dorii Brightwhisper",
+    "name": "Dorii Brightwhisper"
+  },
+  "251389": {
+    "en": "Akeri Duskblade",
+    "name": "Akeri Duskblade"
+  },
+  "251402": {
+    "en": "Cirrusfly Soldier",
+    "name": "Soldato Cirrusfly"
+  },
+  "251404": {
+    "en": "Cirrusfly Queen",
+    "name": "Regina Cirrusfly"
+  },
+  "251428": {
+    "en": "Hoarder",
+    "name": "Accumulatore"
+  },
+  "251437": {
+    "en": "Fireflies",
+    "name": "Lucciole"
+  },
+  "251448": {
+    "en": "Al'Aketh Neophyte",
+    "name": "Neofita Al'Aketh"
+  },
+  "251451": {
+    "en": "Al'Aketh Ambusher",
+    "name": "Imboscato Al'Aketh"
+  },
+  "251487": {
+    "en": "Ventaari Brightwish",
+    "name": "Ventaari Brightwish"
+  },
+  "251537": {
+    "en": "Uualia Suncrest",
+    "name": "Uualia Suncrest"
+  },
+  "251559": {
+    "en": "Hoarder",
+    "name": "Accumulatore"
+  },
+  "251617": {
+    "en": "Peeps",
+    "name": "Peeps"
+  },
+  "251661": {
+    "en": "Galestrider",
+    "name": "Galestrider"
+  },
+  "251902": {
+    "en": "Illaya Amberwind",
+    "name": "Illaya Amberwind"
+  },
+  "251904": {
+    "en": "Sania Silverstream",
+    "name": "Sania Silverstream"
+  },
+  "251905": {
+    "en": "Zerril Softbreeze",
+    "name": "Zerril Softbreeze"
+  },
+  "251906": {
+    "en": "Teeri Wellwind",
+    "name": "Teeri Wellwind"
+  },
+  "251913": {
+    "en": "Aedi Thriceforged",
+    "name": "Aedi Thriceforged"
+  },
+  "251964": {
+    "en": "Blademaster Ren",
+    "name": "Maestro di spada Ren"
+  },
+  "251965": {
+    "en": "Fevrath Skyhammer",
+    "name": "Fevrath Skyhammer"
+  },
+  "251991": {
+    "en": "Taleen Shimmerthread",
+    "name": "Taleen Shimmerthread"
+  },
+  "251993": {
+    "en": "Indari Sunseam",
+    "name": "Indari Sunseam"
+  },
+  "252095": {
+    "en": "Hanaa Nightwind",
+    "name": "Hanaa Nightwind"
+  },
+  "2523": {
+    "en": "Searing Totem",
+    "name": "Totem rovente"
+  },
+  "253474": {
+    "en": "Peacekeeper",
+    "name": "Pacificatore"
+  },
+  "254081": {
+    "en": "Naeluna Swiftmend",
+    "name": "Naeluna Swiftmend"
+  },
+  "254082": {
+    "en": "Aarnor Galestrike",
+    "name": "Aarnor Galestrike"
+  },
+  "254087": {
+    "en": "Miriaan Mistblade",
+    "name": "Miriaan Mistblade"
+  },
+  "254088": {
+    "en": "Corsan Earthrazer",
+    "name": "Corsan Earthrazer"
+  },
+  "254089": {
+    "en": "Coriella Calmbreeze",
+    "name": "Coriella Calmbreeze"
+  },
+  "254100": {
+    "en": "Zephras Citizen",
+    "name": "Cittadino di Zephras"
+  },
+  "254358": {
+    "en": "Veena Vericloud",
+    "name": "Veena Vericloud"
+  },
+  "254360": {
+    "en": "Belandiel Farflight",
+    "name": "Belandiel Farflight"
+  },
+  "255002": {
+    "en": "Ryff",
+    "name": "Ryff"
+  },
+  "255979": {
+    "en": "Thendal Grove Ranger",
+    "name": "Guardaboschi del Bosco di Thendal"
+  },
+  "256930": {
+    "en": "Captured Bandit",
+    "name": "Bandito catturato"
+  },
+  "256935": {
+    "en": "Malduko Cloudcrush",
+    "name": "Malduko Cloudcrush"
+  },
+  "257018": {
+    "en": "Naleeia Tattermend",
+    "name": "Naleeia Tattermend"
+  },
+  "257019": {
+    "en": "Nyassa Swiftdraught",
+    "name": "Nyassa Swiftdraught"
+  },
+  "257020": {
+    "en": "Nasalanna Windsinger",
+    "name": "Nasalanna Windsinger"
+  },
+  "257021": {
+    "en": "Halassa Fernbreeze",
+    "name": "Halassa Fernbreeze"
+  },
+  "257022": {
+    "en": "Messana Crestwind",
+    "name": "Messana Crestwind"
+  },
+  "257024": {
+    "en": "Mendalass Tattermend",
+    "name": "Mendalass Tattermend"
+  },
+  "257421": {
+    "en": "Tephri Thriceforged",
+    "name": "Tephri Thriceforged"
+  },
+  "257551": {
+    "en": "Valreaa Valewind",
+    "name": "Valreaa Valewind"
+  },
+  "257554": {
+    "en": "Halaan Hawk-Eye",
+    "name": "Halaan Hawk-Eye"
+  },
+  "259377": {
+    "en": "Injured Deathguard",
+    "name": "Guardia della Morte ferita"
+  },
+  "2620": {
+    "en": "Prairie Dog",
+    "name": "Cane della prateria"
+  },
+  "2630": {
+    "en": "Earthbind Totem",
+    "name": "Totem del Vincolo della Terra"
+  },
+  "263113": {
+    "en": "Myriaal Mistwake",
+    "name": "Myriaal Mistwake"
+  },
+  "263664": {
+    "en": "Raan Wildwind",
+    "name": "Raan Wildwind"
+  },
+  "266849": {
+    "en": "Ridgeshade Lurker",
+    "name": "Ridgeshade furtivo"
+  },
+  "266850": {
+    "en": "Ridgeshade Creeper",
+    "name": "Ridgeshade strisciante"
+  },
+  "267321": {
+    "en": "Karne Grayhoof",
+    "name": "Karne Grayhoof"
+  },
+  "267323": {
+    "en": "Clarence Gillian",
+    "name": "Clarence Gillian"
+  },
+  "267324": {
+    "en": "Margaret Weaver",
+    "name": "Margaret Weaver"
+  },
+  "267325": {
+    "en": "Walter Mason",
+    "name": "Walter Mason"
+  },
+  "267326": {
+    "en": "Florence Nightshade",
+    "name": "Florence Nightshade"
+  },
+  "267330": {
+    "en": "Nawka Wildsong",
+    "name": "Nawka Wildsong"
+  },
+  "267331": {
+    "en": "Vartha Rockmane",
+    "name": "Vartha Rockmane"
+  },
+  "267332": {
+    "en": "Garan Sunstrider",
+    "name": "Garan Sunstrider"
+  },
+  "267599": {
+    "en": "Energizing Vortex",
+    "name": "Vortice energizzante"
+  },
+  "273458": {
+    "en": "Wisp",
+    "name": "Fuoco fatuo"
+  },
+  "273459": {
+    "en": "Haal",
+    "name": "Haal"
+  },
+  "273460": {
+    "en": "Meeri",
+    "name": "Meeri"
+  },
+  "275103": {
+    "en": "Deathguard Veteran",
+    "name": "Veterano della Guardia della Morte"
+  },
+  "276061": {
+    "en": "Decrepit Harvester",
+    "name": "Mietitore decrepito"
+  },
+  "2949": {
+    "en": "Palemane Tanner",
+    "name": "Conciatore Crinopallida"
+  },
+  "2950": {
+    "en": "Palemane Skinner",
+    "name": "Scuoiatore Crinopallida"
+  },
+  "2955": {
+    "en": "Plainstrider",
+    "name": "Corridore delle pianure"
+  },
+  "2961": {
+    "en": "Mountain Cougar",
+    "name": "Puma di montagna"
+  },
+  "2966": {
+    "en": "Battleboar",
+    "name": "Cinghiale da battaglia"
+  },
+  "2980": {
+    "en": "Grull Hawkwind",
+    "name": "Grull Hawkwind"
+  },
+  "2981": {
+    "en": "Chief Hawkwind",
+    "name": "Capo Hawkwind"
+  },
+  "2982": {
+    "en": "Seer Graytongue",
+    "name": "Veggente Graytongue"
+  },
+  "2991": {
+    "en": "Greatmother Hawkwind",
+    "name": "Gran madre Hawkwind"
+  },
+  "3059": {
+    "en": "Harutt Thunderhorn",
+    "name": "Harutt Thunderhorn"
+  },
+  "3060": {
+    "en": "Gart Mistrunner",
+    "name": "Gart Mistrunner"
+  },
+  "3061": {
+    "en": "Lanka Farshot",
+    "name": "Lanka Farshot"
+  },
+  "3062": {
+    "en": "Meela Dawnstrider",
+    "name": "Meela Dawnstrider"
+  },
+  "3072": {
+    "en": "Kawnie Softbreeze",
+    "name": "Kawnie Softbreeze"
+  },
+  "3073": {
+    "en": "Marjak Keenblade",
+    "name": "Marjak Keenblade"
+  },
+  "3074": {
+    "en": "Varia Hardhide",
+    "name": "Varia Hardhide"
+  },
+  "3075": {
+    "en": "Bronk Steelrage",
+    "name": "Bronk Steelrage"
+  },
+  "3099": {
+    "en": "Dire Mottled Boar",
+    "name": "Cinghiale feroce chiazzato"
+  },
+  "3111": {
+    "en": "Razormane Quilboar",
+    "name": "Jabaferro Crinispina"
+  },
+  "3112": {
+    "en": "Razormane Scout",
+    "name": "Esploratore Crinispina"
+  },
+  "3113": {
+    "en": "Razormane Dustrunner",
+    "name": "Corridore della polvere Crinispina"
+  },
+  "3114": {
+    "en": "Razormane Battleguard",
+    "name": "Guardia da battaglia Crinispina"
+  },
+  "3125": {
+    "en": "Clattering Scorpid",
+    "name": "Scorpide tintinnante"
+  },
+  "3128": {
+    "en": "Kul Tiras Sailor",
+    "name": "Marinaio di Kul Tiras"
+  },
+  "3129": {
+    "en": "Kul Tiras Marine",
+    "name": "Fante di marina di Kul Tiras"
+  },
+  "3192": {
+    "en": "Lieutenant Benedict",
+    "name": "Tenente Benedict"
+  },
+  "3206": {
+    "en": "Voodoo Troll",
+    "name": "Troll vudù"
+  },
+  "3207": {
+    "en": "Hexed Troll",
+    "name": "Troll maledetto"
+  },
+  "3209": {
+    "en": "Brave Windfeather",
+    "name": "Valoroso Windfeather"
+  },
+  "3210": {
+    "en": "Brave Proudsnout",
+    "name": "Valoroso Proudsnout"
+  },
+  "3211": {
+    "en": "Brave Lightninghorn",
+    "name": "Valoroso Lightninghorn"
+  },
+  "3213": {
+    "en": "Brave Running Wolf",
+    "name": "Valoroso Running Wolf"
+  },
+  "3214": {
+    "en": "Brave Greathoof",
+    "name": "Valoroso Greathoof"
+  },
+  "3300": {
+    "en": "Adder",
+    "name": "Vipera"
+  },
+  "3579": {
+    "en": "Stoneclaw Totem",
+    "name": "Totem Artiglio di Pietra"
+  },
+  "3883": {
+    "en": "Moodan Sungrain",
+    "name": "Moodan Sungrain"
+  },
+  "4075": {
+    "en": "Rat",
+    "name": "Ratto"
+  },
+  "416": {
+    "en": "Imp",
+    "name": "Imp"
+  },
+  "5667": {
+    "en": "Venya Marthand",
+    "name": "Venya Marthand"
+  },
+  "5749": {
+    "en": "Kayla Smithe",
+    "name": "Kayla Smithe"
+  },
+  "5873": {
+    "en": "Stoneskin Totem",
+    "name": "Totem della Pelle di Pietra"
+  },
+  "5888": {
+    "en": "Seer Ravenfeather",
+    "name": "Veggente Ravenfeather"
+  },
+  "5907": {
+    "en": "Kranal Fiss",
+    "name": "Kranal Fiss"
+  },
+  "6784": {
+    "en": "Calvin Montague",
+    "name": "Calvin Montague"
+  },
+  "721": {
+    "en": "Rabbit",
+    "name": "Coniglio"
+  },
+  "10556": {
+    "en": "Lazy Peon",
+    "name": "Peone Pigro"
+  },
+  "11044": {
+    "en": "Doctor Martin Felben",
+    "name": "Dottor Martin Felben"
+  },
+  "11378": {
+    "en": "Foreman Thazz'ril",
+    "name": "Caposquadra Thazz'ril"
+  },
+  "1377": {
+    "en": "Pilot Stonegear",
+    "name": "Pilota Stonegear"
+  },
+  "1378": {
+    "en": "Pilot Bellowfiz",
+    "name": "Pilota Bellowfiz"
+  },
+  "1444": {
+    "en": "Brother Kristoff",
+    "name": "Fratello Kristoff"
+  },
+  "14450": {
+    "en": "Orphan Matron Nightingale",
+    "name": "Matrona degli Orfani Nightingale"
+  },
+  "1965": {
+    "en": "Mountaineer Thalos",
+    "name": "Montanaro Thalos"
+  },
+  "197": {
+    "en": "Marshal McBride",
+    "name": "Maresciallo McBride"
+  },
+  "2055": {
+    "en": "Master Apothecary Faranell",
+    "name": "Maestro Speziale Faranell"
+  },
+  "2151": {
+    "en": "Moon Priestess Amara",
+    "name": "Sacerdotessa della Luna Amara"
+  },
+  "240": {
+    "en": "Marshal Dughan",
+    "name": "Maresciallo Dughan"
+  },
+  "251001": {
+    "en": "Deathguard Kristof",
+    "name": "Guardia della Morte Kristof"
+  },
+  "251523": {
+    "en": "Constable Aonda",
+    "name": "Conestabile Aonda"
+  },
+  "271546": {
+    "en": "Mountaineer Gretchen",
+    "name": "Montanaro Gretchen"
+  },
+  "275683": {
+    "en": "Sentinel Eralya Leafshadow",
+    "name": "Sentinella Eralya Leafshadow"
+  },
+  "2784": {
+    "en": "King Magni Bronzebeard",
+    "name": "Re Magni Bronzebeard"
+  },
+  "2930": {
+    "en": "Sentinel Glynda Nal'Shea",
+    "name": "Sentinella Glynda Nal'Shea"
+  },
+  "2934": {
+    "en": "Keeper Bel'dugur",
+    "name": "Custode Bel'dugur"
+  },
+  "295": {
+    "en": "Innkeeper Farley",
+    "name": "Locandiere Farley"
+  },
+  "3188": {
+    "en": "Master Gadrin",
+    "name": "Maestro Gadrin"
+  },
+  "3191": {
+    "en": "Cook Torka",
+    "name": "Cuoco Torka"
+  },
+  "3304": {
+    "en": "Master Vornal",
+    "name": "Maestro Vornal"
+  },
+  "341": {
+    "en": "Foreman Oslow",
+    "name": "Caposquadra Oslow"
+  },
+  "3516": {
+    "en": "Arch Druid Fandral Staghelm",
+    "name": "Arcidruido Fandral Staghelm"
+  },
+  "3519": {
+    "en": "Sentinel Arynia Cloudsbreak",
+    "name": "Sentinella Arynia Cloudsbreak"
+  },
+  "3568": {
+    "en": "Mist",
+    "name": "Nebbia"
+  },
+  "5808": {
+    "en": "Warlord Kolkanis",
+    "name": "Signore della Guerra Kolkanis"
+  },
+  "5893": {
+    "en": "Minor Manifestation of Fire",
+    "name": "Manifestazione Minore del Fuoco"
+  },
+  "6928": {
+    "en": "Innkeeper Grosk",
+    "name": "Locandiere Grosk"
+  },
+  "7313": {
+    "en": "Priestess A'moora",
+    "name": "Sacerdotessa A'moora"
+  },
+  "823": {
+    "en": "Deputy Willem",
+    "name": "Vice Willem"
+  },
+  "8396": {
+    "en": "Sentinel Dalia Sunblade",
+    "name": "Sentinella Dalia Sunblade"
+  },
+  "951": {
+    "en": "Brother Paxton",
+    "name": "Fratello Paxton"
+  },
+  "952": {
+    "en": "Brother Neals",
+    "name": "Fratello Neals"
+  }
+}

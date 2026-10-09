@@ -1,0 +1,5 @@
+Source: https://github.com/z4mbo/WOW-Forver-Italiano
+Snapshot retrieved 2026-10-09; SHA256 ad77bf16dcb0b212a33f11a92ed057622ce1b070352a5d37f7b22032ac6e09ab
+License: Vendor/WOWForverItaliano/LICENSE
+Imported authored Italian data only; no external runtime code. Existing names take precedence. Test/deprecated/unused names and unresolved placeholders excluded. Exact English source guards apply. Source translations require continued proofreading.
+7286 candidate names; 4122 exact descriptions.

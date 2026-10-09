@@ -1,0 +1,2 @@
+Original Italian translations. First exact item IDs and English names observed in ForeverDB 0.30.0 offline metadata 2026-10-08.e2503fa5: qfItems 2318,2447,2589,2840; qgItems 255663. Generic tooltip labels and anchored numeric patterns; unknown effects untouched. Tooltip names require matching ID and exact source title. No item API or hyperlink mutation.
+Additional 119 original item names: qfItems exact ID and English title, documented in docs/item-name-expansion.json. Proper names retained where no verified Italian name is available.

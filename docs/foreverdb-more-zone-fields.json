@@ -1,0 +1,100 @@
+[
+  {
+    "id": 98319,
+    "field": "title",
+    "en": "Secure the Mountain",
+    "it": "Mettere in sicurezza la montagna",
+    "hash": "06983765"
+  },
+  {
+    "id": 98319,
+    "field": "objectives",
+    "en": "Find Mountaineer Cornelius in the Grizzled Den for Mountaineer Gretchen.",
+    "it": "Trova il Montanaro Cornelius nel Grizzled Den per la Montanara Gretchen.",
+    "hash": "4ac6432e"
+  },
+  {
+    "id": 98321,
+    "field": "title",
+    "en": "Flintfire's Shipment",
+    "it": "La spedizione di Flintfire",
+    "hash": "13b7dd8f"
+  },
+  {
+    "id": 98321,
+    "field": "objectives",
+    "en": "Collect 8 Flintfire Shipments from the Grizzled Den for Tongus Flintfire in Kharanos.",
+    "it": "Raccogli 8 Flintfire Shipments nel Grizzled Den per Tongus Flintfire a Kharanos.",
+    "hash": "022574e5"
+  },
+  {
+    "id": 98322,
+    "field": "title",
+    "en": "Secure the Mountain",
+    "it": "Mettere in sicurezza la montagna",
+    "hash": "06983765"
+  },
+  {
+    "id": 98322,
+    "field": "objectives",
+    "en": "Check in on Mountaineer Gretchen west of Kharanos.",
+    "it": "Controlla come sta la Montanara Gretchen a ovest di Kharanos.",
+    "hash": "108fbc58"
+  },
+  {
+    "id": 99047,
+    "field": "title",
+    "en": "Not Dead Yet",
+    "it": "Non ancora morta",
+    "hash": "35363bd9"
+  },
+  {
+    "id": 99047,
+    "field": "objectives",
+    "en": "Seek aid from Byancie in Dolanaar for Sentinel Eralya Leafshadow.",
+    "it": "Chiedi aiuto a Byancie a Dolanaar per la Sentinella Eralya Leafshadow.",
+    "hash": "bb269065"
+  },
+  {
+    "id": 99050,
+    "field": "title",
+    "en": "The Great Tree Provides",
+    "it": "Il grande albero provvede",
+    "hash": "a5b495b2"
+  },
+  {
+    "id": 99050,
+    "field": "objectives",
+    "en": "Collect 6 Dewy Lasher Fronds, an Empty Vial, and a Refreshing Spring Water for Byancie in Dolanaar.",
+    "it": "Raccogli 6 Dewy Lasher Fronds, una Empty Vial e una Refreshing Spring Water per Byancie a Dolanaar.",
+    "hash": "8c0913f4"
+  },
+  {
+    "id": 95161,
+    "field": "title",
+    "en": "Remember That I Love You",
+    "it": "Ricorda che ti amo",
+    "hash": "02d918ce"
+  },
+  {
+    "id": 95161,
+    "field": "objectives",
+    "en": "Deliver the Blood-Stained Letter to Avette Fellwood in Duskwood.",
+    "it": "Consegna la Blood-Stained Letter ad Avette Fellwood a Boscovespro.",
+    "hash": "440499aa"
+  },
+  {
+    "id": 95697,
+    "field": "title",
+    "en": "Changing Tastes",
+    "it": "Gusti che cambiano",
+    "hash": "335915cf"
+  },
+  {
+    "id": 95697,
+    "field": "objectives",
+    "en": "Enter the Excavation Sites in the Wetlands and bring back Thicket Raptor Meat.",
+    "it": "Entra nei siti di scavo delle Paludi Grigie e riporta della Thicket Raptor Meat.",
+    "hash": "eb4ea9ce"
+  }
+]
