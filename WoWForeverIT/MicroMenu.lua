@@ -1,5 +1,14 @@
 -- Micro menu tooltip text only; icon behavior and keybindings remain intact.
 local titles={
+ ["Who List"]="Elenco giocatori",
+ ["Group Browser"]="Ricerca gruppi",
+ ["Create Listing"]="Crea annuncio",
+ ["Indicates that you are willing to protect allies from harm by ensuring that enemies are attacking you instead of them."]="Indica che sei disposto a proteggere gli alleati facendo in modo che i nemici attacchino te invece di loro.",
+ ["Indicates that you are willing to heal your allies when they take damage."]="Indica che sei disposto a curare gli alleati quando subiscono danni.",
+ ["This role is not recommended for your current character's class."]="Questo ruolo non è consigliato per la classe del tuo personaggio.",
+ ["Indicates that you are willing to take on the role of dealing damage to enemies."]="Indica che sei disposto a infliggere danni ai nemici.",
+ ["Indicates that you welcome new players into your group and are willing to act as a guide for them."]="Indica che accogli nuovi giocatori nel gruppo e sei disposto a guidarli.",
+
  ['Friend Requests']='Richieste di amicizia',['Friend Request']='Richiesta di amicizia',
  ['Friends List']='Lista amici',['Recent Players']='Giocatori recenti',
  ['Blocked Players']='Giocatori bloccati',['Add Friend']='Aggiungi un amico',
@@ -16,7 +25,7 @@ local titles={
  Achievements='Imprese',['Game Menu']='Menu di gioco',Help='Aiuto',
  ['Customer Support']='Assistenza clienti',Shop='Negozio',['Adventure Guide']='Guida alle avventure',
 }
-local owners={FriendsFrame=true,SocialFrame=true,BattleNetFriendsFrame=true,CharacterMicroButton=true,SpellbookMicroButton=true,TalentMicroButton=true,
+local owners={LFGParentFrame=true,LFGListingFrame=true,LFGBrowseFrame=true,FriendsFrame=true,SocialFrame=true,BattleNetFriendsFrame=true,CharacterMicroButton=true,SpellbookMicroButton=true,TalentMicroButton=true,
  ProfessionMicroButton=true,ProfessionsMicroButton=true,LegacyMicroButton=true,
  QuestLogMicroButton=true,SocialsMicroButton=true,FriendsMicroButton=true,GuildMicroButton=true,
  LFDMicroButton=true,LFGMicroButton=true,CollectionsMicroButton=true,AchievementMicroButton=true,

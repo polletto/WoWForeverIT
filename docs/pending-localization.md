@@ -51,7 +51,21 @@ Micro menu: new scoped tooltip module, title translations preserve displayed key
 
 - Test21 live screenshot confirms translated target name alongside creature nameplates. Screenshot added to README gallery. Observed tracker objectives remain English; requires follow-up.
 
-## Dopo test21 — versione di sviluppo 0.9.12
-- Aggiunte etichette Prezzo di vendita e Reagente per creazione, tre obiettivi nel tracker, etichette del nuovo pannello Amici e messaggio di missione accettata.
-- Target e nameplate confermati in gioco; nuove etichette e pannello Amici verificati con fixture, in attesa del test live.
-- Push di sviluppo; nessuna nuova release o richiesta di upload CurseForge.
+## 18 ottobre — aggiornamento quest e interfaccia, non pubblicato
+- 163 nuovi campi con impronta inglese su 110 quest; 2.687 ID totali. Le varianti precedenti sono conservate. Fonte ForeverDB 0.37.0, snapshot 2026-10-18.264fccc4.
+- Restano sette campi dubbi e il nome proprio invariato Chakuyak: nessun testo troncato o segnaposto sospetto è stato importato.
+- 74 nuove etichette esatte di menu, assistenza, addon, macro, Amici e gilda.
+- Nuovo modulo GroupFinder per controlli statici noti di ricerca, creazione annunci, filtri e ruoli. Nessuna scansione di righe dei risultati, candidati o descrizioni degli annunci. Necessario screenshot/test live per confermare i nomi dei controlli del nuovo pannello Forever.
+- Finestra opzioni più alta, nota ancorata sotto l'ultima checkbox, testo aggiornato su oggetti e creature.
+- Fixture superate per fonti quest, guardie sui testi, traduzioni e ripristino UI, controlli LFG tardivi e contenuti dei giocatori. Verifica in gioco ancora necessaria. Nessuno ZIP, push o rilascio.
+
+## Test1 LFG screenshot — 18 ottobre
+- Screenshot 185915: title, Quests & Zones, Custom, Back and List Self stayed English.
+- Cause: Forever uses Blizzard_GroupFinder_VanillaStyle, with LFGListingFrame/LFGBrowseFrame and CategoryView.CategoryButtons; previous module targeted different controls.
+- Added actual named frames, listing footer, category buttons and category refresh hook. Verified hierarchy against Gethe/wow-ui-source branch forever, Blizzard_LFGVanilla_Listing.lua and Mainline XML. No traversal of player result rows or comment edit boxes.
+- Fixture now reproduces the screenshot hierarchy and verifies all five visible labels, category redraw and English restoration. New package 0.9.13-test2; live check pending.
+
+## Test2 LFG tooltip feedback — 18 ottobre
+- User screenshots confirm translated panel labels; footer shortened from Pubblica disponibilità to Pubblica.
+- Added exact tooltips Who List, Group Browser, Create Listing, tank/heal/damage descriptions, new-player guidance and class/role warning. MicroMenu tooltip owner whitelist now includes VanillaStyle parent/listing/browse frames and their descendants. Warning colors retained.
+- Eight tooltip cases, restoration, parent ownership and unrelated-tooltip exclusion pass local fixtures. Package 0.9.13-test3; live tooltip verification pending.

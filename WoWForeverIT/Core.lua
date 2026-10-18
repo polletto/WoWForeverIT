@@ -721,6 +721,7 @@ function WoWForeverIT_SetOption(key,value)
     if WoWForeverIT_RefreshItems then WoWForeverIT_RefreshItems() end
     if WoWForeverIT_RefreshCreatures then WoWForeverIT_RefreshCreatures() end
     if WoWForeverIT_RefreshMicroMenu then WoWForeverIT_RefreshMicroMenu() end
+    if WoWForeverIT_RefreshGroupFinder then WoWForeverIT_RefreshGroupFinder() end
 end
 local frame = CreateFrame("Frame")
 for _, event in ipairs({"GOSSIP_SHOW", "QUEST_GREETING", "ADDON_LOADED", "QUEST_DETAIL", "QUEST_PROGRESS", "QUEST_COMPLETE", "QUEST_FINISHED", "QUEST_LOG_UPDATE", "QUEST_WATCH_LIST_CHANGED"}) do

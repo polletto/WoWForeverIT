@@ -4,7 +4,6 @@ local checks={}
 function WoWForeverIT_OpenOptions()
     if not panel then
         panel=CreateFrame('Frame','WoWForeverITOptions',UIParent,'BasicFrameTemplateWithInset')
-        panel:SetSize(490,453)
         panel:SetPoint('CENTER')
         panel:SetFrameStrata('DIALOG')
         panel:SetMovable(true)
@@ -25,6 +24,8 @@ function WoWForeverIT_OpenOptions()
             {'creatures','Creature: tooltip e nameplate'},
             {'debug','Debug: mostra i testi originali in chat'},
         }
+        panel:SetSize(490,48+#rows*38+150)
+        local lastCheck
         for i,row in ipairs(rows) do
             local key=row[1]
             local check=CreateFrame('CheckButton',nil,panel,'UICheckButtonTemplate')
@@ -34,12 +35,13 @@ function WoWForeverIT_OpenOptions()
             caption:SetText(row[2])
             check:SetScript('OnClick',function(self) WoWForeverIT_SetOption(key,self:GetChecked()) end)
             checks[key]=check
+            lastCheck=check
         end
         local note=panel:CreateFontString(nil,'OVERLAY','GameFontHighlightSmall')
-        note:SetPoint('TOPLEFT',26,-282)
+        note:SetPoint('TOPLEFT',lastCheck,'BOTTOMLEFT',8,-18)
         note:SetWidth(435)
         note:SetJustifyH('LEFT')
-        note:SetText('Le preferenze vengono salvate automaticamente.\n\nAbilità: mago e primo lotto delle altre otto classi; i testi non riconosciuti restano in inglese. Oggetti e NPC non sono ancora inclusi. I titoli delle quest seguono l’opzione Missioni.')
+        note:SetText('Le preferenze vengono salvate automaticamente.\n\nLa copertura di abilità, oggetti e creature è parziale: i testi non riconosciuti restano in inglese. I nomi dei giocatori non vengono modificati. I titoli delle quest seguono l’opzione Missioni.')
     end
     for key,check in pairs(checks) do check:SetChecked(WoWForeverIT_GetOption(key)) end
     panel:Show()

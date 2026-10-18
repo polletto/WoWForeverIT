@@ -4,7 +4,7 @@
 
 Italian quest and interface localization for the **WoW Forever beta**. Community project by [polletto](https://github.com/polletto), with quest data and text utilities adapted from **QuestIT 0.8.6 by Drakanast**.
 
-**Versione 0.9.12 · Beta · Interface 16001**
+**Versione 0.9.13 · Beta · Interface 16001**
 
 ## Italiano
 
@@ -12,7 +12,7 @@ WoWForeverIT traduce direttamente le finestre delle missioni, il registro nella 
 
 ### Installazione
 
-1. Scarica [WoWForeverIT-beta-0.9.12.zip](https://github.com/polletto/WoWForeverIT/releases/download/v0.9.12/WoWForeverIT-beta-0.9.12.zip).
+1. Scarica [WoWForeverIT-beta-0.9.13.zip](https://github.com/polletto/WoWForeverIT/releases/download/v0.9.13/WoWForeverIT-beta-0.9.13.zip).
 2. Chiudi il gioco ed estrai la cartella `WoWForeverIT` in `Interface/AddOns` **dell'installazione beta che usi**.
 3. Verifica questa struttura: `Interface/AddOns/WoWForeverIT/WoWForeverIT.toc`.
 4. Abilita l'addon. Per verificare questa versione, disabilita QuestIT e altri traduttori che modificano le stesse finestre.
@@ -29,7 +29,7 @@ Il pulsante **Code → Download ZIP** scarica il repository di sviluppo: per gio
 - Traduzioni parziali di messaggi di sistema, menu delle icone e pannello Amici.
 - Icona personalizzata e pulsante trascinabile sulla minimappa con bordo dorato.
 - Primo gruppo di categorie, etichette e pulsanti di Esc, Opzioni, grafica, audio, comandi, Addon e Macro.
-- **2.609 ID di quest** con copertura variabile dei campi; 7.859 nomi di oggetti e 4.122 descrizioni con controllo del testo originale; 133 nomi di creature. La presenza nel database non implica traduzione integrale o verifica in gioco.
+- **2.687 ID di quest** con copertura variabile dei campi; 7.859 nomi di oggetti e 4.122 descrizioni con controllo del testo originale; 133 nomi di creature. La presenza nel database non implica traduzione integrale o verifica in gioco.
 - I campi importati vengono confrontati con l'impronta del testo inglese: se il testo manca o è diverso, resta in inglese. Gli override locali precedenti non applicano questo confronto.
 
 ### Comandi
@@ -101,7 +101,7 @@ Gli screenshot documentano le versioni già provate in gioco; non tutte le etich
 
 WoWForeverIT translates supported quest text inside the game's existing quest dialogs, map quest log and objective tracker. It also provides an initial Italian dictionary for the Esc menu and selected settings screens.
 
-Download the [installable ZIP](https://github.com/polletto/WoWForeverIT/releases/download/v0.9.12/WoWForeverIT-beta-0.9.12.zip), close the game, and extract its `WoWForeverIT` folder into the beta installation's `Interface/AddOns`. The final file must be `Interface/AddOns/WoWForeverIT/WoWForeverIT.toc`. Disable other translators affecting the same UI while testing.
+Download the [installable ZIP](https://github.com/polletto/WoWForeverIT/releases/download/v0.9.13/WoWForeverIT-beta-0.9.13.zip), close the game, and extract its `WoWForeverIT` folder into the beta installation's `Interface/AddOns`. The final file must be `Interface/AddOns/WoWForeverIT/WoWForeverIT.toc`. Disable other translators affecting the same UI while testing.
 
 Coverage is incomplete. Database records are not a count of fully translated, verified quests. Imported fields use English fingerprints; changed or missing text stays English. Existing local overrides do not use fingerprint checks. Zephras additions are concise original Italian adaptations. Short tracker objectives and UI labels use separate dictionaries. Imported gossip, options and books are not wired into the viewer yet.
 

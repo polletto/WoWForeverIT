@@ -1,3 +1,11 @@
+# 0.9.13 — 2026-10-18
+
+- 163 campi tradotti su 110 quest; database esteso a 2.687 ID con copertura parziale.
+- 74 nuove etichette di menu, assistenza, macro, Amici e gilda.
+- Traduzione del Cerca gruppo di Forever e dei tooltip di ruoli, nuovi giocatori e schede; pulsante Pubblica abbreviato.
+- Correzione della sovrapposizione nella finestra delle opzioni.
+- Conservate le guardie sul testo inglese e le esclusioni dei contenuti scritti dai giocatori.
+
 # 0.9.12 — 2026-10-09
 
 - Estensione di quest, oggetti, abilità e dialoghi NPC con controlli sul testo originale.

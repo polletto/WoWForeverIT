@@ -3,7 +3,7 @@
 ## Category: Localization
 ## Category-itIT: Localizzazione
 ## Notes: Italian quest and interface localization for the Forever beta.
-## Version: 0.9.12
+## Version: 0.9.13
 ## SavedVariables: WoWForeverIT_Settings
 ## IconTexture: Interface\AddOns\WoWForeverIT\Media\Icon.tga
 ## Author: polletto and contributors
@@ -20,6 +20,7 @@ Locales/Beta-Quest-Fixes.lua
 Locales/Zephras-Missing.lua
 Locales/Zephras-Complements.lua
 Locales/Tracker.lua
+Locales/QuestUpdates-20261018.lua
 QuestDB.lua
 Locales/UI.lua
 Core.lua
@@ -38,3 +39,4 @@ Creatures.lua
 MicroMenu.lua
 SystemChat.lua
 Minimap.lua
+GroupFinder.lua
