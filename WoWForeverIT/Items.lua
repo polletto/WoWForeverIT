@@ -1,11 +1,12 @@
 -- Display-only item tooltip localization. Unknown effects remain unchanged.
+-- Tooltip lines are plain FontStrings, so they are translated in combat too;
+-- forbidden/protected regions and secret values are still skipped.
 local saved=setmetatable({}, {__mode='k'})
 local active=setmetatable({}, {__mode='k'})
 local installed,busy=false,false
 local function safe(v) return type(v)=='string' and not (type(issecretvalue)=='function' and issecretvalue(v)) end
 local function allowed(r)
  if not r or type(r.GetText)~='function' or type(r.SetText)~='function' then return false end
- if type(InCombatLockdown)=='function' and InCombatLockdown() then return false end
  for _,m in ipairs({'IsForbidden','IsProtected'}) do
   if type(r[m])=='function' then local ok,v=pcall(r[m],r);if not ok or v then return false end end
  end
@@ -101,6 +102,6 @@ function WoWForeverIT_RefreshItems()
  end
 end
 local events=CreateFrame('Frame')
-for _,event in ipairs({'ADDON_LOADED','PLAYER_REGEN_ENABLED'}) do events:RegisterEvent(event) end
+for _,event in ipairs({'ADDON_LOADED'}) do events:RegisterEvent(event) end
 events:SetScript('OnEvent',WoWForeverIT_RefreshItems)
 WoWForeverIT_RefreshItems()

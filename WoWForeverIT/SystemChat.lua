@@ -9,18 +9,34 @@ local function itemLinks(text)
   return prefix..'['..name..']'..suffix
  end))
 end
+-- Title fingerprint -> Italian title, built once. Scanning every quest ID per
+-- "Quest accepted" line hashed the same text thousands of times.
+local titleIndex
+local function buildTitleIndex(data)
+ local index={}
+ for _,entry in pairs(data) do
+  for name,record in pairs(entry) do
+   if type(name)=='string' and (name=='title' or name:sub(1,6)=='title#') and type(record)=='table' and safe(record.it) then
+    local hashes=type(record.enHash)=='table' and record.enHash or {record.enHash}
+    for _,hash in ipairs(hashes) do
+     if type(hash)=='string' then
+      local known=index[hash]
+      -- Repeated English titles with different translations stay in English.
+      if known==nil then index[hash]=record.it elseif known~=record.it then index[hash]=false end
+     end
+    end
+   end
+  end
+ end
+ return index
+end
 local function questTitle(title)
  if not WoWForeverIT_GetOption('quests') then return title end
  local db=WoWForeverIT_QuestIT
  if not db or not db.Core or not db.DataIT then return title end
- local found
- for id in pairs(db.DataIT) do
-  local status,record=db.Core.TranslationStatus(id,'title',title)
-  if status=='current' and record and safe(record.it) then
-   if found and found~=record.it then return title end
-   found=record.it
-  end
- end
+ if not titleIndex or titleIndex.data~=db.DataIT then titleIndex={data=db.DataIT,map=buildTitleIndex(db.DataIT)} end
+ local found=titleIndex.map[db.Core.EnglishHash(title)]
+ if found==nil then found=titleIndex.map[db.Core.AttachedEnglishHash(title)] end
  return found or title
 end
 function WoWForeverIT_TranslateSystemMessage(event,text)

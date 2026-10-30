@@ -3,10 +3,31 @@
 local Core = WoWForeverIT_QuestIT.Core
 Core.Try = function(_, fn, ...) return pcall(fn, ...) end
 
+-- Fingerprints cost dozens of gsubs per text and the same texts are checked on
+-- every redraw, tooltip and 1.5-second pulse. Cache the matched record (or a
+-- miss) per character name, quest, field and English text; rendering stays live
+-- because $P depends on the NPC being spoken to.
+local statusCache, cacheSize, cacheData = {}, 0, nil
+local function cachedTranslation(id, field, english)
+    local data = WoWForeverIT_QuestIT.DataIT
+    if cacheData ~= data or cacheSize > 4000 then
+        statusCache, cacheSize, cacheData = {}, 0, data
+    end
+    local okName, player = pcall(UnitName, "player")
+    local key = tostring(okName and player) .. "\031" .. tostring(id) .. "\031" .. field .. "\031" .. english
+    local cached = statusCache[key]
+    if cached ~= nil then return cached or nil end
+    local ok, status, translation = pcall(Core.TranslationStatus, id, field, english)
+    local value = ok and status == "current" and translation or false
+    statusCache[key] = value
+    cacheSize = cacheSize + 1
+    return value or nil
+end
+
 function WoWForeverIT_TranslateField(id, field, english)
     if type(english) ~= "string" or english == "" then return nil end
-    local ok, status, translation = pcall(Core.TranslationStatus, id, field, english)
-    if not ok or status ~= "current" then return nil end
+    local translation = cachedTranslation(id, field, english)
+    if not translation then return nil end
     local rendered, text = pcall(function()
         return Core.RenderItalian(translation.it, Core.PlayerInfo())
     end)
