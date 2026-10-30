@@ -2,6 +2,7 @@
 
 - 162 campi tradotti (74 titoli, 81 obiettivi, 7 descrizioni) su quest Forever con ID 80000+, dai dati di ForeverDB del 30 ottobre; database esteso a 2.763 ID. Ogni campo richiede l'impronta del testo inglese.
 - 213 testi di progresso e completamento (91 progressi, 122 completamenti) su 125 quest Forever, copiati da Wowhead (www.wowhead.com/forever) il 30 ottobre e tradotti, ciascuno con la propria impronta del testo inglese.
+- 1.027 nuovi nomi italiani di abilità Forever: abilità e talenti delle nove classi, rune incise ("Incidi Cintura - ..."), tratti razziali e abilità dei famigli, dalle liste di Wowhead Forever. Solo nomi esatti; le descrizioni restano in inglese dove non c'è un modello.
 
 # 0.9.13 — 2026-10-18
 

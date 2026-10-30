@@ -18,3 +18,5 @@ ForeverDB offline addon 0.30.0, metadata 2026-10-08.e2503fa5, client 1.60.1.7020
 174 additional original Italian names from the same classSpells inventory through level 30; names only, no mechanics inferred.
 
 Additional text families: https://www.wowhead.com/forever/spell=1776/gouge ; https://www.wowhead.com/forever/spell=19740/blessing-of-might ; https://www.wowhead.com/forever/spell=1978/serpent-sting . Checked 2026-10-08. Gouge description/aura, Blessing of Might hour-duration variant, Serpent Sting aura.
+
+2026-10-30: 1027 original Italian names in Locales/Spells-Forever.lua. English names from the Wowhead Forever spell lists (https://www.wowhead.com/forever/spells/abilities/<class>, /talents/<class>, /pet-abilities/hunter, /pet-abilities/warlock, /racial-traits). Names only; internal entries (OLD, DND, test, effect, passive, scaling) skipped. Engrave runes use "Incidi <slot> - <rune>".

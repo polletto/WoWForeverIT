@@ -82,3 +82,7 @@ Micro menu: new scoped tooltip module, title translations preserve displayed key
 - Wowhead mostra `<name>`, `<class>` e `<race>` al posto di nome, classe e razza: convertiti in `$N`, `$C` e `$R` prima di calcolare l'impronta. Il testo è stato preso dall'HTML della pagina con gli a capo `<br>`, spazi doppi compresi.
 - 62 delle 209 quest Forever senza questi campi non hanno testi su Wowhead (quasi tutte con ID 98000+): restano mancanti.
 - Nomi di PNG, oggetti e luoghi lasciati in inglese come nei campi ForeverDB. Verifica in gioco ancora necessaria. Nessuno ZIP o rilascio.
+
+## 30 ottobre — nomi delle abilità Forever, non pubblicato
+- 1.027 nomi in `Locales/Spells-Forever.lua` (prima 339): abilità e talenti di tutte le classi, rune incise, tratti razziali, abilità dei famigli di cacciatore e stregone. Fonte: liste di Wowhead Forever. Nomi coerenti con quelli già presenti (per esempio i talenti "Improved X" riusano la traduzione di X).
+- Le descrizioni dei tooltip di queste abilità restano in inglese: servono modelli con i valori numerici del client, da aggiungere a parte. Verifica in gioco dei nomi ancora necessaria.

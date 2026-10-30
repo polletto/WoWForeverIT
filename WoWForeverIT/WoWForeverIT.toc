@@ -30,6 +30,7 @@ QuestTooltips.lua
 Options.lua
 Locales/Spells.lua
 Locales/Spells-Expansion.lua
+Locales/Spells-Forever.lua
 Spells.lua
 Locales/Items.lua
 Locales/Items-Imported.lua
