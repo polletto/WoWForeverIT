@@ -23,6 +23,7 @@ Locales/Tracker.lua
 Locales/QuestUpdates-20261018.lua
 Locales/QuestUpdates-20261030.lua
 Locales/QuestUpdates-20261030-Wowhead.lua
+Locales/QuestIT094-Forever.lua
 QuestDB.lua
 Locales/UI.lua
 Core.lua

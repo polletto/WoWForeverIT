@@ -1,0 +1,31 @@
+Traduzioni italiane di QuestIT (data/it/ e QuestIT/Data_it.lua)
+
+I testi originali sono di Blizzard Entertainment. Le traduzioni italiane sono
+lavoro degli autori di QuestIT: tutti i diritti riservati, salvo i permessi qui sotto.
+
+Questa licenza vale per le traduzioni di tutte le versioni di QuestIT, comprese
+quelle pubblicate prima: il file LICENSE delle versioni precedenti copriva con
+la MIT solo il codice dell'addon, non le traduzioni.
+
+È permesso usarle, copiarle e modificarle, gratis, a queste condizioni, che
+valgono anche per un uso parziale: anche solo una parte delle traduzioni di
+QuestIT, mescolata con traduzioni proprie o di altri, obbliga a rispettarle.
+1. citare in modo chiaro, sia dentro l'addon (in un file di licenza o di crediti)
+   sia nella pagina pubblica del progetto (descrizione su CurseForge, Wago o simili):
+   - QuestIT, come fonte delle traduzioni;
+   - la comunità Discord di QuestIT, che le mantiene (raccoglie e corregge i testi);
+   - #italyforazeroth (https://italy-for-azeroth.vercel.app/).
+   Per esempio: "Traduzioni italiane di QuestIT, con l'aiuto della comunità
+   Discord di QuestIT. #italyforazeroth https://italy-for-azeroth.vercel.app/";
+   inoltre, ovunque si dica come o da chi sono state fatte le traduzioni
+   (descrizioni su CurseForge, Wago o altre piattaforme, pagine, note di
+   rilascio, file dell'addon), nello stesso punto va scritto che vengono, in
+   tutto o in parte, da QuestIT; non si possono presentare come lavoro
+   proprio o come fatte in modo indipendente (per esempio da
+   un'intelligenza artificiale);
+2. nessun uso a scopo di lucro;
+3. nessun uso per sintesi vocale, doppiaggio o audio generato che imiti la voce
+   di persone reali (doppiatori compresi) senza il loro consenso scritto.
+
+Chi non rispetta queste condizioni perde il permesso.
+Il codice dell'addon resta sotto licenza MIT (file LICENSE).

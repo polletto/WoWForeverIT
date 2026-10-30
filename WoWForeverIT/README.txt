@@ -12,6 +12,9 @@ Disabilita altri traduttori durante la prova.
 Copertura parziale. Campi nuovi/differenti possono restare inglesi.
 Le aggiunte di Zephras sono adattamenti sintetici non ufficiali.
 Codice originale MIT; crediti/licenza QuestIT in Vendor/QuestIT/LICENSE.
+Traduzioni italiane di QuestIT, con l'aiuto della comunità Discord di QuestIT. #italyforazeroth https://italy-for-azeroth.vercel.app/
+Le traduzioni di QuestIT non sono MIT: vedi Vendor/QuestIT/LICENSE-traduzioni.txt
+(niente uso a scopo di lucro, niente sintesi vocale).
 I testi di gioco restano di proprietà di Blizzard Entertainment.
 
 Documentazione, contributi e segnalazioni:

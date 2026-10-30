@@ -2,7 +2,9 @@
 
 <p align="center"><img src="docs/images/WoWForeverIT-logo.png" alt="WoWForeverIT — localizzazione italiana" width="256"></p>
 
-Italian quest and interface localization for the **WoW Forever beta**. Community project by [polletto](https://github.com/polletto), with quest data and text utilities adapted from **QuestIT 0.8.6 by Drakanast**.
+Italian quest and interface localization for the **WoW Forever beta**. Community project by [polletto](https://github.com/polletto), with quest data and text utilities adapted from **QuestIT by Drakanast** (0.8.6 database, plus Forever translations from 0.9.4).
+
+> Traduzioni italiane di QuestIT, con l'aiuto della comunità Discord di QuestIT. #italyforazeroth https://italy-for-azeroth.vercel.app/ Gran parte delle traduzioni delle quest viene da QuestIT; non sono lavoro originale di questo progetto.
 
 **Versione 0.9.13 · Beta · Interface 16001**
 
@@ -126,6 +128,6 @@ The regression checks use simulated WoW APIs. They do not establish in-game safe
 
 ## Credits and licensing
 
-Original WoWForeverIT code: MIT, see [LICENSE](LICENSE). QuestIT-derived code retains Drakanast's notice and [upstream license](WoWForeverIT/Vendor/QuestIT/LICENSE). Quest text is identified by that license as Blizzard Entertainment's property; the code's MIT license does not grant ownership of Blizzard content. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and [Zephras sources](WoWForeverIT/Sources-Zephras.txt).
+Original WoWForeverIT code: MIT, see [LICENSE](LICENSE). QuestIT-derived code retains Drakanast's notice and [upstream license](WoWForeverIT/Vendor/QuestIT/LICENSE). QuestIT's Italian translations are not MIT: they are used under [QuestIT's translation license](WoWForeverIT/Vendor/QuestIT/LICENSE-traduzioni.txt) (credit to QuestIT, its Discord community and #italyforazeroth; non-commercial; no voice synthesis). Quest text is identified by that license as Blizzard Entertainment's property; the code's MIT license does not grant ownership of Blizzard content. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and [Zephras sources](WoWForeverIT/Sources-Zephras.txt).
 
 This is an unofficial community project, not affiliated with or endorsed by Blizzard Entertainment or QuestIT's author.
