@@ -21,6 +21,8 @@ Locales/Zephras-Missing.lua
 Locales/Zephras-Complements.lua
 Locales/Tracker.lua
 Locales/QuestUpdates-20261018.lua
+Locales/QuestUpdates-20261030.lua
+Locales/QuestUpdates-20261030-Wowhead.lua
 QuestDB.lua
 Locales/UI.lua
 Core.lua
@@ -28,6 +30,7 @@ QuestTooltips.lua
 Options.lua
 Locales/Spells.lua
 Locales/Spells-Expansion.lua
+Locales/Spells-Forever.lua
 Spells.lua
 Locales/Items.lua
 Locales/Items-Imported.lua

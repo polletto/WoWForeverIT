@@ -29,7 +29,7 @@ Il pulsante **Code → Download ZIP** scarica il repository di sviluppo: per gio
 - Traduzioni parziali di messaggi di sistema, menu delle icone e pannello Amici.
 - Icona personalizzata e pulsante trascinabile sulla minimappa con bordo dorato.
 - Primo gruppo di categorie, etichette e pulsanti di Esc, Opzioni, grafica, audio, comandi, Addon e Macro.
-- **2.687 ID di quest** con copertura variabile dei campi; 7.859 nomi di oggetti e 4.122 descrizioni con controllo del testo originale; 133 nomi di creature. La presenza nel database non implica traduzione integrale o verifica in gioco.
+- **2.763 ID di quest** con copertura variabile dei campi; 7.859 nomi di oggetti e 4.122 descrizioni con controllo del testo originale; 133 nomi di creature. La presenza nel database non implica traduzione integrale o verifica in gioco.
 - I campi importati vengono confrontati con l'impronta del testo inglese: se il testo manca o è diverso, resta in inglese. Gli override locali precedenti non applicano questo confronto.
 
 ### Comandi
