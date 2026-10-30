@@ -69,3 +69,10 @@ Micro menu: new scoped tooltip module, title translations preserve displayed key
 - User screenshots confirm translated panel labels; footer shortened from Pubblica disponibilità to Pubblica.
 - Added exact tooltips Who List, Group Browser, Create Listing, tank/heal/damage descriptions, new-player guidance and class/role warning. MicroMenu tooltip owner whitelist now includes VanillaStyle parent/listing/browse frames and their descendants. Warning colors retained.
 - Eight tooltip cases, restoration, parent ownership and unrelated-tooltip exclusion pass local fixtures. Package 0.9.13-test3; live tooltip verification pending.
+
+## 30 ottobre — quest Forever da ForeverDB, non pubblicato
+- 162 nuovi campi con impronta inglese per quest Forever (ID 80000+): 74 titoli, 81 obiettivi, 7 descrizioni. 76 ID nuovi nel database, 2.763 ID totali. Fonte: foreverdb.net (`data/questguides`) e ForeverDB Companion 0.54.5, build 1.60.1.70658. Testi e impronte in `quest-translations-2026-10-30.json`.
+- ForeverDB non contiene testi di progresso o completamento per le quest Forever (0 su 2.595 ID): quei campi restano mancanti e servono catture in gioco.
+- Le descrizioni del sito sostituiscono nome e classe del giocatore con "adventurer" e "class"; per 92947 e 94414 l'impronta usa `$C`/`$N`. Gli obiettivi con "the required number of" non sono stati importati. Otto descrizioni del sito coincidono già con traduzioni esistenti dopo questa normalizzazione e non sono state duplicate.
+- Nomi di PNG, oggetti e luoghi lasciati in inglese come nel database principale. Titoli invariati (Moonglade, Chakuyak, Carnage, Frosthowl) non aggiunti.
+- Verifica in gioco ancora necessaria. Nessuno ZIP o rilascio.

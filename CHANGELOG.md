@@ -1,3 +1,7 @@
+# Non pubblicato
+
+- 162 campi tradotti (74 titoli, 81 obiettivi, 7 descrizioni) su quest Forever con ID 80000+, dai dati di ForeverDB del 30 ottobre; database esteso a 2.763 ID. Ogni campo richiede l'impronta del testo inglese.
+
 # 0.9.13 — 2026-10-18
 
 - 163 campi tradotti su 110 quest; database esteso a 2.687 ID con copertura parziale.
