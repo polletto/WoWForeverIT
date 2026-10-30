@@ -76,3 +76,9 @@ Micro menu: new scoped tooltip module, title translations preserve displayed key
 - Le descrizioni del sito sostituiscono nome e classe del giocatore con "adventurer" e "class"; per 92947 e 94414 l'impronta usa `$C`/`$N`. Gli obiettivi con "the required number of" non sono stati importati. Otto descrizioni del sito coincidono già con traduzioni esistenti dopo questa normalizzazione e non sono state duplicate.
 - Nomi di PNG, oggetti e luoghi lasciati in inglese come nel database principale. Titoli invariati (Moonglade, Chakuyak, Carnage, Frosthowl) non aggiunti.
 - Verifica in gioco ancora necessaria. Nessuno ZIP o rilascio.
+
+## 30 ottobre — progressi e completamenti Forever da Wowhead, non pubblicato
+- 213 nuovi campi con impronta inglese su 125 quest Forever (ID 80000+): 91 testi di progresso e 122 di completamento. Altri 15 campi Zephras avevano già una traduzione con la stessa impronta e non sono stati duplicati; per 92840, 93737 e 93951 il testo Wowhead differisce da quello già tradotto e la nuova versione è aggiunta come variante. Fonte: sezioni Progress e Completion di www.wowhead.com/forever/quest=ID, lette dal browser il 30 ottobre. Testi, impronte e traduzioni in `quest-translations-2026-10-30-wowhead.json`.
+- Wowhead mostra `<name>`, `<class>` e `<race>` al posto di nome, classe e razza: convertiti in `$N`, `$C` e `$R` prima di calcolare l'impronta. Il testo è stato preso dall'HTML della pagina con gli a capo `<br>`, spazi doppi compresi.
+- 62 delle 209 quest Forever senza questi campi non hanno testi su Wowhead (quasi tutte con ID 98000+): restano mancanti.
+- Nomi di PNG, oggetti e luoghi lasciati in inglese come nei campi ForeverDB. Verifica in gioco ancora necessaria. Nessuno ZIP o rilascio.

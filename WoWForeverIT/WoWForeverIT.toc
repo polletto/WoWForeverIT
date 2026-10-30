@@ -22,6 +22,7 @@ Locales/Zephras-Complements.lua
 Locales/Tracker.lua
 Locales/QuestUpdates-20261018.lua
 Locales/QuestUpdates-20261030.lua
+Locales/QuestUpdates-20261030-Wowhead.lua
 QuestDB.lua
 Locales/UI.lua
 Core.lua
