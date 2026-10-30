@@ -7,7 +7,8 @@ local function position(angle)
  button:SetPoint('CENTER',Minimap,'CENTER',math.cos(radians)*radius,math.sin(radians)*radius)
 end
 local function install()
- if button or not Minimap then return end
+ if not Minimap then return end
+ if button then WoWForeverIT_RefreshMinimap() return end
  button=CreateFrame('Button','WoWForeverITMinimapButton',Minimap)
  button:SetSize(32,32)
  WoWForeverIT_Settings=WoWForeverIT_Settings or {}
@@ -47,6 +48,11 @@ local function install()
   GameTooltip:Show()
  end)
  button:SetScript('OnLeave',function() if GameTooltip then GameTooltip:Hide() end end)
+ WoWForeverIT_RefreshMinimap()
+end
+function WoWForeverIT_RefreshMinimap()
+ if not button then return end
+ if WoWForeverIT_GetOption('minimap') then button:Show() else button:Hide() end
 end
 local events=CreateFrame('Frame')
 events:RegisterEvent('PLAYER_LOGIN')

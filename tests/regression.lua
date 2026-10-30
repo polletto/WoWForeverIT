@@ -389,3 +389,29 @@ assert(WoWForeverIT_TranslateSystemMessage('CHAT_MSG_SYSTEM','Quest accepted: Ch
 assert(calls<=4,'quest accepted lines must not hash once per quest ID')
 WoWForeverIT_QuestIT.Core.EnglishHash=hash
 print('PASS: quest accepted chat titles use the title fingerprint index')
+
+-- Capture: untranslated English fields are stored with their fingerprint,
+-- translated ones are skipped and stale entries are dropped.
+WoWForeverIT_Capture=nil
+WoWForeverIT_CaptureField(87,'title','Changed beta title','Changed beta title')
+WoWForeverIT_CaptureField(999999,'progress','Have you found it yet, Averdan?','A Test')
+local captured=WoWForeverIT_Capture.quests
+assert(captured[87].title.status=='changed' and captured[87].title.hash==WoWForeverIT_QuestIT.Core.EnglishHash('Changed beta title'))
+WoWForeverIT_CaptureField(87,'title','Goldtooth','Goldtooth')
+assert(captured[87]==nil,'translated text must not be captured')
+assert(captured[999999].progress.en=='Have you found it yet, $N?','player name must become $N')
+assert(captured[999999].progress.status=='missing')
+WoWForeverIT_QuestIT.DataIT[999999]={progress={it='Lo hai trovato, $N?',enHash=captured[999999].progress.hash}}
+WoWForeverIT_CaptureField(999999,'progress','Have you found it yet, Averdan?','A Test')
+assert(captured[999999]==nil,'a field translated later must leave the capture')
+WoWForeverIT_QuestIT.DataIT[999999]=nil
+WoWForeverIT_SetOption('capture',false)
+WoWForeverIT_SetOption('capture',true)
+print('PASS: capture stores untranslated quest fields with fingerprints')
+
+-- Options: translation switches grey out while translations are off.
+WoWForeverIT_RefreshOptions()
+WoWForeverIT_SetOption('minimap',false)
+assert(WoWForeverIT_GetOption('minimap')==false)
+WoWForeverIT_SetOption('minimap',true)
+print('PASS: minimap and options refresh')

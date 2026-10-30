@@ -2,7 +2,7 @@ local addonName = ...
 local prefix = "|cff44ccff[WoWForeverIT]|r "
 local debugEnabled = false
 local italianEnabled = true
-local defaults={enabled=true,quests=true,interface=true,questTooltips=true,spells=true,items=true,creatures=true,debug=false}
+local defaults={enabled=true,quests=true,interface=true,questTooltips=true,spells=true,items=true,creatures=true,minimap=true,capture=true,debug=false}
 function WoWForeverIT_GetOption(key)
     local value=WoWForeverIT_Settings and WoWForeverIT_Settings[key]
     if value==nil then return defaults[key] end
@@ -722,6 +722,8 @@ function WoWForeverIT_SetOption(key,value)
     if WoWForeverIT_RefreshCreatures then WoWForeverIT_RefreshCreatures() end
     if WoWForeverIT_RefreshMicroMenu then WoWForeverIT_RefreshMicroMenu() end
     if WoWForeverIT_RefreshGroupFinder then WoWForeverIT_RefreshGroupFinder() end
+    if WoWForeverIT_RefreshMinimap then WoWForeverIT_RefreshMinimap() end
+    if WoWForeverIT_RefreshOptions then WoWForeverIT_RefreshOptions() end
 end
 local frame = CreateFrame("Frame")
 for _, event in ipairs({"GOSSIP_SHOW", "QUEST_GREETING", "ADDON_LOADED", "QUEST_DETAIL", "QUEST_PROGRESS", "QUEST_COMPLETE", "QUEST_FINISHED", "QUEST_LOG_UPDATE", "QUEST_WATCH_LIST_CHANGED"}) do
@@ -773,7 +775,7 @@ end)
 
 SLASH_WOWFOREVERIT1 = "/wfit"
 SlashCmdList.WOWFOREVERIT = function(input)
-    local cmd = (input or ""):lower():match("^%s*(%S*)")
+    local cmd, argument = (input or ""):lower():match("^%s*(%S*)%s*(.-)%s*$")
     if cmd == "toggle" then
         -- SetOption already restores or refreshes every module and respects
         -- the separate quest-tooltip option.
@@ -790,6 +792,8 @@ SlashCmdList.WOWFOREVERIT = function(input)
         else
             report("Diagnostica tooltip", "modulo QuestTooltips.lua non caricato. Controlla la cartella e il file .toc, poi riavvia WoW.")
         end
+    elseif cmd == "cattura" or cmd == "capture" then
+        if WoWForeverIT_CaptureCommand then WoWForeverIT_CaptureCommand(argument) end
     elseif cmd == "debug" then
         WoWForeverIT_SetOption("debug",not debugEnabled)
         report("Debug", debugEnabled and "attivo" or "disattivo")
@@ -800,6 +804,6 @@ SlashCmdList.WOWFOREVERIT = function(input)
         report("Build", (GetBuildInfo and select(1, GetBuildInfo())) or "sconosciuta")
         report("Locale", (GetLocale and GetLocale()) or "sconosciuta")
     else
-        print(prefix .. "Comandi: /wfit (opzioni) | /wfit toggle (italiano/inglese) | /wfit info | /wfit debug | /wfit tooltip")
+        print(prefix .. "Comandi: /wfit (opzioni) | /wfit toggle (italiano/inglese) | /wfit cattura | /wfit info | /wfit debug | /wfit tooltip")
     end
 end

@@ -3,7 +3,7 @@ UnitName=function() return nil end
 UnitClass=function() return nil end
 UnitRace=function() return nil end
 UnitSex=function() return 2 end
-local runtime={['Core.lua']=true,['Spells.lua']=true,['Options.lua']=true,['QuestTooltips.lua']=true,['Minimap.lua']=true,['Items.lua']=true,['Creatures.lua']=true,['MicroMenu.lua']=true,['SystemChat.lua']=true,['GroupFinder.lua']=true}
+local runtime={['Core.lua']=true,['Spells.lua']=true,['Options.lua']=true,['QuestTooltips.lua']=true,['Minimap.lua']=true,['Items.lua']=true,['Creatures.lua']=true,['MicroMenu.lua']=true,['SystemChat.lua']=true,['GroupFinder.lua']=true,['Capture.lua']=true}
 for line in io.lines('WoWForeverIT/WoWForeverIT.toc') do
  if line:match('%.lua$') and not runtime[line] then dofile('WoWForeverIT/'..line) end
 end
