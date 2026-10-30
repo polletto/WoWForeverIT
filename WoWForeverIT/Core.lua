@@ -734,7 +734,7 @@ frame:SetScript("OnEvent", function(_, event, arg)
             italianEnabled=WoWForeverIT_GetOption('enabled')
             debugEnabled=WoWForeverIT_GetOption('debug')
             if WoWForeverIT_SetTooltipLanguage then WoWForeverIT_SetTooltipLanguage(questsEnabled() and WoWForeverIT_GetOption('questTooltips')) end
-            print(prefix .. "caricato. /wfit toggle | /wfit debug | /wfit info")
+            print(prefix .. "caricato. /wfit per le opzioni, /wfit toggle per italiano/inglese.")
             installHooks()
             installTrackerHook()
             refresh()
@@ -775,9 +775,9 @@ SLASH_WOWFOREVERIT1 = "/wfit"
 SlashCmdList.WOWFOREVERIT = function(input)
     local cmd = (input or ""):lower():match("^%s*(%S*)")
     if cmd == "toggle" then
+        -- SetOption already restores or refreshes every module and respects
+        -- the separate quest-tooltip option.
         WoWForeverIT_SetOption("enabled",not italianEnabled)
-        if WoWForeverIT_SetTooltipLanguage then WoWForeverIT_SetTooltipLanguage(italianEnabled) end
-        if italianEnabled then refresh() replaceGameMenu() else restoreEnglish() end
         if QuestObjectiveTracker and type(QuestObjectiveTracker.MarkDirty) == "function" then
             QuestObjectiveTracker:MarkDirty()
         end
@@ -800,6 +800,6 @@ SlashCmdList.WOWFOREVERIT = function(input)
         report("Build", (GetBuildInfo and select(1, GetBuildInfo())) or "sconosciuta")
         report("Locale", (GetLocale and GetLocale()) or "sconosciuta")
     else
-        print(prefix .. "/wfit toggle | /wfit debug | /wfit info")
+        print(prefix .. "Comandi: /wfit (opzioni) | /wfit toggle (italiano/inglese) | /wfit info | /wfit debug | /wfit tooltip")
     end
 end

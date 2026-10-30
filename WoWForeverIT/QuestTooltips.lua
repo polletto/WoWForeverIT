@@ -47,8 +47,9 @@ local function captureMapTooltip()
     end
     if matched then activeOwner,activeID=owner,matched end
 end
+local relayout = false
 local function translate()
-    if not enabled or not GameTooltip then return end
+    if relayout or not enabled or not GameTooltip then return end
     if WoWForeverIT_GetOption and (not WoWForeverIT_GetOption('quests') or not WoWForeverIT_GetOption('questTooltips')) then return end
     captureMapTooltip()
     if not activeID then return end
@@ -56,6 +57,7 @@ local function translate()
     if type(GameTooltip.NumLines) ~= 'function' then return end
     local own = WoWForeverIT_Quests and WoWForeverIT_Quests[activeID]
     local name = GameTooltip:GetName() or 'GameTooltip'
+    local changed = false
     for i=1,GameTooltip:NumLines() do
         local line = _G[name..'TextLeft'..i]
         if line and type(line.GetText)=='function' then
@@ -95,9 +97,17 @@ local function translate()
                     end
                     originals[line]={english=raw,italian=rendered,owner=activeOwner}
                     line:SetText(rendered)
+                    changed = true
                 end
             end
         end
+    end
+    if changed and type(GameTooltip.Show) == 'function' then
+        -- Italian lines are usually longer: lay the tooltip out again so they
+        -- are not clipped. The guard stops the Show post-hook from recursing.
+        relayout = true
+        pcall(GameTooltip.Show, GameTooltip)
+        relayout = false
     end
 end
 local function hover(owner)

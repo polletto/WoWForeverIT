@@ -382,3 +382,10 @@ spellCallback(GameTooltip,{id=133})
 assert(GameTooltipTextLeft1:GetText()=='Fireball')
 InCombatLockdown=nil
 print('PASS: spell numbers, changed sources, late redraw, preferences, unknown IDs and combat guards')
+local calls,hash=0,WoWForeverIT_QuestIT.Core.EnglishHash
+WoWForeverIT_QuestIT.Core.EnglishHash=function(...) calls=calls+1;return hash(...) end
+assert(WoWForeverIT_TranslateSystemMessage('CHAT_MSG_SYSTEM','Quest accepted: Goldtooth')=='Missione accettata: Dentedoro')
+assert(WoWForeverIT_TranslateSystemMessage('CHAT_MSG_SYSTEM','Quest accepted: Changed beta title')=='Missione accettata: Changed beta title')
+assert(calls<=4,'quest accepted lines must not hash once per quest ID')
+WoWForeverIT_QuestIT.Core.EnglishHash=hash
+print('PASS: quest accepted chat titles use the title fingerprint index')

@@ -192,7 +192,11 @@ function WoWForeverIT_RefreshSpells()
 end
 local deferredCast=false
 local events=CreateFrame('Frame')
-for _,event in ipairs({'ADDON_LOADED','SPELLS_CHANGED','PLAYER_REGEN_ENABLED','UNIT_SPELLCAST_START','UNIT_SPELLCAST_DELAYED','UNIT_SPELLCAST_STOP','UNIT_SPELLCAST_CHANNEL_START','UNIT_SPELLCAST_CHANNEL_UPDATE'}) do events:RegisterEvent(event) end
+for _,event in ipairs({'ADDON_LOADED','SPELLS_CHANGED','PLAYER_REGEN_ENABLED'}) do events:RegisterEvent(event) end
+-- Player casts only: in groups and cities other units' casts would wake this handler constantly.
+for _,event in ipairs({'UNIT_SPELLCAST_START','UNIT_SPELLCAST_DELAYED','UNIT_SPELLCAST_STOP','UNIT_SPELLCAST_CHANNEL_START','UNIT_SPELLCAST_CHANNEL_UPDATE'}) do
+ if type(events.RegisterUnitEvent)=='function' then events:RegisterUnitEvent(event,'player') else events:RegisterEvent(event) end
+end
 events:SetScript('OnEvent',function(_,event,unit)
  if event:match('^UNIT_') and unit~='player' then return end
  WoWForeverIT_RefreshSpells()
