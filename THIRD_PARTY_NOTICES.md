@@ -8,6 +8,14 @@ Source: https://www.curseforge.com/wow/addons/questit-forever
 
 The imported `Text.lua`, `Names_en.lua` and `Data_it.lua` are under `WoWForeverIT/Vendor/QuestIT/`. The original LICENSE is preserved there, including its explicit distinction between MIT-licensed addon code and Blizzard-owned quest text. Local modifications isolate the namespace as `WoWForeverIT_QuestIT`. We use our own viewer and adapter; QuestIT's `Viewer.lua` and collector are not included.
 
+### QuestIT 0.9.4 translations
+
+Traduzioni italiane di QuestIT, con l'aiuto della comunità Discord di QuestIT. #italyforazeroth https://italy-for-azeroth.vercel.app/
+
+`WoWForeverIT/Locales/QuestIT094-Forever.lua` adds 1,200 Italian quest fields taken from QuestIT 0.9.4 (`QuestIT/Data_it.lua`), limited to fields QuestIT marks as seen on Forever. Name tokens are rendered in QuestIT's default level-2 form; texts and English fingerprints are otherwise unchanged. The field list is in `docs/questit-0.9.4-import.json`.
+
+QuestIT's Italian translations are not covered by the MIT license. Since 0.9.4 they are licensed under `WoWForeverIT/Vendor/QuestIT/LICENSE-traduzioni.txt`, which the author states also applies to earlier versions, including the 0.8.6 data above. Conditions: credit QuestIT, the QuestIT Discord community and #italyforazeroth inside the addon and on the public project page; say the translations come in whole or in part from QuestIT wherever their origin is described, and never present them as this project's own or AI-made work; no commercial use; no voice synthesis or dubbing imitating real people.
+
 This is not an official QuestIT release and does not imply its author's endorsement. Database translations are community content and may include unverified Vanilla fields.
 
 ## World of Warcraft text and assets
