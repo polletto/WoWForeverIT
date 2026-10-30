@@ -41,7 +41,7 @@ function WoWForeverIT_OpenOptions()
         note:SetPoint('TOPLEFT',lastCheck,'BOTTOMLEFT',8,-18)
         note:SetWidth(435)
         note:SetJustifyH('LEFT')
-        note:SetText('Le preferenze vengono salvate automaticamente.\n\nLa copertura di abilità, oggetti e creature è parziale: i testi non riconosciuti restano in inglese. I nomi dei giocatori non vengono modificati. I titoli delle quest seguono l’opzione Missioni.')
+        note:SetText('Le preferenze vengono salvate automaticamente.\n\nLa copertura di abilità, oggetti e creature è parziale: i testi non riconosciuti restano in inglese. I nomi dei giocatori non vengono modificati. I titoli delle quest seguono l’opzione Missioni.\n\nMolte traduzioni delle quest vengono da QuestIT (Drakanast), con l’aiuto della comunità Discord di QuestIT. #italyforazeroth https://italy-for-azeroth.vercel.app/')
     end
     for key,check in pairs(checks) do check:SetChecked(WoWForeverIT_GetOption(key)) end
     panel:Show()
