@@ -1,4 +1,4 @@
-WoWForeverIT beta 0.9.14
+WoWForeverIT beta 0.9.15
 
 INSTALLAZIONE
 Estrai WoWForeverIT in Interface/AddOns dell’installazione beta.

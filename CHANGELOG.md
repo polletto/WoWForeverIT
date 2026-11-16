@@ -1,3 +1,7 @@
+# 0.9.15 — 2026-11-16
+
+- 447 campi tradotti (188 titoli, 259 obiettivi) su 279 quest, dai dati del Companion di ForeverDB 0.62.1 (build 1.60.1.70938); 188 quest nuove, database esteso a 3.120 ID. Include obiettivi cambiati su Forever per quest già presenti, aggiunti come varianti. Ogni campo richiede l'impronta del testo inglese.
+
 # 0.9.14 — 2026-10-30
 
 - 1.200 campi di quest Forever da QuestIT 0.9.4 (Drakanast e comunità Discord di QuestIT, #italyforazeroth): 678 su 169 quest nuove, 316 campi mancanti e 206 varianti del testo inglese; database esteso a 2.932 ID. Solo testi che QuestIT segna come visti su Forever, con le sue impronte.

@@ -3,7 +3,7 @@
 ## Category: Localization
 ## Category-itIT: Localizzazione
 ## Notes: Italian quest and interface localization for the Forever beta.
-## Version: 0.9.14
+## Version: 0.9.15
 ## SavedVariables: WoWForeverIT_Settings, WoWForeverIT_Capture
 ## IconTexture: Interface\AddOns\WoWForeverIT\Media\Icon.tga
 ## Author: polletto and contributors
@@ -24,6 +24,7 @@ Locales/QuestUpdates-20261018.lua
 Locales/QuestUpdates-20261030.lua
 Locales/QuestUpdates-20261030-Wowhead.lua
 Locales/QuestIT094-Forever.lua
+Locales/QuestUpdates-20261116.lua
 QuestDB.lua
 Locales/UI.lua
 Core.lua
