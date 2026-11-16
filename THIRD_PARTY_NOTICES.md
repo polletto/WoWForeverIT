@@ -29,3 +29,7 @@ The added records cite their sources in `WoWForeverIT/Sources-Zephras.txt`. They
 ## WOW Forver - Italiano
 
 Four Italian quest titles in `Locales/Reused-Titles.lua` are reused from https://github.com/z4mbo/WOW-Forver-Italiano, copyright (c) 2026 WOW Forver - Italiano contributors. The original MIT notice is preserved in `WoWForeverIT/Vendor/WOWForverItaliano/LICENSE`. Source paths and commit are recorded in `WoWForeverIT/Sources-Reused.txt`. Only titles still identical to English are filled; the existing English fingerprints remain unchanged. Blizzard game text and third-party material retain their owners' rights.
+
+## ForeverDB.net
+
+English quest titles, objectives and descriptions used as fingerprints for the project's own Italian translations in `Locales/QuestUpdates-20261030.lua` and `Locales/QuestUpdates-20261116.lua` come from ForeverDB.net (https://foreverdb.net) and its Companion addon data. Data: ForeverDB.net, reused with the credit its notice requires (GPL-3.0 section 7(b)). The source texts are recorded in `docs/quest-translations-2026-10-30.json` and `docs/quest-translations-2026-11-16.json`.
